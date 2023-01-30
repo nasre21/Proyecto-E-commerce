@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    
-</head>
-<body>
-    <div class="container border">
-<h1>Aprendiendo Bootstrap </h1>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="source/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="container d-flex flex-column">
+      <div id="logo" class="logo d-flex col-12">
+        <img
+          src="/image/logo-topets.png"
+          alt="logo de la pagina "
+          class="img"
+        />
+        <h1>TOPETS</h1>
+      </div>
+      <div id="nav-bar" class="container">
+        <ul id="nav-menu" class="navbar-brand d-flex col-12 justify-content-end list-unstyled ">
+          <li class="me-3  "><a class="text-decoration-none link-info " href="#">HOME</a></li>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima officiis accusantium cum sequi vitae incidunt voluptas unde enim reiciendis. Soluta?
-</p>
-    
-</div>
+          <li class="me-3 "><a class="text-decoration-none link-info " href="#">CATEGORIAS</a></li>
 
+          <li class="me-3 "><a class="text-decoration-none link-info " href="#">SOBRE NOSOTROS</a> </li>
 
-<script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-</body>
+          <li class="me-3 "><a class="text-decoration-none link-info " href="#">CONTACTO</a></li>
+
+          <li id="img-carrito" class="mx-4"><img src="/image/carrito-de-compras.png"></li>
+
+        </ul>
+        
+      </div>
+    </div>
+    <script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap\js\bootstrap.min.js"></script>
+  </body>
 </html>

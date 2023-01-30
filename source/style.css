@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid black;
+}
+
+.logo {
+  align-items: center;
+  height: 6rem;
+  border: 1px solid black;
+}
+.logo .img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.logo h1 {
+  padding-top: 0.5rem;
+}
+
+#nav-bar img {
+  width: 2rem;
+}
+
+#nav-menu {
+  padding-top: 1rem;
+}/*# sourceMappingURL=style.css.map */
