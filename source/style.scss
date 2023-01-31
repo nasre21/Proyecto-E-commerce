@@ -39,3 +39,14 @@ $font-primary:'Roboto Flex', sans-serif;
 // Estilo de Footer
 
 
+//Estilo home
+.home-main {
+    background-image: url("../image/mascota_perro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 100vw;
+    height: 800px;
+
+    
+}
