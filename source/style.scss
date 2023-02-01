@@ -50,6 +50,10 @@ $font-primary:'Roboto Flex', sans-serif;
     position: relative;
     font-family: $font-primary;
 
+    #border {
+        border: 2px solid $terciary-color;
+    }
+
     .container {
         width: 40%;
         height: auto;
@@ -57,18 +61,23 @@ $font-primary:'Roboto Flex', sans-serif;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 3px solid $terciary-color;
-       
         background-color: $complementary-color-two;
 
         p {
             margin: 1rem;
             font-size: large;
             text-align: center;
+            line-height: 2rem;
             
-            a {
-                text-decoration:none;
-                color: $terciary-color;
+            .entrar {
+                font-size: larger;
+                font-weight: bold;
+                
+                a {
+                    text-decoration:none;
+                    color: $terciary-color;
+                    font-weight: bolder;
+                }
             }
         }
     }
