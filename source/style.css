@@ -9,9 +9,17 @@
   background-size: contain;
   background-position: center;
   max-width: 100vw;
-  height: 800px;
+  height: 100vh;
   position: relative;
   font-family: "Roboto Flex", sans-serif;
+}
+.home-main .titulo {
+  margin: auto;
+  padding-top: 3rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #8C56A2;
 }
 .home-main .container {
   width: 40%;
@@ -27,6 +35,10 @@
   margin: 1rem;
   font-size: large;
   text-align: center;
+}
+.home-main .container p .entrar {
+  font-size: larger;
+  font-weight: bolder;
 }
 .home-main .container p a {
   text-decoration: none;
