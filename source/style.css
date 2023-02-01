@@ -3,6 +3,15 @@
   width: 8rem;
 }
 
+#img-mundo {
+  width: 2rem;
+}
+
+#img-usser {
+  height: auto;
+  width: 2rem;
+}
+
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
