@@ -5,16 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="source/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container d-flex flex-column">
-      <!-- nav bar ------------------------------------------->
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button
@@ -29,23 +25,15 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <!-- parte nav bar izq -------- -->
-        <ul class="navbar-nav">
+        <!-- parte nav bar izq ---------->
+        <ul class="navbar-nav" id="navIzquierda">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+              >Home <span class="sr-only"></span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-        </ul>
-        <!-- logo centrado ------ -->
-        <a class="navbar-brand" href="#">Navbar</a>
-        <!-- parte nav bar de la derecha --------->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Catalogo</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -56,17 +44,52 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Dropdown link
+              Categorias
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Perro</a>
+              <a class="dropdown-item" href="#">Gato</a>
+              <a class="dropdown-item" href="#">Aves</a>
+              <a class="dropdown-item" href="#">...</a>
             </div>
           </li>
         </ul>
-      </div>
-    </nav>
+        <!-- logo centrado ------ -->
+        <a class="navbar-brand" href="#">Logo</a>
+        <!-- parte nav bar de la derecha --------->
+        <ul class="navbar-nav" id="navDerecha">
+        <!-- search .falta por poner la lupa -->
+        <li>
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </li>
+          <!--idiomas desplegable  -->
+        
+          <!-- avatar desplegable con opcions de perfil -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
+            height="22" alt="Avatar" loading="lazy" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Mi perfil</a>
+              <a class="dropdown-item" href="#">Cerrar sesion</a>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </nav>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
@@ -188,23 +211,20 @@
       </section>
       <!-- Section: Links  -->
 
-      <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.025)"
-      >
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
 
-    <script
-      type="text/javascript"
-      src="bootstrap/js/bootstrap.min.js"
-    ></script>
+
+
+
+
+   
   </body>
 </html>
