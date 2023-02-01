@@ -27,9 +27,6 @@
   position: relative;
   font-family: "Roboto Flex", sans-serif;
 }
-.home-main #border {
-  border: 2px solid #8C56A2;
-}
 .home-main .container {
   width: 40%;
   height: auto;
@@ -37,20 +34,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 3px solid #8C56A2;
   background-color: #F2F2F2;
 }
 .home-main .container p {
   margin: 1rem;
   font-size: large;
   text-align: center;
-  line-height: 2rem;
 }
-.home-main .container p .entrar {
-  font-size: larger;
-  font-weight: bold;
-}
-.home-main .container p .entrar a {
+.home-main .container p a {
   text-decoration: none;
   color: #8C56A2;
-  font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */
