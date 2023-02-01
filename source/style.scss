@@ -13,7 +13,20 @@ $padding:20rem;
 //NavBar
 #logonavbar{
     width: 8rem;
+    margin: 0 auto;
+   
+    
 }
+#img-mundo{
+    width: 2rem;
+    
+}
+
+#img-usser{
+    height: auto;
+    width: 2rem;
+}
+
 
 
 //Estilo home
@@ -26,7 +39,6 @@ $padding:20rem;
     height: 100vh;    
     position: relative;
     font-family: $font-primary;
-
     .titulo {
         margin: auto;
         padding-top: 3rem;
@@ -60,6 +72,8 @@ $padding:20rem;
                 text-decoration:none;
                 color: $terciary-color;
             }
-        }
+       }
+ 
     }
 }
+
