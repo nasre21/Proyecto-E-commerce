@@ -39,9 +39,10 @@ $padding:20rem;
     height: 100vh;    
     position: relative;
     font-family: $font-primary;
+   
     .titulo {
         margin: auto;
-        padding-top: 3rem;
+        padding-top: 8rem;
         font-size: 5rem;
         font-weight: bolder;
         text-align: center;
@@ -73,7 +74,34 @@ $padding:20rem;
                 color: $terciary-color;
             }
        }
- 
     }
 }
 
+
+/* Media queries for Tablet */
+@media screen and (max-width: 960px) {
+    .home-main {
+        .titulo {
+            padding-top: 8rem;
+        }
+        
+        .container {
+            width: 75%;
+            top: 40%;
+        }
+    }
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    .home-main {
+        .titulo {
+            padding-top: 4rem;
+            font-size: 3rem;
+        }
+
+        .container {
+            width: 98%;
+        }
+    }
+}
