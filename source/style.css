@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+#logonavbar {
+  width: 8rem;
+}
+
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
