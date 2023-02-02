@@ -2,6 +2,16 @@
 
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
+<<<<<<< HEAD
+=======
+=======
+@import url('/Proyecto-E-commerce/source/catalogo');
+@use 'catalogo';
+>>>>>>> 3aba852ed4ae1dfc22e70aef5f537483e4b17f98
+@import url(/source/_producdescription.scss);
+
+
+>>>>>>> 1b88cbc12dbe41c8688d4d744f93c2de2c91f91c
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -10,6 +20,8 @@ $complementary-color-two:#F2F2F2;
 $complementary-color-three:#8E58A6;
 $font-primary:'Roboto Flex', sans-serif;
 $padding:20rem;
+
+
 
 //NavBar
 #logonavbar{
@@ -121,3 +133,19 @@ $padding:20rem;
     height: 50%;
   
 }
+
+
+// descripcion del producto
+
+#cantidad-producto{
+    width: 3rem;
+}
+
+
+.agregar-comentario{
+    height: 10rem;
+    width: 100%;
+}
+
+
+
