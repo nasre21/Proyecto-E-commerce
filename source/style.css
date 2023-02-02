@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 <<<<<<< HEAD
 @import url(/source/_Footer.scss);
+@import url(/source/_producdescription.scss);
+=======
+<<<<<<< HEAD
+@import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
 =======
 <<<<<<< HEAD
@@ -10,6 +14,7 @@
 @import url("/source/_Footer.scss");
 >>>>>>> 83ebff90456bc8cc3985ed4d38e89a765325a751
 >>>>>>> 3aba852ed4ae1dfc22e70aef5f537483e4b17f98
+>>>>>>> 0ba651a789677fe3225c9fecf3681e8b9031c725
 #logonavbar {
   width: 8rem;
   margin: 0 auto;
@@ -87,6 +92,15 @@
   }
 }
 <<<<<<< HEAD
+#cantidad-producto {
+  width: 3rem;
+}
+
+.agregar-comentario {
+  height: 10rem;
+  width: 100%;
+=======
+<<<<<<< HEAD
 .div-datos-cliente {
   background-color: #F2F2F2;
   width: 50rem;
@@ -94,4 +108,5 @@
 #carouselExampleIndicators {
   height: 50%;
 >>>>>>> 83ebff90456bc8cc3985ed4d38e89a765325a751
+>>>>>>> 0ba651a789677fe3225c9fecf3681e8b9031c725
 }/*# sourceMappingURL=style.css.map */
