@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 @import url(/source/_Footer.scss);
+@import url(/source/_producdescription.scss);
+
+
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -9,6 +12,8 @@ $complementary-color-two:#F2F2F2;
 $complementary-color-three:#8E58A6;
 $font-primary:'Roboto Flex', sans-serif;
 $padding:20rem;
+
+
 
 //NavBar
 #logonavbar{
@@ -105,3 +110,18 @@ $padding:20rem;
         }
     }
 }
+
+// descripcion del producto
+
+#cantidad-producto{
+    width: 3rem;
+}
+
+
+.agregar-comentario{
+    height: 10rem;
+    width: 100%;
+}
+
+
+

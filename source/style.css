@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+@import url(/source/_Footer.scss);
+@import url(/source/_producdescription.scss);
 #logonavbar {
   width: 8rem;
   margin: 0 auto;
@@ -74,4 +76,12 @@
   .home-main .container {
     width: 98%;
   }
+}
+#cantidad-producto {
+  width: 3rem;
+}
+
+.agregar-comentario {
+  height: 10rem;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
