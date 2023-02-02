@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
-
-@import url(/source/_Footer.scss);
+@import url('/Proyecto-E-commerce/source/catalogo');
+@use 'catalogo';
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -128,3 +128,9 @@ $padding:20rem;
 
 
 
+// compras
+
+.carosel{
+    height: 50%;
+  
+}

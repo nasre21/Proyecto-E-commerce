@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+<<<<<<< HEAD
 @import url(/source/_Footer.scss);
+=======
+@import url("/Proyecto-E-commerce/source/catalogo");
+@import url("/source/_Footer.scss");
+>>>>>>> 83ebff90456bc8cc3985ed4d38e89a765325a751
 #logonavbar {
   width: 8rem;
   margin: 0 auto;
@@ -76,7 +81,12 @@
     width: 98%;
   }
 }
+<<<<<<< HEAD
 .div-datos-cliente {
   background-color: #F2F2F2;
   width: 50rem;
+=======
+#carouselExampleIndicators {
+  height: 50%;
+>>>>>>> 83ebff90456bc8cc3985ed4d38e89a765325a751
 }/*# sourceMappingURL=style.css.map */
