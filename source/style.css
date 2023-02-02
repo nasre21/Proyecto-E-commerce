@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 <<<<<<< HEAD
 @import url(/source/_Footer.scss);
+@import url(/source/_compraRealizada.scss);
+=======
+<<<<<<< HEAD
+@import url(/source/_Footer.scss);
 =======
 @import url("/Proyecto-E-commerce/source/catalogo");
 @import url("/source/_Footer.scss");
 >>>>>>> 83ebff90456bc8cc3985ed4d38e89a765325a751
+>>>>>>> 3aba852ed4ae1dfc22e70aef5f537483e4b17f98
 #logonavbar {
   width: 8rem;
   margin: 0 auto;
