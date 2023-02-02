@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
-<<<<<<< HEAD
-=======
+
 @import url(/source/_producdescription.scss);
->>>>>>> 6a1624127dce1ed2cc6732381b018a54d4f5bc4b
 #logonavbar {
   width: 8rem;
   margin: 0 auto;
@@ -81,7 +79,6 @@
     width: 98%;
   }
 }
-<<<<<<< HEAD
 
 #cantidad-producto {
   width: 3rem;
@@ -91,8 +88,6 @@
   height: 10rem;
   width: 100%;
 }
-=======
->>>>>>> 6a1624127dce1ed2cc6732381b018a54d4f5bc4b
 .div-datos-cliente {
   background-color: #F2F2F2;
   width: 50rem;
@@ -100,9 +95,6 @@
 
 .carosel {
   height: 50%;
-<<<<<<< HEAD
-}
-=======
 }
 
 #cantidad-producto {
@@ -113,4 +105,4 @@
   height: 10rem;
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
->>>>>>> 6a1624127dce1ed2cc6732381b018a54d4f5bc4b
+
