@@ -2,9 +2,9 @@
 
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
+@import url('/Proyecto-E-commerce/source/catalogo');
+@use 'catalogo';
 @import url(/source/_producdescription.scss);
-
-
 
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
@@ -111,7 +111,10 @@ $padding:20rem;
             width: 98%;
         }
     }
+
 }
+
+
 
 //Estilos página de cliente
 
@@ -140,6 +143,4 @@ $padding:20rem;
     height: 10rem;
     width: 100%;
 }
-
-
 
