@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 @import url(/source/_Footer.scss);
+<<<<<<< HEAD
+@import url(/source/_compraRealizada.scss);
+
+=======
 @import url('/Proyecto-E-commerce/source/catalogo');
 @use 'catalogo';
 @import url(/source/_producdescription.scss);
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
 
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
@@ -110,7 +115,10 @@ $padding:20rem;
             width: 98%;
         }
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
 }
 
 
@@ -123,23 +131,41 @@ $padding:20rem;
 }
 
 
-// compras
+// descripcion del producto
 
-.carosel{
-    height: 50%;
-  
+
+#section-comentarios{
+    margin: 3rem 0; 
+    margin-bottom: 4rem;
+    margin-right: 2rem;
 }
 
 
-// descripcion del producto
-
-#cantidad-producto{
+.input-number{
     width: 3rem;
 }
 
+<<<<<<< HEAD
 
-.agregar-comentario{
-    height: 10rem;
-    width: 100%;
+    #btn{
+        margin: 1rem 0 5rem 0;
+    width: 5rem;
+
+
+
+    }
+    
+   
+    #caja-comentario{
+        height: 5rem;
+    }
+
+
+#comentarios-escritos{
+    margin: 0 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
-
+=======
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
