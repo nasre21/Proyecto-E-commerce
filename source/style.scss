@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 @import url(/source/_Footer.scss);
-<<<<<<< HEAD
 @import url(/source/_compraRealizada.scss);
-
-=======
-@import url('/Proyecto-E-commerce/source/catalogo');
-@use 'catalogo';
-@import url(/source/_producdescription.scss);
->>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
-
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -23,7 +15,7 @@ $padding:20rem;
 
 //NavBar
 #logonavbar{
-    width: 8rem;
+    width: 4rem;
     margin: 0 auto;
    
     
@@ -115,12 +107,7 @@ $padding:20rem;
             width: 98%;
         }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
 }
-
 
 
 //Estilos página de cliente
@@ -145,15 +132,23 @@ $padding:20rem;
     width: 3rem;
 }
 
-<<<<<<< HEAD
 
     #btn{
         margin: 1rem 0 5rem 0;
-    width: 5rem;
+        width: 5rem;
+        color: black;
+        }
+
+        #btn:hover{
+            color: $complementary-color-one;
+            background-color: #8C56A2;
+        }
 
 
-
-    }
+        #btn-sidebar:hover{
+            background-color: $complementary-color-three;
+        }
+    
     
    
     #caja-comentario{
@@ -167,5 +162,3 @@ $padding:20rem;
     border-radius: 5px;
     margin-top: 2rem;
 }
-=======
->>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
