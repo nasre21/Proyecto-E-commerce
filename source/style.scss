@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 @import url(/source/_Footer.scss);
+<<<<<<< HEAD
 @import url(/source/_compraRealizada.scss);
 
+=======
+@import url('/Proyecto-E-commerce/source/catalogo');
+@use 'catalogo';
+@import url(/source/_producdescription.scss);
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
 
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
@@ -109,21 +115,19 @@ $padding:20rem;
             width: 98%;
         }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
 }
+
+
 
 //Estilos página de cliente
 
 .div-datos-cliente {
     background-color: $complementary-color-two;
     width: 50rem;
-}
-
-
-// compras
-
-.carosel{
-    height: 50%;
-  
 }
 
 
@@ -141,6 +145,7 @@ $padding:20rem;
     width: 3rem;
 }
 
+<<<<<<< HEAD
 
     #btn{
         margin: 1rem 0 5rem 0;
@@ -162,3 +167,5 @@ $padding:20rem;
     border-radius: 5px;
     margin-top: 2rem;
 }
+=======
+>>>>>>> 46b86e1967cd069dcf462ea1d8163e7028a4baf1
