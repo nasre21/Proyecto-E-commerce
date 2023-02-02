@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+<<<<<<< HEAD
+
+@import url(/source/_Footer.scss);
+@import url(/source/_compraRealizada.scss);
+=======
 @import url('/Proyecto-E-commerce/source/catalogo');
 @use 'catalogo';
+<<<<<<< HEAD
+=======
+>>>>>>> 3aba852ed4ae1dfc22e70aef5f537483e4b17f98
+@import url(/source/_producdescription.scss);
+
+>>>>>>> 526e174fda2a30c6c3cb25e77a5f26d9c4f34696
 
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
@@ -10,6 +21,8 @@ $complementary-color-two:#F2F2F2;
 $complementary-color-three:#8E58A6;
 $font-primary:'Roboto Flex', sans-serif;
 $padding:20rem;
+
+
 
 //NavBar
 #logonavbar{
@@ -105,4 +118,39 @@ $padding:20rem;
             width: 98%;
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+//Estilos página de cliente
+
+.div-datos-cliente {
+    background-color: $complementary-color-two;
+    width: 50rem;
+}
+
+
+// compras
+
+.carosel{
+    height: 50%;
+  
+}
+
+
+// descripcion del producto
+
+#cantidad-producto{
+    width: 3rem;
+}
+
+
+.agregar-comentario{
+    height: 10rem;
+    width: 100%;
+}
+
+
+
+>>>>>>> 526e174fda2a30c6c3cb25e77a5f26d9c4f34696
