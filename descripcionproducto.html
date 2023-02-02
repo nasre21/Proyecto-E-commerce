@@ -1,54 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="source/style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="source/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class=" imagen container border  d-flex justify-content-center">
-            <img src="/image/perros/comida_perro.jpg" alt="">
-        </div>
-        <div class="botones  container border d-flex justify-content-center ">
-              <input type="number"  id="cantidad-producto">
-              <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
-        </div>
-        <div class="description border  ">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sint iste quae dicta cum modi, quam accusamus rerum repellendus eveniet inventore? Blanditiis voluptatibus impedit et qui ipsum porro ipsa quos.</p>
-        </div>
-        <div class="comentario container border ">
-            <div class="agregar-comentario">
+  <div class="container-fluid descripcion d-flex flex-wrap">
+    <div class="container img-descripcion d-flex flex-column col-12">
+      <img class="w-25 m-auto mb-5" src="/image/perros/comida_perro.jpg" alt="" />
 
-            </div>
-        </div>
-        <div class="aside container border ">
-            <div class="container border ">proeba aside</div>
-            <div class="container border ">proeba aside</div>
-            <div class="container border ">proeba aside</div>
-            <div class="container border ">proeba aside</div>
-        </div>
-
+      <div class="botones d-flex justify-content-center mb-5">
+        <input type="number" class="input-number me-2" />
+        <div class="botones btn btn-outline-primary">Agregar al carrito</div>
+      </div>
     </div>
+
+    <div id="section-comentarios" class="d-flex flex-column col-8">
+      <p>Agregar comentario.</p>
+      <div id="caja-comentario" class="border rounded bg-body-secondary"></div>
+      <button id="btn" class="btn btn-outline-secondary">Enviar</button>
+      <h3>comentarios</h3>
+      <div id="comentarios-escritos">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          numquam quisquam eaque nemo modi. Aperiam consectetur sed hic quo
+          ducimus maxime obcaecati aut ullam debitis.
+        </p>
+      </div>
+      <div id="comentarios-escritos">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          numquam quisquam eaque nemo modi. Aperiam consectetur sed hic quo
+          ducimus maxime obcaecati aut ullam debitis.
+        </p>
+      </div>
+      <div id="comentarios-escritos">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          numquam quisquam eaque nemo modi. Aperiam consectetur sed hic quo
+          ducimus maxime obcaecati aut ullam debitis.
+        </p>
+      </div>
+      <div id="comentarios-escritos">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          numquam quisquam eaque nemo modi. Aperiam consectetur sed hic quo
+          ducimus maxime obcaecati aut ullam debitis.
+        </p>
+      </div>
+    </div>
+
+    <aside class="barralateral col">
+      <div class="container img-descripcion d-flex flex-column border rounded mb-2">
+        <img class="w-25 m-auto mb-5" src="/image/perros/comida_perro.jpg" alt="" />
+
+        <div class="botones d-flex justify-content-center mb-5">
+          <div class="botones btn btn-outline-primary">
+            Agregar al carrito
+          </div>
+        </div>
+      </div>
+
+      <div class="container img-descripcion d-flex flex-column border rounded mb-2">
+        <img class="w-25 m-auto mb-5" src="/image/perros/comida_perro.jpg" alt="" />
+
+        <div class="botones d-flex justify-content-center mb-5">
+          <div class="botones btn btn-outline-primary">
+            Agregar al carrito
+          </div>
+        </div>
+      </div>
+
+      <div class="container img-descripcion d-flex flex-column border rounded mb-2">
+        <img class="w-25 m-auto mb-5" src="/image/perros/comida_perro.jpg" alt="" />
+
+        <div class="botones d-flex justify-content-center mb-5">
+          <div class="botones btn btn-outline-primary">
+            Agregar al carrito
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
 </body>
+
 </html>
