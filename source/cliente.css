@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 .div-datos-cliente {
-    background-color: #c91717;
+    background-color: #F2F2F2;
+    width: 50rem; 
 }
