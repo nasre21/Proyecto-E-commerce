@@ -142,11 +142,13 @@ $padding:20rem;
         #btn:hover{
             color: $complementary-color-one;
             background-color: #8C56A2;
+            color: white;
         }
 
 
         #btn-sidebar:hover{
             background-color: $complementary-color-three;
+            color: white;
         }
     
     
@@ -183,5 +185,13 @@ $padding:20rem;
         width: 100%;
     }
 
+
+    #descripcion-producto{
+        width: 100%;
+    }
+
+    #img-descripcion{
+        width: 100%;
+    }
 
 }
