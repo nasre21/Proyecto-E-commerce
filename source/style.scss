@@ -162,3 +162,26 @@ $padding:20rem;
     border-radius: 5px;
     margin-top: 2rem;
 }
+
+@media (max-width:411px) {
+   
+    #section-comentarios{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    
+
+    }
+
+    #caja-comentario{
+    width: 100%;
+    margin: 0 auto;
+
+    }
+
+    #comentarios-escritos{
+        width: 100%;
+    }
+
+
+}
