@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 .div-datos-cliente {
-
+    border: 1px solid #AFBAEF;
     width: 50rem; 
 }
 .col-sm-1 {
     text-align: center;
   }
 
-#pedidos-margen {
-    margin-top: 10rem;
-}
   .imagen-caja {
-    width: 15rem;
+    width: 13rem;
   }
+.div-pedidos-curso {
+  margin-top: 10rem;
+}
