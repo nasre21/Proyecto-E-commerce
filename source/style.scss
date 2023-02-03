@@ -2,6 +2,7 @@
 
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
+@import url(source/carrito.scss);
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -189,7 +190,10 @@ $padding:20rem;
 
 }
 
-//login 
+//login
+#btn-login{
+    color: $complementary-color-three;
+} 
 
 #btn-login:hover{
     color: $complementary-color-one;
@@ -206,4 +210,30 @@ $padding:20rem;
     color: $complementary-color-three;
     font-size: 1.5rem ;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#container-login{
+    margin: auto;
+    margin-top: 5rem;
+}
+#email{
+
+   width: 80%;
+}
+
+
+#password{
+    width: 80%;
+}
+
+
+
+@media (max-width:411px) {
+    
+    #container-login-one {
+        display: none;
+    }
+
+
 }
