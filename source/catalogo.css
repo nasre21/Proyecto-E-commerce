@@ -16,20 +16,31 @@ height:40rem;
 }
 .card img{
   display: flex;
- padding-left:1rem ;
- padding-top: 2rem;
+  padding: 2rem 0rem 1rem 5rem;
+ /* padding-left:5rem ;
+ padding-top: 2rem; */
   width: 50%;
-  
+  justify-content: center;
+
   /* height: 5rem; */
  
+}
+
+summary:hover{
+  color: blueviolet;
+  transition: all 2s;
+  
 }
 /* .hover-button a:hover {
   background-color: #8E58A6;
 } */
+
 #btn-sidebar{
   color: black;
-  /* border: dimgray ; */
+   border: dimgray ; 
+  transition: ease-in 1s;
 }
+
 
 
 
