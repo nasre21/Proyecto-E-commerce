@@ -1,0 +1,12 @@
+
+
+.caja1{
+    display: flex;
+}
+@media only screen and (max-width: 980px){
+
+    .caja1{
+        flex-direction:column-reverse;
+
+    }
+}
