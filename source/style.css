@@ -135,6 +135,10 @@
     width: 100%;
   }
 }
+#btn-login {
+  color: #8E58A6;
+}
+
 #btn-login:hover {
   color: #AEEBF2;
   background-color: #8C56A2;
