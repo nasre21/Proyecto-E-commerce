@@ -16,9 +16,11 @@ height:40rem;
 }
 .card img{
   display: flex;
- padding-left:6rem ;
+ padding-left:1rem ;
  padding-top: 2rem;
-  width: 60%;
+  width: 50%;
+  
+  /* height: 5rem; */
  
 }
 /* .hover-button a:hover {
@@ -36,7 +38,7 @@ height:40rem;
 /* responsive tablet*/
 @media(max-width: 960px){
 
-  #cards{
+  .cards{
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -51,7 +53,7 @@ height:40rem;
 /* responsive de movil */
 @media(max-width: 480px){
 
-  #cards{
+  .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
