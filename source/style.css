@@ -134,4 +134,9 @@
   #img-descripcion {
     width: 100%;
   }
+}
+#btn-login:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
