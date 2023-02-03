@@ -189,7 +189,10 @@ $padding:20rem;
 
 }
 
-//login 
+//login
+#btn-login{
+    color: $complementary-color-three;
+} 
 
 #btn-login:hover{
     color: $complementary-color-one;
