@@ -144,4 +144,15 @@
   color: #AEEBF2;
   background-color: #8C56A2;
   color: white;
+}
+
+#link-login {
+  text-decoration: none;
+  color: #8E58A6;
+}
+
+.label {
+  color: #8E58A6;
+  font-size: 1.5rem;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
