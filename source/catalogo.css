@@ -16,9 +16,13 @@ height:40rem;
 }
 .card img{
   display: flex;
-  justify-content: center;
+ padding-left:6rem ;
+ padding-top: 2rem;
   width: 60%;
-  height: 18rem;
+ 
+}
+.hover-button a:hover {
+  background-color: #8E58A6;
 }
 
 
