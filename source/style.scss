@@ -110,13 +110,6 @@ $padding:20rem;
 }
 
 
-//Estilos página de cliente
-
-.div-datos-cliente {
-    background-color: $complementary-color-two;
-    width: 50rem;
-}
-
 
 // descripcion del producto
 
@@ -194,4 +187,23 @@ $padding:20rem;
         width: 100%;
     }
 
+}
+
+//login 
+
+#btn-login:hover{
+    color: $complementary-color-one;
+    background-color: #8C56A2;
+    color: white;
+}
+
+#link-login{
+    text-decoration: none;
+    color: $complementary-color-three;
+}
+
+.label{
+    color: $complementary-color-three;
+    font-size: 1.5rem ;
+    font-weight: bold;
 }

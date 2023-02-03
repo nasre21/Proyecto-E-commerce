@@ -77,11 +77,6 @@
     width: 98%;
   }
 }
-.div-datos-cliente {
-  background-color: #F2F2F2;
-  width: 50rem;
-}
-
 #section-comentarios {
   margin: 3rem 0;
   margin-bottom: 4rem;
@@ -139,4 +134,20 @@
   #img-descripcion {
     width: 100%;
   }
+}
+#btn-login:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
+}
+
+#link-login {
+  text-decoration: none;
+  color: #8E58A6;
+}
+
+.label {
+  color: #8E58A6;
+  font-size: 1.5rem;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
