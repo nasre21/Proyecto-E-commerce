@@ -55,7 +55,7 @@ summary:hover{
 } */
 
 #btn-sidebar{
-  color: black;
+  color: blueviolet;
    border: dimgray ; 
   transition: ease-in 1s;
 }
