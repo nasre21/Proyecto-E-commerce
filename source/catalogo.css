@@ -10,9 +10,20 @@ height:40rem;
 
 /* card */
 .cards {
-  padding: 4rem;
+  padding-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+  #cads-plus{
+    width: 18rem;
+    margin-top: 3rem;
+    margin-bottom:2rem ;
+  /* padding-bottom: 2rem; */
+ /* cursor: pointer; */
+  }
+#cads-plus:hover{
+ box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
+ transition: all 2s;
 }
 .card img{
   display: flex;
