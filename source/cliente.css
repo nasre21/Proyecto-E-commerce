@@ -29,3 +29,20 @@
   margin-top: 1rem;
   font-size: 0.9rem;
 }
+
+/*Media query para movil*/
+
+@media (max-width: 650px) {
+  .texto-pedidos {
+    text-align: center;
+  }
+  
+}
+
+/*Media query para movil*/
+
+@media (min-width: 651px) and (max-width: 850px) {
+  .texto-pedidos {
+    text-align: center;
+  }
+}

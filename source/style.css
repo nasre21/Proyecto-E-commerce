@@ -28,7 +28,7 @@
 }
 .home-main .titulo {
   margin: auto;
-  padding-top: 8rem;
+  padding-top: 5rem;
   font-size: 5rem;
   font-weight: bolder;
   text-align: center;
@@ -175,4 +175,7 @@
   #container-login-one {
     display: none;
   }
+}
+.registro-usuario img {
+  width: 8rem;
 }/*# sourceMappingURL=style.css.map */
