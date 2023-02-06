@@ -30,11 +30,19 @@
   font-size: 0.9rem;
 }
 
+.input-pagina-cliente {
+  margin-left: 4.7rem;
+}
+
 /*Media query para movil*/
 
 @media (max-width: 650px) {
   .texto-pedidos {
     text-align: center;
+  }
+
+  .input-pagina-cliente {
+    margin-left: 0rem;
   }
   
 }
