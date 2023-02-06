@@ -3,6 +3,7 @@
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
 @import url(source/carrito.scss);
+@import url(source/checkout.scss);
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -12,15 +13,25 @@ $complementary-color-three:#8E58A6;
 $font-primary:'Roboto Flex', sans-serif;
 $padding:20rem;
 
-
+@mixin button-general {
+    margin: 1rem 0 5rem 0;
+    padding: auto;
+    width: 5rem;
+    color: black;
+    
+    &:hover{
+        color: $complementary-color-one;
+        background-color: #8C56A2;
+        color: white;
+    }
+}
 
 //NavBar
 #logonavbar{
     width: 4rem;
     margin: 0 auto;
-   
-    
 }
+
 #img-mundo{
     width: 2rem;
     
@@ -113,44 +124,37 @@ $padding:20rem;
 
 
 // descripcion del producto
-
-
 #section-comentarios{
     margin: 3rem 0; 
     margin-bottom: 4rem;
     margin-right: 2rem;
 }
 
-
 .input-number{
     width: 3rem;
 }
 
 
-    #btn{
-        margin: 1rem 0 5rem 0;
-        width: 5rem;
-        color: black;
-        }
-
-        #btn:hover{
-            color: $complementary-color-one;
-            background-color: #8C56A2;
-            color: white;
-        }
-
-
-        #btn-sidebar:hover{
-            background-color: $complementary-color-three;
-            color: white;
-        }
-    
-    
-   
-    #caja-comentario{
-        height: 5rem;
+#btn{
+    margin: 1rem 0 5rem 0;
+    width: 5rem;
+    color: black;
     }
 
+#btn:hover{
+    color: $complementary-color-one;
+    background-color: #8C56A2;
+    color: white;
+}
+
+#btn-sidebar:hover{
+    background-color: $complementary-color-three;
+    color: white;
+}
+
+#caja-comentario{
+    height: 5rem;
+}
 
 #comentarios-escritos{
     margin: 0 1rem;
@@ -217,17 +221,15 @@ $padding:20rem;
     margin: auto;
     margin-top: 5rem;
 }
+
 #email{
 
    width: 80%;
 }
 
-
 #password{
     width: 80%;
 }
-
-
 
 @media (max-width:411px) {
     
@@ -240,9 +242,19 @@ $padding:20rem;
 
 
 // registro de usuario 
-
 .registro-usuario{
      img{
         width: 8rem;
      }
+}
+
+
+//Checkout
+.container-resumen, .formulario-envio {
+    width: 45vw;
+    margin: 1rem;
+
+    #btn {
+        @include button-general;
+    }
 }

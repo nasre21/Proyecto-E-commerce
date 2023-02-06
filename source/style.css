@@ -2,6 +2,7 @@
 @import url(/source/_Footer.scss);
 @import url(/source/_compraRealizada.scss);
 @import url(source/carrito.scss);
+@import url(source/checkout.scss);
 #logonavbar {
   width: 4rem;
   margin: 0 auto;
@@ -178,4 +179,20 @@
 }
 .registro-usuario img {
   width: 8rem;
+}
+
+.container-resumen, .formulario-envio {
+  width: 45vw;
+  margin: 1rem;
+}
+.container-resumen #btn, .formulario-envio #btn {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+.container-resumen #btn:hover, .formulario-envio #btn:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
   <link rel="stylesheet" href="source/style.css">
-  <link rel="stylesheet" href="source/checkout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -89,9 +88,9 @@
       </ul>
     </div>
     </nav>
-  
-    <section class="container-resumen">
-        <h2 class="titulo-resumen-compra">Resumen de compra</h2>
+    <main class="d-flex">
+        <section class="container-resumen ">
+        <h2 class="titulo-resumen-compra mt-5 mb-4">Resumen de compra</h2>
         <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
@@ -107,15 +106,162 @@
                   <p class="card-text">PVP</p>
               </div>
             </div>
+
           </div>
     </section>
-    <section>
-        <button type="button" id="button" class="btn btn-primary">Finalizar</button>
+        </div>
+        <div class="total-pago">
+            <p>Total a pagar</p>
+        </div>
+        </section>
+        <section class=" formulario-envio">
+            <h2 class="text-center mt-5">Formulario de envío</h1>
+            <form action="" class="d-flex flex-column justify-content-center"> 
+                <label for="usuario">Usuario</label>
+                <input type="text" name="" id="usuario" class="mb-4 rounded">
+    
+                <label for="nombre">Nombre</label>
+                <input type="text" name="" id="nombre" class="mb-4 rounded">
+    
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="" id="apellidos" class="mb-4 rounded"> 
+    
+                <label for="edad">Fecha de nacimiento</label>
+                <input type="date" name="" id="edad" class="mb-4 rounded"> 
+                <label for="correo-registro">Correo electronico.</label>
+                <input type="email" name="" id="correo-registro" class="mb-4 rounded"> 
+    
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="" id="contraseña" class="mb-4 rounded"> 
+    
+                <div class="direccion d-flex row">
+                    <div class="calle col-lg-6 col-sm-12">
+                        <label for="direccion">calle</label><br>
+                        <input type="text" name="" id="direccion" class="mb-4 rounded"> 
+                    </div>
+    
+                    <div class="portal col-lg-6 col-sm-12 ">
+                        <label for="direccion">Portal</label><br>
+                        <input type="text" name="" id="direccion" class="mb-4 rounded"> 
+                    </div>
+    
+                    <div class="piso  col-lg-6 col-sm-12">
+                        <label for="direccion">Piso</label><br>
+                        <input type="text" name="" id="direccion" class="mb-4 rounded"> 
+                    </div>
+    
+                    <div class="codigopostal  col-lg-6 col-sm-12">
+                        <label for="direccion">Codigo Postal</label><br>
+                        <input type="text" name="" id="direccion" class="mb-4 rounded">
+                    </div> 
+    
+                    <label for="direccion">provincia</label><br>
+                    <select class="w-50  mb-5 ms-2">
+                    <option value="">Elige Provincia</option>
+                    <option value="Álava/Araba">Álava/Araba</option>
+                    <option value="Albacete">Albacete</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Almería">Almería</option>
+                    <option value="Asturias">Asturias</option>
+                    <option value="Ávila">Ávila</option>
+                    <option value="Badajoz">Badajoz</option>
+                    <option value="Baleares">Baleares</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Burgos">Burgos</option>
+                    <option value="Cáceres">Cáceres</option>
+                    <option value="Cádiz">Cádiz</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castellón">Castellón</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Ciudad Real">Ciudad Real</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Gerona/Girona">Gerona/Girona</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Huesca">Huesca</option>
+                    <option value="Jaén">Jaén</option>
+                    <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Las Palmas">Las Palmas</option>
+                    <option value="León">León</option>
+                    <option value="Lérida/Lleida">Lérida/Lleida</option>
+                    <option value="Lugo">Lugo</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Málaga">Málaga</option>
+                    <option value="Melilla">Melilla</option>
+                    <option value="Murcia">Murcia</option>
+                    <option value="Navarra">Navarra</option>
+                    <option value="Orense/Ourense">Orense/Ourense</option>
+                    <option value="Palencia">Palencia</option>
+                    <option value="Pontevedra">Pontevedra</option>
+                    <option value="Salamanca">Salamanca</option>
+                    <option value="Segovia">Segovia</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Soria">Soria</option>
+                    <option value="Tarragona">Tarragona</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Teruel">Teruel</option>
+                    <option value="Toledo">Toledo</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Valladolid">Valladolid</option>
+                    <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                    <option value="Zamora">Zamora</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                    </select>
+                </div>
+    
+                <label for="direccion">Telefono.</label>
+                <input type="number" name="" id="direccion" class="mb-4 rounded"> 
+    
+                <label for="direccion">DNI, NIE o Pasaporte</label>
+                <input type="text" name="" id="direccion" class="mb-4 rounded"> 
+    
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                    Aceptar terminos y condiciones.
+                </label>
+                <section class="container-modal">
+      
+                  <button type="button" class="btn btn-primary" id="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Finalizar
+                  </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body ">
+                  <div class="row justify-content-center align-items-center ">
+                    <div class="bg-dark-subtle container-fluid h-75">
+                        <div class="row h-100 justify-content-center align-content-center">
+                            <img class="container col-lg-3 d-flex justify-content-center" src="image/a5ee7a2a-6f63-4ab9-8986-ba83113aca56_16-9-discover-aspect-ratio_default_0.jpg" alt="">
+                            <div class="text-center border bg-light mt-2">
+                                <h2>¡Felicidades! tu pedido ha sido realizado.</h2>
+                                <h4>RECIBIRÁS UN EMAIL DE CONFIRMACIÓN Y OTRO DE SEGUIMIENTO CUANDO TU PEDIDO SEA ENVIADO.</h4>
+                                <p>Por favor, revisa que todos tus datos son correctos. Una vez que el pedido ha sido enviado no se puede modificar.</p>
+                            </div>
+                            <div class="botones btn btn-outline-primary d-flex w-25 justify-content-center m-auto p-2 mt-3" data-bs-dismiss="modal">Cerrar</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+                  
+                  
+              </section>
 
-        
-    </section>
+
+            </form>
+        </section>
+    </main>
    
-
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
     <!-- Section: Social media -->
