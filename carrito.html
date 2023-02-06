@@ -97,34 +97,55 @@
       <div class="tarjeta d-flex mb-2 ">
         <img class="m-3" src="image/gatos/comida de cato.jpg" alt="">
         <div class="descripcion w-100 row align-items-center">
-          <h5>Pienso de Gato</h5>
+          <div class="border-bottom">
+            <h5>Pienso de Gato</h5>
+            <div class="d-flex">
+              <p>Cantidad:</p>
+              <div class="d-flex justify-content-end w-100">
+                <input type="button" class="btn btn-primary" onclick="decreaseValue()" value="Menos ">
+                <input type="text" id="number" value="0">
+                <input type="button" class="btn btn-primary" onclick="increaseValue()" value="Mas">
+              </div>
+            </div>
+          </div>
           <div class="d-flex border-bottom">
             <p>Precio:</p>
-            <p class="d-flex justify-content-end w-100">55$</p>
+            <p class="d-flex justify-content-end w-100">55€</p>
           </div>
         </div>
       </div>
-      <div class="tarjeta d-flex mb-2">
+      <div class="tarjeta d-flex mb-2 ">
         <img class="m-3" src="image/gatos/comida de cato.jpg" alt="">
         <div class="descripcion w-100 row align-items-center">
-          <h5>Pienso de Gato</h5>
+          <div class="border-bottom">
+            <h5>Pienso de Gato</h5>
+            <div class="d-flex">
+              <p>Cantidad:</p>
+              <div class="d-flex justify-content-end w-100">
+                <input type="button" class="btn btn-primary" onclick="decreaseValue()" value="Menos ">
+                <input type="text" id="number" value="0">
+                <input type="button" class="btn btn-primary" onclick="increaseValue()" value="Mas">
+              </div>
+            </div>
+          </div>
           <div class="d-flex border-bottom">
             <p>Precio:</p>
-            <p class="d-flex justify-content-end w-100">55$</p>
+            <p class="d-flex justify-content-end w-100">55€</p>
           </div>
         </div>
       </div>
+
     </div>
     <!-- div de la derecha------------ -->
     <div class="divderecha w-100 me-4">
       <h3 class="border-bottom border-3 border-dark mb-5">Resumen</h3>
       <div class="totalSin d-flex">
         <p class="w-75">Total Productos:</p>
-        <p class="text-end">150$</p>
+        <p class="text-end">150€</p>
       </div>
       <div class="envio d-flex">
         <p class="w-75">Precio envio:</p>
-        <p class="text-end">15$</p>
+        <p class="text-end">15€</p>
       </div>
       <div class="d-flex border-bottom border-2 border-dark-subtle">
         <p class="w-75">Descuento:</p>
@@ -132,9 +153,9 @@
       </div>
       <div class="d-flex border-bottom border-2 border-dark-subtle mt-5 mb-4">
         <h4 class="w-75"> Total:</h4>
-        <h4 class="text-end">165$</h4>
+        <h4 class="text-end">165€</h4>
       </div>
-      <div class="botones btn btn-outline-primary d-flex w-50 justify-content-center m-auto p-2">Pasar al checkout</div>
+      <button  id="btn-login" class=" btn btn border me-3 col">Pasar al checkout</button>
 
     </div>
   </div>
@@ -261,7 +282,21 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
+<script>
+  function increaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("number").value = value;
+      }
+      
+      function decreaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value = (value > 0)? value -1 : 0;
+        document.getElementById("number").value = value;
+      }
+</script>
 </body>
 
 </html>
