@@ -18,3 +18,6 @@ function changeValue(id, operation) {
   
   const total = (price1 + price2) * (1 - discount);
   document.getElementById("total").innerHTML = "Total: " + total;
+
+//     modal
+const button = document.getElementById("button");

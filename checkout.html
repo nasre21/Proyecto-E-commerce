@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="source/style.css">
+  <link rel="stylesheet" href="source/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-lg-evenly container " id="navbarNavDropdown">
+      <!-- parte nav bar izq ---------->
+      <ul class="navbar-nav col" id="navIzquierda">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Catalogo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Todo</a>
+            <a class="dropdown-item" href="#">Perro</a>
+            <a class="dropdown-item" href="#">Gato</a>
+            <a class="dropdown-item" href="#">Aves</a>
+            <a class="dropdown-item" href="#">...</a>
+          </div>
+        </li>
+      </ul>
+      <!-- logo centrado ------ -->
+      <a id="logo-navmenu" class="navbar-brand col d-flex " href="#"><img src="/image/logoToPets-sin-blanco.png"
+          id="logonavbar" alt="imagen-logo" /></a>
+      <!-- parte nav bar de la derecha --------->
+      <ul class="navbar-nav col" id="navDerecha">
+        <!-- search .falta por poner la lupa -->
+        <li class="m-auto">
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </li>
+        <!--idiomas desplegable  -->
+
+        <!-- avatar desplegable con opcions de perfil -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img id="img-usser" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
+              height="22" alt="Avatar" loading="lazy" />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Mi perfil</a>
+            <a class="dropdown-item" href="#">Cerrar sesion</a>
+          </div>
+        </li>
+        <!-- idiomas -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img id="img-mundo" src="/image/44386.png" />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul>
+              <li class="dropdown-item">EN</li>
+              <li class="dropdown-item disabled ">EU</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </nav>
+  
+    <section class="container-resumen">
+        <h2 class="titulo-resumen-compra">Resumen de compra</h2>
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="imagen producto">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre producto</h5>
+                  <p class="card-text">Descripción producto.</p>
+                </div>
+              </div>
+              <div class="col-md-2 card-body">
+                  <p class="card-text">PVP</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+        <button type="button" id="button" class="btn btn-primary">Finalizar</button>
+
+        
+    </section>
+   
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+
+      <!-- Grid container -->
+      <div class="container p-4 pb-0 d-flex justify-content-center">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <!-- <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a> -->
+          <!-- Github -->
+          <!-- <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #333333"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a> -->
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Política de cookies
+                  </h6>
+                  <p>
+                    Lee aquí nuestra
+                    <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
+                      cookies</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
+                  <p>
+                    Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
+                    Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <p>
+                    <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
+                    Peñascal F5
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    info@topets.com
+                  </p>
+                  <p>
+                    <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
+                    13
+                  </p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
