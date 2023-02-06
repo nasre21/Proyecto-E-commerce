@@ -109,9 +109,37 @@
             </div>
           </div>
     </section>
-    <section>
-        <button type="button" id="button" class="btn btn-primary">Finalizar</button>
+    <section class="container-modal">
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body ">
+        <div class="row justify-content-center align-items-center ">
+          <div class="bg-dark-subtle container-fluid h-75">
+              <div class="row h-100 justify-content-center align-content-center">
+                  <img class="container col-lg-3 d-flex justify-content-center" src="image/a5ee7a2a-6f63-4ab9-8986-ba83113aca56_16-9-discover-aspect-ratio_default_0.jpg" alt="">
+                  <div class="text-center border bg-light mt-2">
+                      <h2>¡Felicidades! tu pedido ha sido realizado.</h2>
+                      <h4>RECIBIRÁS UN EMAIL DE CONFIRMACIÓN Y OTRO DE SEGUIMIENTO CUANDO TU PEDIDO SEA ENVIADO.</h4>
+                      <p>Por favor, revisa que todos tus datos son correctos. Una vez que el pedido ha sido enviado no se puede modificar.</p>
+                  </div>
+                  <div class="botones btn btn-outline-primary d-flex w-25 justify-content-center m-auto p-2 mt-3" data-bs-dismiss="modal">Cerrar</div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        
         
     </section>
    
