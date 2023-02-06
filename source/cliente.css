@@ -35,6 +35,10 @@
   margin-left: 4.7rem;
 }
 
+.text-center {
+  margin-bottom: 3rem;
+}
+
 /*Media query para movil*/
 
 @media (max-width: 650px) {
@@ -55,11 +59,13 @@
 /*Media query para tablet*/
 
 @media (min-width: 651px) and (max-width: 850px) {
-  .texto-pedidos {
-    text-align: center;
-  }
-
+ 
   .imagen-caja {
     display: none;
+  }
+
+  .boton-modificar-perfil {
+    
+    font-size: 1.2rem;
   }
 }
