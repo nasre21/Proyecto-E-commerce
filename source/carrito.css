@@ -1,3 +1,7 @@
+.inputNumero {
+  width: 2rem;
+}
+
 .caja1 {
   display: flex;
 }
