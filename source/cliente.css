@@ -27,6 +27,7 @@
 
 .boton-modificar-perfil {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 
@@ -44,13 +45,21 @@
   .input-pagina-cliente {
     margin-left: 0rem;
   }
+
+  .imagen-caja {
+    display: none;
+  }
   
 }
 
-/*Media query para movil*/
+/*Media query para tablet*/
 
 @media (min-width: 651px) and (max-width: 850px) {
   .texto-pedidos {
     text-align: center;
+  }
+
+  .imagen-caja {
+    display: none;
   }
 }
