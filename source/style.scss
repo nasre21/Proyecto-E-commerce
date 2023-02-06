@@ -15,20 +15,33 @@ $padding:20rem;
 
 
 //NavBar
-#logonavbar{
-    width: 4rem;
-    margin: 0 auto;
-   
-    
-}
-#img-mundo{
-    width: 2rem;
-    
+
+#link{
+    margin-top: 3rem;
 }
 
-#img-usser{
-    height: auto;
-    width: 2rem;
+
+#logo-gato{
+    
+   
+    img{width: 6rem;
+        
+        
+    }
+    
+
+}
+#img-mundo{
+   width: 2rem;
+}
+
+
+@media (max-width:411px) {
+    #img-logo-nav{
+        display: none;
+}
+
+
 }
 
 
