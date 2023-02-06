@@ -16,10 +16,14 @@
   .imagen-caja {
     width: 13rem;
   }
+
 .div-pedidos-curso {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
+.div-historico-pedidos {
+  margin-bottom: 3rem;
+}
 .btn {
   color:#8C56A2;
   font-weight: bolder;
@@ -33,6 +37,10 @@
 
 .input-pagina-cliente {
   margin-left: 4.7rem;
+}
+
+.text-center {
+  margin-bottom: 3rem;
 }
 
 /*Media query para movil*/
@@ -55,11 +63,13 @@
 /*Media query para tablet*/
 
 @media (min-width: 651px) and (max-width: 850px) {
-  .texto-pedidos {
-    text-align: center;
-  }
-
+ 
   .imagen-caja {
     display: none;
+  }
+
+  .boton-modificar-perfil {
+    
+    font-size: 1.2rem;
   }
 }
