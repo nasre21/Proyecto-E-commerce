@@ -258,3 +258,7 @@ $padding:20rem;
         @include button-general;
     }
 }
+
+#btn-modal {
+    @include button-general;
+}

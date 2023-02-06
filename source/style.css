@@ -195,4 +195,16 @@
   color: #AEEBF2;
   background-color: #8C56A2;
   color: white;
+}
+
+#btn-modal {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+#btn-modal:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
