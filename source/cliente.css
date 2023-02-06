@@ -16,10 +16,14 @@
   .imagen-caja {
     width: 13rem;
   }
+
 .div-pedidos-curso {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
+.div-historico-pedidos {
+  margin-bottom: 3rem;
+}
 .btn {
   color:#8C56A2;
   font-weight: bolder;
