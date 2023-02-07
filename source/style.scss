@@ -28,34 +28,52 @@ $padding:20rem;
 
 //NavBar
 
-#link{
-    margin-top: 3rem;
-}
+#search{
+    width: 15rem;
+     margin: 2rem 2rem 0 12rem;
+ }
 
 
-#logo-gato{
+ #logo-gato{
     
    
-    img{width: 6rem;
+     img{width: 6rem;   
+         margin-left: 22rem;
         
-        
-    }
-    
-
+    }   
 }
 
-#img-mundo{
-   width: 2rem;
-}
+
+
+ #img-usuario{
+     margin-top: 1rem;
+     width: 3rem;
+ }
 
 
 @media (max-width:411px) {
-    #img-logo-nav{
+    #logo-gato{
         display: none;
 }
+#search_{
+display: none; 
+}
+
+#link{
+    margin-left: 3rem;
+}
+
+
+#img-usuario{
+    margin-left: 3rem;
+    
+}
+
+
 
 
 }
+
 
 
 
@@ -106,36 +124,6 @@ $padding:20rem;
        }
     }
 }
-
-
-/* Media queries for Tablet */
-@media screen and (max-width: 960px) {
-    .home-main {
-        .titulo {
-            padding-top: 8rem;
-        }
-        
-        .container {
-            width: 75%;
-            top: 40%;
-        }
-    }
-}
-
-/* Media queries for mobile */
-@media screen and (max-width: 480px) {
-    .home-main {
-        .titulo {
-            padding-top: 4rem;
-            font-size: 3rem;
-        }
-
-        .container {
-            width: 98%;
-        }
-    }
-}
-
 
 
 // descripcion del producto
@@ -210,11 +198,11 @@ $padding:20rem;
 }
 
 //login
-#btn-login{
+#registro-login{
     color: $complementary-color-three;
 } 
 
-#btn-login:hover{
+#registro:hover{
     color: $complementary-color-one;
     background-color: #8C56A2;
     color: white;
@@ -265,9 +253,23 @@ $padding:20rem;
 
 
 //Checkout
+.parrafo-intro {
+    text-align: center;
+    padding-top: 2rem;
+}
+
 .container-resumen, .formulario-envio {
     width: 45vw;
     margin: 1rem;
+
+    .formulario-titulo {
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        font-size: calc(1.325rem + .9vw);
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--bs-heading-color,inherit);
+    }
 
     #btn {
         @include button-general;
@@ -276,4 +278,79 @@ $padding:20rem;
 
 #btn-modal {
     @include button-general;
+}
+
+
+/* Media queries for Tablet */
+@media screen and (max-width: 960px) {
+    //home
+    .home-main {
+        .titulo {
+            padding-top: 8rem;
+        }
+        
+        .home-container {
+            width: 75%;
+            top: 40%;
+        }
+    }
+
+    //checkout
+    #d-flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 98vw;
+        margin: auto;
+        
+        .container-resumen {
+            width: 90vw;
+            padding: 1rem;
+        }
+
+        .formulario-titulo {
+            margin-top: 1.5rem;
+        }
+
+        .formulario-envio {
+            width: 90vw;
+            padding: 1rem;
+        }
+    }
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    //home
+    .home-main {
+        .titulo {
+            padding-top: 4rem;
+            font-size: 3rem;
+        }
+
+        .home-container {
+            width: 98%;
+        }
+    }
+
+    //checkout
+    .container-resumen, .formulario-titulo {
+        padding: 0;
+
+        #titulo-resumen-compra {
+            margin-top: 0;
+        }
+
+        #card-mobile {
+            display: flex;    
+        }
+
+        #img-articulo {
+            display: none;
+        }
+
+        .formulario-titulo {
+            margin-top: 0.5rem;
+        }
+    }
 }
