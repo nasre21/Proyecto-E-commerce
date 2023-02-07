@@ -235,9 +235,23 @@ $padding:20rem;
 
 
 //Checkout
+.parrafo-intro {
+    text-align: center;
+    padding-top: 2rem;
+}
+
 .container-resumen, .formulario-envio {
     width: 45vw;
     margin: 1rem;
+
+    .formulario-titulo {
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        font-size: calc(1.325rem + .9vw);
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--bs-heading-color,inherit);
+    }
 
     #btn {
         @include button-general;
@@ -264,6 +278,27 @@ $padding:20rem;
     }
 
     //checkout
+    #d-flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 98vw;
+        margin: auto;
+        
+        .container-resumen {
+            width: 90vw;
+            padding: 1rem;
+        }
+
+        .formulario-titulo {
+            margin-top: 1.5rem;
+        }
+
+        .formulario-envio {
+            width: 90vw;
+            padding: 1rem;
+        }
+    }
 }
 
 /* Media queries for mobile */
@@ -281,4 +316,23 @@ $padding:20rem;
     }
 
     //checkout
+    .container-resumen, .formulario-titulo {
+        padding: 0;
+
+        #titulo-resumen-compra {
+            margin-top: 0;
+        }
+
+        #card-mobile {
+            display: flex;    
+        }
+
+        #img-articulo {
+            display: none;
+        }
+
+        .formulario-titulo {
+            margin-top: 0.5rem;
+        }
+    }
 }
