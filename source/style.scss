@@ -108,36 +108,6 @@ $padding:20rem;
 }
 
 
-/* Media queries for Tablet */
-@media screen and (max-width: 960px) {
-    .home-main {
-        .titulo {
-            padding-top: 8rem;
-        }
-        
-        .container {
-            width: 75%;
-            top: 40%;
-        }
-    }
-}
-
-/* Media queries for mobile */
-@media screen and (max-width: 480px) {
-    .home-main {
-        .titulo {
-            padding-top: 4rem;
-            font-size: 3rem;
-        }
-
-        .container {
-            width: 98%;
-        }
-    }
-}
-
-
-
 // descripcion del producto
 #section-comentarios{
     margin: 3rem 0; 
@@ -276,4 +246,39 @@ $padding:20rem;
 
 #btn-modal {
     @include button-general;
+}
+
+
+/* Media queries for Tablet */
+@media screen and (max-width: 960px) {
+    //home
+    .home-main {
+        .titulo {
+            padding-top: 8rem;
+        }
+        
+        .home-container {
+            width: 75%;
+            top: 40%;
+        }
+    }
+
+    //checkout
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    //home
+    .home-main {
+        .titulo {
+            padding-top: 4rem;
+            font-size: 3rem;
+        }
+
+        .home-container {
+            width: 98%;
+        }
+    }
+
+    //checkout
 }
