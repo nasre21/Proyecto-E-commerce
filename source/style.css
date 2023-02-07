@@ -176,9 +176,22 @@
   width: 8rem;
 }
 
+.parrafo-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .container-resumen, .formulario-envio {
   width: 45vw;
   margin: 1rem;
+}
+.container-resumen .formulario-titulo, .formulario-envio .formulario-titulo {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color, inherit);
 }
 .container-resumen #btn, .formulario-envio #btn {
   margin: 1rem 0 5rem 0;
@@ -213,6 +226,24 @@
     width: 75%;
     top: 40%;
   }
+  #d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98vw;
+    margin: auto;
+  }
+  #d-flex-column .container-resumen {
+    width: 90vw;
+    padding: 1rem;
+  }
+  #d-flex-column .formulario-titulo {
+    margin-top: 1.5rem;
+  }
+  #d-flex-column .formulario-envio {
+    width: 90vw;
+    padding: 1rem;
+  }
 }
 /* Media queries for mobile */
 @media screen and (max-width: 480px) {
@@ -222,5 +253,20 @@
   }
   .home-main .home-container {
     width: 98%;
+  }
+  .container-resumen, .formulario-titulo {
+    padding: 0;
+  }
+  .container-resumen #titulo-resumen-compra, .formulario-titulo #titulo-resumen-compra {
+    margin-top: 0;
+  }
+  .container-resumen #card-mobile, .formulario-titulo #card-mobile {
+    display: flex;
+  }
+  .container-resumen #img-articulo, .formulario-titulo #img-articulo {
+    display: none;
+  }
+  .container-resumen .formulario-titulo, .formulario-titulo .formulario-titulo {
+    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
