@@ -132,11 +132,11 @@
     width: 100%;
   }
 }
-#btn-login {
+#registro-login {
   color: #8E58A6;
 }
 
-#btn-login:hover {
+#registro:hover {
   color: #AEEBF2;
   background-color: #8C56A2;
   color: white;

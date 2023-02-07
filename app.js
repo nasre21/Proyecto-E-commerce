@@ -1,5 +1,18 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // suma y resta productos del carrito
 function changeValue(id, operation) {
     var value = parseInt(document.getElementById(id).value, 10);
