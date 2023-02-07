@@ -13,4 +13,20 @@ imgDiv.addEventListener('mouseleave', function(){
     uploadBtn.style.display = "none";
 });
 
+file.addEventListener('change', function(){
+    // this refers to the file
+    const choosedFile = this.files[0];
+  
+  if (choosedFile) {
+    const reader = new FileReader();
+  
+    reader.addEventListener('load', function(){
+      img.setAttribute('src', reader.result);
+    });
+  
+    reader.readAsDataURL(choosedFile);
+  }
+  
+  });
+
 
