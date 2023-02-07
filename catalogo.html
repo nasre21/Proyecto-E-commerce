@@ -14,110 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // Variables
-        const baseDeDatos = [
-            {
-                id: 1,
-                nombre: 'Patata',
-                descripcion: 'Esto es una patata de datos',
-                precio: 1,
-                imagen: 'imagenes/descarga.jpeg'
-            },
-            {
-                id: 2,
-                nombre: 'Cebolla',
-                precio: 1.2,
-                imagen: 'cebolla.jpg'
-            },
-            {
-                id: 3,
-                nombre: 'Calabacin',
-                precio: 2.1,
-                imagen: 'calabacin.jpg'
-            },
-            {
-                id: 4,
-                nombre: 'Fresas',
-                precio: 0.6,
-                imagen: 'fresas.jpg'
-            }
-
-        ];
-
-        let carrito = [];
-        const divisa = '€';
-        const DOMitems = document.querySelector('#items');
-        const DOMcarrito = document.querySelector('#carrito');
-        const DOMtotal = document.querySelector('#total');
-        const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-
-        // Funciones
-
-        /**
-        * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
-        */
-        function renderizarProductos() {
-            baseDeDatos.forEach((info) => {
-                // Estructura
-                const miNodo = document.createElement('div');
-                miNodo.classList.add('producto');
-                // Body
-
-                  // Imagen
-                  const miNodoImagen = document.createElement('img');
-                  miNodoImagen.classList.add('imagenProducto');
-                  miNodoImagen.setAttribute('src', info.imagen);
-                  //div para meter lado izq
-                  const miNodoIzq = document.createElement('div');
-                  miNodoIzq.classList.add('divDerecha');
-                // Titulo
-                const miNodoTitle = document.createElement('h5');
-                miNodoTitle.classList.add('card-title');
-                miNodoTitle.textContent = info.nombre;
-                //descripcion
-                const miNodoDescripcion = document.createElement('p');
-                miNodoDescripcion.classList.add('card-descripcion');
-                miNodoDescripcion.textContent = info.descripcion;
-
-
-                // Precio
-                const miNodoPrecio = document.createElement('p');
-                miNodoPrecio.classList.add('card-text');
-                miNodoPrecio.textContent = `${info.precio}${divisa}`;
-                // Boton
-                const miNodoBoton = document.createElement('button');
-                miNodoBoton.classList.add('btn', 'btn-primary');
-                miNodoBoton.textContent = '+';
-                miNodoBoton.setAttribute('marcador', info.id);
-              //   miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
-                // Boton restar
-               const miNodoBotonV = document.createElement('button');
-               miNodoBotonV.classList.add('btn', 'btn-primary');
-               miNodoBotonV.textContent = '-';
-               miNodoBotonV.setAttribute('marcador', info.id);
-               // miNodoBotonV.addEventListener('click', quitarProductoAlCarrito);
-
-                // Insertamos
-                miNodo.appendChild(miNodoImagen);
-                miNodoIzq.appendChild(miNodoTitle);
-                miNodoIzq.appendChild(miNodoDescripcion);
-                miNodoIzq.appendChild(miNodoPrecio);
-                miNodoIzq.appendChild(miNodoBoton);
-                  miNodoIzq.appendChild(miNodoBotonV);
-                miNodo.appendChild(miNodoIzq);
-                DOMitems.appendChild(miNodo);
-            });
-        }
-
-        
-
-        // Inicio
-      renderizarProductos();
-      // renderizarCarrito();
-      } );
-  </script>
+    
 </head>
 <body>
   <!-- navigacion -->
@@ -198,17 +95,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="container">
-        <div class="row">
-            <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-8 row"></main>
-            <!-- Carrito -->
-           
-        </div>
-    </div>
+      
     <!-- ----------- catalogo de imagenes----------- -->
 
-  <!-- <div class="container"> 
+   <div class="container"> 
     <h2 id="catalogo-texto" class="text-center p-5">Catalogo</h2>  
    <div class="container cards">
     <div  id="cads-plus" class="card" >
@@ -274,7 +164,7 @@
   </div> 
   </div>
 
-                      <!-- catalogo 2 -->
+                      <!-- catalogo 2  -->
   <details>
     <summary class=" text-center fs-3 fw-bold">Ver mas</summary>
     <div class="container cards">
