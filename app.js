@@ -1,5 +1,18 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // suma y resta productos del carrito
 function changeValue(id, operation) {
     var value = parseInt(document.getElementById(id).value, 10);
@@ -24,6 +37,7 @@ function changeValue(id, operation) {
   document.getElementById("total").innerHTML = total;
 
 
+  
 
 
 
@@ -36,5 +50,3 @@ function changeValue(id, operation) {
 
 
 
-//     modal
-const button = document.getElementById("button");

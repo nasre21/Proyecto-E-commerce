@@ -28,34 +28,52 @@ $padding:20rem;
 
 //NavBar
 
-#link{
-    margin-top: 3rem;
-}
+#search{
+    width: 15rem;
+     margin: 2rem 2rem 0 12rem;
+ }
 
 
-#logo-gato{
+ #logo-gato{
     
    
-    img{width: 6rem;
+     img{width: 6rem;   
+         margin-left: 22rem;
         
-        
-    }
-    
-
+    }   
 }
 
-#img-mundo{
-   width: 2rem;
-}
+
+
+ #img-usuario{
+     margin-top: 1rem;
+     width: 3rem;
+ }
 
 
 @media (max-width:411px) {
-    #img-logo-nav{
+    #logo-gato{
         display: none;
 }
+#search_{
+display: none; 
+}
+
+#link{
+    margin-left: 3rem;
+}
+
+
+#img-usuario{
+    margin-left: 3rem;
+    
+}
+
+
 
 
 }
+
 
 
 
@@ -180,11 +198,11 @@ $padding:20rem;
 }
 
 //login
-#btn-login{
+#registro-login{
     color: $complementary-color-three;
 } 
 
-#btn-login:hover{
+#registro:hover{
     color: $complementary-color-one;
     background-color: #8C56A2;
     color: white;
