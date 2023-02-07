@@ -37,6 +37,7 @@ function changeValue(id, operation) {
   document.getElementById("total").innerHTML = total;
 
 
+  
 
 
 
@@ -49,5 +50,3 @@ function changeValue(id, operation) {
 
 
 
-//     modal
-const button = document.getElementById("button");
