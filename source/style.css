@@ -187,6 +187,10 @@
   width: 8rem;
 }
 
+#btn-login {
+  width: 5rem;
+}
+
 .parrafo-intro {
   text-align: center;
   padding-top: 2rem;
