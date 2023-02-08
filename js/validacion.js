@@ -131,4 +131,3 @@ boton.addEventListener('click', e=>{
         alert("El email no es válido");
 
     }
-}
