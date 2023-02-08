@@ -33,6 +33,16 @@ height:40rem;
   cursor: pointer;
 }
 
+#botones-car{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#botones-car input{
+  width: 2rem;
+}  
+
 .card img{
   display: flex;
   padding: 2rem 0rem 1rem 5rem;
@@ -58,6 +68,8 @@ summary:hover{
   color: blueviolet;
    border: dimgray ; 
   transition: ease-in 1s;
+  /* padding-left: 4rem;
+  padding-right:4rem ; */
 }
 
 
