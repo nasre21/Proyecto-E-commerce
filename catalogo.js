@@ -11,25 +11,39 @@ const buTon6 = document.getElementById("imagen6");
 
 
 
-
-
-buTon.addEventListener("click",open);
-
-function open(){
-  let estado = buTon.getAttribute("src", "/image/perros/dog-comida.png");
-  if(estado == buTon.getAttribute("src", "/image/perros/dog-comida.png")git){
-    document.location.assign("/descripcionproducto.html");
-   }
-  }
+  buTon.addEventListener("click",open1);
   buTon2.addEventListener("click",open2);
+  buTon3.addEventListener("click",open3);
+  buTon4.addEventListener("click",open4);
+  buTon5.addEventListener("click",open5);
+  buTon6.addEventListener("click",open6);
+
+
+
+
+function open1(){
+   document.location.assign("/descripcionproducto.html");
+   }
+  
 
 function open2(){
-  let estado1 = buTon.getAttribute("src", "/image/gatos/img_de_gato3.png");
-  if(estado1 == buTon.getAttribute("src", "/image/gatos/img_de_gato3.png")){
-    document.location.assign("/descripcionproducto.html");
-   }
+  document.location.assign("/descripcionproducto.html");
   }
-
   
+function open3(){
+  document.location.assign("/descripcionproducto.html");
+  }
+  
+function open4(){
+  document.location.assign("/descripcionproducto.html");
+  }
+  
+function open5(){
+  document.location.assign("/descripcionproducto.html");
+  }
+  
+function open6(){
+  document.location.assign("/descripcionproducto.html");
+  }
   
   
