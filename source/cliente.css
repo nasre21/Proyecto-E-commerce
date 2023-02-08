@@ -16,7 +16,10 @@
   border-radius: 2rem;
   cursor: pointer;
   color:#8C56A2;
-
+  background-color: #8c56a24b;
+  box-shadow: 2px 4px 4px #8E58A6;
+  margin-top: 15rem;
+  transform: translateX(-100%);
 }
   
 .div-datos-cliente {
