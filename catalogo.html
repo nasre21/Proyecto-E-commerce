@@ -17,7 +17,15 @@
     
 </head>
 <body>
-  <!-- navigacion -->
+  <div class="container-fluid  d-flex justify-content-end position-relative">
+    
+    <p  class="parrafoFecha me-5 position-absolute ">fecha</p>
+    <select class="mt-3 me-4" name="idiomas" id="idiomas">
+      <option value="">ES</option>
+      <option value="">EN</option>
+      <option disabled value="EUS"></option>
+    </select>
+  </div>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -27,11 +35,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav d-flex mb-lg-0 ">
           <li class="nav-item">
-            <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="#">Home</a>
+            <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
+        
           <li id="link" class="nav-item dropdown mt-4">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorias
+            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Perros</a></li>
@@ -58,9 +67,14 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Mi perfil</a>
-              <a id="nombre-usuario" class="dropdown-item" href="#"></a>
+              <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
+          </li>
+          <li>
+            <div class="carrito ">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+          </div>
           </li>
         </ul>
       </div>
@@ -69,7 +83,7 @@
 <!-- -----------acaba navigacion------------ -->
 
   <!-- slide -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div id="carouselExampleIndicators" class="carousel slide w-75  mx-auto" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

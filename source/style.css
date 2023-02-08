@@ -38,6 +38,11 @@
   right: 1.3rem;
 }
 
+.parrafoFecha {
+  top: 1rem;
+  right: 5rem;
+}
+
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
