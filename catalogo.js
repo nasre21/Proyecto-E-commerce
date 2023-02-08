@@ -17,7 +17,7 @@ buTon.addEventListener("click",open);
 
 function open(){
   let estado = buTon.getAttribute("src", "/image/perros/dog-comida.png");
-  if(estado == buTon.getAttribute("src", "/image/perros/dog-comida.png")){
+  if(estado == buTon.getAttribute("src", "/image/perros/dog-comida.png")git){
     document.location.assign("/descripcionproducto.html");
    }
   }
