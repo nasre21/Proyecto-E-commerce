@@ -3,6 +3,7 @@
 const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario input")
 
+const select = document.getElementById("provincias");
 
 
 
@@ -29,14 +30,78 @@ const expresiones = {
 }
 
 
-const validarFormulario = () => {
+const validarFormulario = (e) => {
+
+    switch (e.targe.name){
+        case  "usuario":
+            
+        break;
+
+        case  "nombre":
+        
+        break;
+
+        case  "apellido":
+        
+        break;
+
+        case  "fecha":
+        
+        break;
+
+        case  "correo":
+        
+        break;
+
+        case  "contraseña":
+        
+        break;
+
+        case  "direccion":
+        
+        break;
+
+
+        case  "portal":
+        
+        break;
+
+        case  "piso":
+        
+        break;
+
+        case  "codigopostal":
+        
+        break;
+
+        case  "provincias":
+        
+        break;
+
+        case  "telefono":
+        
+        break;
+
+        case  "identificacion":
+        
+        break;
+    }
+
+   
+
 
 }
 
 
+
+
+
 inputs.forEach(input => {
     input.addEventListener("keyup",validarFormulario);
-    input.addEventListener("keyup",validarFormulario);
+    input.addEventListener("blur",validarFormulario);
+    
+  
+   
 
 });
 

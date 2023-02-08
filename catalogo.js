@@ -29,3 +29,7 @@ function open2(){
     document.location.assign("/descripcionproducto.html");
    }
   }
+
+  
+  
+  

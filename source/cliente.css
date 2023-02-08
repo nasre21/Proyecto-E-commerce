@@ -5,27 +5,20 @@
   border-radius: 2rem;
   position: relative;
 }
-
- #picture-file {
+#file {
   display: none;
-} 
+}
 
- #boton-foto {
-  height: 2rem;
-  width: 18%;
+#uploadBtn {
   position: absolute;
-  bottom: 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  color: wheat;
-  line-height: 1.8rem;
-  font-size: 0.9rem;
+  width: 2rem;
+  border: solid #8C56A2;
+  border-radius: 2rem;
   cursor: pointer;
-  display: none;
+  color:#8C56A2;
 
-} 
-
- 
+}
+  
 .div-datos-cliente {
     border: 1px solid #AFBAEF;
     width: 50rem; 
