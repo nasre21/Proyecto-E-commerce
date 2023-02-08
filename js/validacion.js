@@ -1,110 +1,134 @@
-//validar usuarios
+// //validar usuarios
 
-const formulario = document.getElementById("formulario");
-const inputs = document.querySelectorAll("#formulario input")
+// const formulario = document.getElementById("formulario");
+// const inputs = document.querySelectorAll("#formulario input")
 
-const select = document.getElementById("provincias");
-
-
-
-let datosUsuario = {
-    usuario: "",
-    contraseña: "",
-    nombre: "",
-    apellido: "",
-    nacimiento: "",
-    correo: "",
-    direccion: "",
-    codigoPostal: "",
-    provincia: "",
-    numero: "",
-    identidad: ""
-}
-
-const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.                    
-}
+// const select = document.getElementById("provincias");
 
 
-const validarFormulario = (e) => {
 
-    switch (e.targe.name){
-        case  "usuario":
+// let datosUsuario = {
+//     usuario: "",
+//     contraseña: "",
+//     nombre: "",
+//     apellido: "",
+//     nacimiento: "",
+//     correo: "",
+//     direccion: "",
+//     codigoPostal: "",
+//     provincia: "",
+//     numero: "",
+//     identidad: ""
+// }
+
+// const expresiones = {
+// 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+// 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+// 	password: /^.{4,12}$/, // 4 a 12 digitos.
+// 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+// 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.                    
+// }
+
+
+// const validarFormulario = (e) => {
+
+//     switch (e.targe.name){
+//         case  "usuario":
             
-        break;
+//         break;
 
-        case  "nombre":
+//         case  "nombre":
         
-        break;
+//         break;
 
-        case  "apellido":
+//         case  "apellido":
         
-        break;
+//         break;
 
-        case  "fecha":
+//         case  "fecha":
         
-        break;
+//         break;
 
-        case  "correo":
+//         case  "correo":
         
-        break;
+//         break;
 
-        case  "contraseña":
+//         case  "contraseña":
         
-        break;
+//         break;
 
-        case  "direccion":
+//         case  "direccion":
         
-        break;
+//         break;
 
 
-        case  "portal":
+//         case  "portal":
         
-        break;
+//         break;
 
-        case  "piso":
+//         case  "piso":
         
-        break;
+//         break;
 
-        case  "codigopostal":
+//         case  "codigopostal":
         
-        break;
+//         break;
 
-        case  "provincias":
+//         case  "provincias":
         
-        break;
+//         break;
 
-        case  "telefono":
+//         case  "telefono":
         
-        break;
+//         break;
 
-        case  "identificacion":
+//         case  "identificacion":
         
-        break;
-    }
+//         break;
+//     }
 
    
 
 
-}
+// }
 
 
 
 
 
-inputs.forEach(input => {
-    input.addEventListener("keyup",validarFormulario);
-    input.addEventListener("blur",validarFormulario);
+// inputs.forEach(input => {
+//     input.addEventListener("keyup",validarFormulario);
+//     input.addEventListener("blur",validarFormulario);
     
   
    
 
+// });
+
+// formulario.addEventListener("submit", (e) => {
+//     e.preventDefault();
+// })
+
+const form1 = document.getElementById('container-login-two');
+const mail = document.getElementById('mail');
+const password = document.getElementById('password');
+const parrafo = document.getElementById('warnings');
+
+boton.addEventListener('click', e=>{
+    e.preventDefault()
 });
 
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
-})
+// function validacion(correo){
+    // let expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+    // let esValido = expReg.test(correo); 
+
+    if(esValido==true) {
+        alert("El email es válido");
+
+    }
+    else{
+        alert("El email no es válido");
+
+    }
+}
