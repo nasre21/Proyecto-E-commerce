@@ -82,3 +82,6 @@ function open11(){
 function open12(){
   document.location.assign("/descripcionproducto.html");
   }
+
+  // catalogo
+
