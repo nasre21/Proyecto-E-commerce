@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
-#imagen-perfil {
+#photo {
   width: 15rem;
   border-radius: 2rem;
+  position: relative;
 }
- 
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  position: absolute;
+  width: 2rem;
+  border: solid #8C56A2;
+  border-radius: 2rem;
+  cursor: pointer;
+  color:#8C56A2;
+
+}
+  
 .div-datos-cliente {
     border: 1px solid #AFBAEF;
     width: 50rem; 
@@ -42,6 +56,8 @@
 .text-center {
   margin-bottom: 3rem;
 }
+
+
 
 /*Media query para movil*/
 
