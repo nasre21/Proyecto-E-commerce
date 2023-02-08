@@ -32,6 +32,12 @@
     margin-left: 3rem;
   }
 }
+#bubble {
+  font-size: 0.8rem;
+  bottom: 0.5rem;
+  right: 1.3rem;
+}
+
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
