@@ -24,9 +24,6 @@
   .boton-modificar-perfil {
     font-size: 1.2rem;
   }
-  .caja1 {
-    flex-direction: column-reverse;
-  }
   .cards-catalogo {
     display: grid;
     grid-template-columns: 1fr 1fr;

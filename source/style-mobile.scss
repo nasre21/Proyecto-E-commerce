@@ -1,4 +1,4 @@
-@media (max-width:411px) {
+@media (max-width:498px) {
     //=============================navBar=======================================
     #logo-gato{
         display: none;
@@ -14,6 +14,23 @@
     
     #img-usuario{
         margin-left: 3rem;        
+    }
+
+    //=============================home========================================
+    .home-main {
+        .titulo {
+            padding-top: 4rem;
+            font-size: 3rem;
+        }
+
+        .home-container {
+            width: 98%;
+        }
+    }
+
+    //===========================carrito=============
+    .caja1 {
+        flex-direction:column-reverse;
     }
 
     //==================descripcion del producto===============================
@@ -50,17 +67,7 @@
     display: none;
     }
 
-    //=============================home========================================
-    .home-main {
-        .titulo {
-            padding-top: 4rem;
-            font-size: 3rem;
-        }
-
-        .home-container {
-            width: 98%;
-        }
-    }
+    
     //============================cliente==================
     .texto-pedidos {
         text-align: center;

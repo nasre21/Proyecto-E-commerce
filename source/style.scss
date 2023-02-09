@@ -59,6 +59,64 @@ $padding:20rem;
     right: 5rem;
 }
 
+//==========================Estilo home==========================
+.home-main {
+  background-image: url("../image/mascota_perro.jpg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position: center;
+  max-width: 100vw;
+  height: 100vh;    
+  position: relative;
+  font-family: $font-primary;
+ 
+  .titulo {
+      margin: auto;
+      padding-top: 5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      text-align: center;
+      color: $terciary-color;
+  }
+
+  .container {
+      width: 40%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid $terciary-color;
+      background-color: $complementary-color-two;
+
+      p {
+          margin: 1rem;
+          font-size: large;
+          text-align: center;
+          
+          .entrar {
+              font-size: larger;
+              font-weight: bolder;
+          }
+
+          a {
+              text-decoration:none;
+              color: $terciary-color;
+          }
+     }
+  }
+}
+
+//======================carrito====================
+#number{
+  width: 2rem;
+  
+}
+
+.caja1{
+  display: flex;
+}
+
 //=========================cliente========================
 #photo {
     width: 15rem;
@@ -118,53 +176,7 @@ $padding:20rem;
   
  
 
-//==========================Estilo home==========================
-.home-main {
-    background-image: url("../image/mascota_perro.jpg");
-    background-repeat: no-repeat;
-    background-size:  cover;
-    background-position: center;
-    max-width: 100vw;
-    height: 100vh;    
-    position: relative;
-    font-family: $font-primary;
-   
-    .titulo {
-        margin: auto;
-        padding-top: 5rem;
-        font-size: 5rem;
-        font-weight: bolder;
-        text-align: center;
-        color: $terciary-color;
-    }
 
-    .container {
-        width: 40%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 3px solid $terciary-color;
-        background-color: $complementary-color-two;
-
-        p {
-            margin: 1rem;
-            font-size: large;
-            text-align: center;
-            
-            .entrar {
-                font-size: larger;
-                font-weight: bolder;
-            }
-
-            a {
-                text-decoration:none;
-                color: $terciary-color;
-            }
-       }
-    }
-}
 
 
 //==================descripcion del producto===============================
@@ -198,15 +210,6 @@ $padding:20rem;
     margin-top: 2rem;
 }
 
-//======================carrito====================
-#number{
-    width: 2rem;
-    
-}
-
-.caja1{
-    display: flex;
-}
  //===========================catalogo===============
  *{
     padding: 0;

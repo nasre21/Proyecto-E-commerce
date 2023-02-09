@@ -1,4 +1,4 @@
-@media (max-width: 411px) {
+@media (max-width: 498px) {
   #logo-gato {
     display: none;
   }
@@ -10,6 +10,16 @@
   }
   #img-usuario {
     margin-left: 3rem;
+  }
+  .home-main .titulo {
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+  .home-main .home-container {
+    width: 98%;
+  }
+  .caja1 {
+    flex-direction: column-reverse;
   }
   #section-comentarios {
     width: 80%;
@@ -31,13 +41,6 @@
   }
   #container-login-one {
     display: none;
-  }
-  .home-main .titulo {
-    padding-top: 4rem;
-    font-size: 3rem;
-  }
-  .home-main .home-container {
-    width: 98%;
   }
   .texto-pedidos {
     text-align: center;
