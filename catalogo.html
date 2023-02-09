@@ -5,21 +5,28 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catalogo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/source/style.css" />
+  <title>Catalago</title>
+  <link rel="stylesheet" href="source/style.css" />
+  <link rel="stylesheet" href="source/style-tablet.css">
+  <link rel="stylesheet" href="source/style-mobile.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container-fluid d-flex justify-content-end position-relative">
-    <p class="parrafoFecha me-5 position-absolute">fecha</p>
+ 
+  <div class="container-fluid  d-flex justify-content-end position-relative">
+    
+    <p  class="parrafoFecha me-5 position-absolute ">fecha</p>
     <select class="mt-3 me-4" name="idiomas" id="idiomas">
       <option value="">ES</option>
       <option value="">EN</option>
@@ -33,14 +40,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav d-flex mb-lg-0">
+        <ul class="navbar-nav d-flex mb-lg-0 ">
           <li class="nav-item">
             <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
-
+        
           <li id="link" class="nav-item dropdown mt-4">
-            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Catalogo
             </a>
             <ul class="dropdown-menu">
@@ -49,21 +55,21 @@
               <li><a class="dropdown-item" href="#">Aves</a></li>
             </ul>
           </li>
-          <li id="logo-gato" class="nav-item">
-            <img src="/image/logoToPets-sin-blanco.png" alt="" />
+          <li id="logo-gato" class="nav-item ">
+            <img  src="/image/logoToPets-sin-blanco.png" alt="" />
           </li>
           <li id="search_">
             <form id="search" class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button id="btn-login" class="btn btn border col" type="submit">
                 Search
               </button>
             </form>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+              <img id="img-usuario"  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
                 class="rounded-circle" alt="Avatar" loading="lazy" />
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -73,10 +79,9 @@
             </div>
           </li>
           <li>
-            <div class="carrito">
-              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative"><span id="bubble"
-                  class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-            </div>
+            <div class="carrito ">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+          </div>
           </li>
         </ul>
       </div>
@@ -96,13 +101,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./image/gato-kira.jpg" class="d-block w-100" alt="..." />
+        <img src="./image/gato-kira.jpg" class="d-block w-100" alt="imagen de gato" />
       </div>
       <div class="carousel-item">
-        <img src="/image/pecera.jpg" class="d-block w-100" alt="..." />
+        <img src="/image/pecera.jpg" class="d-block w-100" alt="imagen de pecera" />
       </div>
       <div class="carousel-item">
-        <img src="/image/perro-camiseta-amarilla.jpg" class="d-block w-100" alt="..." />
+        <img src="/image/perro-camiseta-amarilla.jpg" class="d-block w-100" alt="imagen perro con camiseta" />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -124,9 +129,9 @@
   <!-- ----------- catalogo de imagenes----------- -->
 
   <div class="container">
-    <h2 id="catalogo-texto" class="text-center p-5">Catalogo</h2>
+    <h2 id="catalogo-titulo" class="text-center">Catalogo</h2>
     <div class="container cards-catalogo">
-      <div id="cads-plus" class="card">
+      <div  class="card cads-plus">
         <img id="imagen1" src="/image/perros/dog-comida.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -135,14 +140,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div  class="card cads-plus">
         <img id="imagen2" src="/image/gatos/img_de_gato3.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -151,14 +156,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div  class="card cads-plus">
         <img id="imagen3" src="/image/perros/frontline.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -167,14 +172,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div  class="card cads-plus">
         <img id="imagen4" src="./image/perros/scalibar.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -183,14 +188,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img id="imagen5" src="/image/gatos/gato-danoup-removebg-preview.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -199,14 +204,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="cads-plus card">
         <img id="imagen6" src="/image/gatos/comida de cato.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -215,7 +220,7 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
@@ -229,7 +234,7 @@
   <details>
     <summary class="text-center fs-3 fw-bold">Ver mas</summary>
     <div class="container cards-catalogo">
-      <div id="cads-plus" class="card">
+      <div id="cads-plus" class="card cads-plus">
         <img src="/image/gatos/hamster.png" id="imagen7" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -238,14 +243,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img src="/image/perros/seresto dog.png" id="imagen8" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -254,14 +259,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img src="/image/perros/impluse.png" class="card-img-top" id="imagen9" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -270,14 +275,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img src="./image/perros/acana-perros.png" class="card-img-top" id="imagen10" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -286,14 +291,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img src="/image/gatos/cat-comida.png" id="imagen11" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -302,14 +307,14 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
           </div>
         </div>
       </div>
-      <div id="cads-plus" class="card">
+      <div class="card cads-plus">
         <img src="/image/gatos/comida de cato.jpg" id="imagen12" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -318,7 +323,7 @@
             bulk of the card's content.
           </p>
           <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn btn-outline-primary border col-8">
+            <button id="btn-sidebar" class="botones btn border">
               Agregar al carrito
             </button>
             <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />

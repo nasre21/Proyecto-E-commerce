@@ -117,6 +117,111 @@ $padding:20rem;
   display: flex;
 }
 
+//===========================catalogo===============
+
+/* slide */
+#carouselExampleIndicators img{
+  height:40rem;
+}
+
+/* card */
+#catalogo-titulo {
+  padding: 3rem;
+}
+
+.cards-catalogo {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+  
+.cads-plus{
+    width: 18rem;
+    margin-top: 3rem;
+    margin-bottom:2rem ;
+
+  }
+  
+#cads-plus:hover{
+    box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
+    transition: all;
+}
+
+.cads-plus img{
+  cursor: pointer;
+}
+
+#botones-car{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#botones-car input{
+  width: 2rem;
+}  
+
+.card img{
+  display: flex;
+  padding: 2rem 0rem 1rem 5rem;
+ /* padding-left:5rem ;
+ padding-top: 2rem; */
+  width: 50%;
+  justify-content: center;
+
+  /* height: 5rem; */
+ 
+}
+
+summary:hover{
+  color: blueviolet;
+  transition: all 2s;
+  
+}
+
+#btn-sidebar{
+  color: blueviolet;
+   border: dimgray ; 
+  transition: ease-in 1s;
+  /* padding-left: 4rem;
+  padding-right:4rem ; */
+}
+
+//======================================Checkout==============================================
+.parrafo-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.container-resumen, .formulario-envio {
+  width: 45vw;
+  margin: 1rem;
+
+  .img-card {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .formulario-titulo {
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+      font-size: calc(1.325rem + .9vw);
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--bs-heading-color,inherit);
+  }
+
+  #btn {
+      @include button-general;
+  }
+}
+
+#btn-modal {
+  @include button-general;
+}
+
+
 //=========================cliente========================
 #photo {
     width: 15rem;
@@ -175,10 +280,6 @@ $padding:20rem;
   }
   
  
-
-
-
-
 //==================descripcion del producto===============================
 #section-comentarios{
     margin: 3rem 0; 
@@ -210,81 +311,7 @@ $padding:20rem;
     margin-top: 2rem;
 }
 
- //===========================catalogo===============
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  /* slide */
-  #carouselExampleIndicators img{
-  height:40rem;
-  }
-  
-  /* card */
-  .cards-catalogo {
-    padding-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-    #cads-plus{
-      width: 18rem;
-      margin-top: 3rem;
-      margin-bottom:2rem ;
-    /* padding-bottom: 2rem; */
-   /* cursor: pointer; */
-    }
-    #cads-plus:hover{
-      box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
-      transition: all 2s;
-  }
-    #catalogo-texto:hover{
-      color: blueviolet;
-      transition: all 2s;
-  }
-  #catalogo-texto{
-    cursor: pointer;
-  }
-  
-  #botones-car{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #botones-car input{
-    width: 2rem;
-  }  
-  
-  .card img{
-    display: flex;
-    padding: 2rem 0rem 1rem 5rem;
-   /* padding-left:5rem ;
-   padding-top: 2rem; */
-    width: 50%;
-    justify-content: center;
-  
-    /* height: 5rem; */
-   
-  }
-  
-  summary:hover{
-    color: blueviolet;
-    transition: all 2s;
-    
-  }
-  /* .hover-button a:hover {
-    background-color: #8E58A6;
-  } */
-  
-  #btn-sidebar{
-    color: blueviolet;
-     border: dimgray ; 
-    transition: ease-in 1s;
-    /* padding-left: 4rem;
-    padding-right:4rem ; */
-  }
-
+ 
 //============================login=========================================
 #registro-login{
     color: $complementary-color-three;
@@ -334,33 +361,7 @@ $padding:20rem;
 }
 
 
-//======================================Checkout==============================================
-.parrafo-intro {
-    text-align: center;
-    padding-top: 2rem;
-}
 
-.container-resumen, .formulario-envio {
-    width: 45vw;
-    margin: 1rem;
-
-    .formulario-titulo {
-        margin-bottom: 1.5rem;
-        margin-top: 3rem;
-        font-size: calc(1.325rem + .9vw);
-        font-weight: 500;
-        line-height: 1.2;
-        color: var(--bs-heading-color,inherit);
-    }
-
-    #btn {
-        @include button-general;
-    }
-}
-
-#btn-modal {
-    @include button-general;
-}
 
 
 //====================================footert===================

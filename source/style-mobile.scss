@@ -33,6 +33,55 @@
         flex-direction:column-reverse;
     }
 
+    //=====================catalogo=================
+    #catalogo-titulo {
+        padding: 1rem;
+    }
+
+    .cads-plus {
+        margin-top: 0;
+    }
+
+    .cards-catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1rem ;
+    width: 80%;
+    }
+
+    #carouselExampleIndicators {
+        margin-top: 2rem;
+
+        img{
+            height:auto;
+            }
+    }
+
+    //========================checkout=================================
+    .container-resumen, .formulario-titulo {
+        padding: 0;
+
+        #titulo-resumen-compra {
+            margin-top: 0;
+        }
+
+        #card-mobile {
+            display: flex;    
+        }
+
+        #img-articulo {
+            display: none;
+        }
+
+        .formulario-titulo {
+            margin-top: 0.5rem;
+        }
+    }
+ 
+    
+
     //==================descripcion del producto===============================
     #section-comentarios{
         width: 80%;
@@ -81,40 +130,7 @@
         display: none;
       }
 
-    //=====================catalogo=================
-    .cards-catalogo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:1rem ;
-        width: 80%;
-      
-      }
-      #carouselExampleIndicators img{
-        height:20rem;
-        }
-    
+  
 
-    //========================checkout=================================
-    .container-resumen, .formulario-titulo {
-        padding: 0;
-
-        #titulo-resumen-compra {
-            margin-top: 0;
-        }
-
-        #card-mobile {
-            display: flex;    
-        }
-
-        #img-articulo {
-            display: none;
-        }
-
-        .formulario-titulo {
-            margin-top: 0.5rem;
-        }
-    }
 }
 
