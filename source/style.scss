@@ -134,13 +134,15 @@ $padding:20rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-  .cads-plus{
+  
+.cads-plus{
     width: 18rem;
     margin-top: 3rem;
     margin-bottom:2rem ;
 
   }
-  #cads-plus:hover{
+  
+#cads-plus:hover{
     box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
     transition: all;
 }
@@ -155,6 +157,7 @@ $padding:20rem;
   align-items: center;
   justify-content: space-between;
 }
+
 #botones-car input{
   width: 2rem;
 }  
@@ -176,9 +179,6 @@ summary:hover{
   transition: all 2s;
   
 }
-/* .hover-button a:hover {
-  background-color: #8E58A6;
-} */
 
 #btn-sidebar{
   color: blueviolet;
@@ -187,6 +187,40 @@ summary:hover{
   /* padding-left: 4rem;
   padding-right:4rem ; */
 }
+
+//======================================Checkout==============================================
+.parrafo-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.container-resumen, .formulario-envio {
+  width: 45vw;
+  margin: 1rem;
+
+  .img-card {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .formulario-titulo {
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+      font-size: calc(1.325rem + .9vw);
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--bs-heading-color,inherit);
+  }
+
+  #btn {
+      @include button-general;
+  }
+}
+
+#btn-modal {
+  @include button-general;
+}
+
 
 //=========================cliente========================
 #photo {
@@ -246,10 +280,6 @@ summary:hover{
   }
   
  
-
-
-
-
 //==================descripcion del producto===============================
 #section-comentarios{
     margin: 3rem 0; 
@@ -331,33 +361,7 @@ summary:hover{
 }
 
 
-//======================================Checkout==============================================
-.parrafo-intro {
-    text-align: center;
-    padding-top: 2rem;
-}
 
-.container-resumen, .formulario-envio {
-    width: 45vw;
-    margin: 1rem;
-
-    .formulario-titulo {
-        margin-bottom: 1.5rem;
-        margin-top: 3rem;
-        font-size: calc(1.325rem + .9vw);
-        font-weight: 500;
-        line-height: 1.2;
-        color: var(--bs-heading-color,inherit);
-    }
-
-    #btn {
-        @include button-general;
-    }
-}
-
-#btn-modal {
-    @include button-general;
-}
 
 
 //====================================footert===================

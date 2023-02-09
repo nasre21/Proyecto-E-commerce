@@ -27,12 +27,6 @@
   #carouselExampleIndicators img {
     height: auto;
   }
-  .imagen-caja {
-    display: none;
-  }
-  .boton-modificar-perfil {
-    font-size: 1.2rem;
-  }
   #d-flex-column {
     display: flex;
     flex-direction: column;
@@ -50,5 +44,11 @@
   #d-flex-column .formulario-envio {
     width: 90vw;
     padding: 1rem;
+  }
+  .imagen-caja {
+    display: none;
+  }
+  .boton-modificar-perfil {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style-tablet.css.map */

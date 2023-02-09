@@ -28,7 +28,7 @@
         }
     }
 
-       //========================catalogo==================
+    //========================catalogo==================
 
   .cards-catalogo{
     display:grid;
@@ -40,19 +40,6 @@
   #carouselExampleIndicators img{
     height:auto;
     }
-    
-    //==========================cliente=====================
-    .imagen-caja {
-        display: none;
-      }
-    
-      .boton-modificar-perfil {
-        
-        font-size: 1.2rem;
-      }
-
- 
-
 
     //=========================checkout========================
     #d-flex-column {
@@ -76,4 +63,14 @@
             padding: 1rem;
         }
     }
+
+    //==========================cliente=====================
+    .imagen-caja {
+        display: none;
+      }
+    
+      .boton-modificar-perfil {
+        
+        font-size: 1.2rem;
+      }
 }
