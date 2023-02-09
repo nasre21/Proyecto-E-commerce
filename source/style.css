@@ -201,7 +201,8 @@ summary:hover {
 }
 
 #uploadBtn {
-  position: absolute;
+  top: 17rem;
+  left: 19rem;
   width: 2rem;
   border: solid #8C56A2;
   border-radius: 2rem;
@@ -209,7 +210,6 @@ summary:hover {
   color: #8C56A2;
   background-color: rgba(140, 86, 162, 0.2941176471);
   box-shadow: 2px 4px 4px #8E58A6;
-  margin-top: 15rem;
   transform: translateX(-100%);
 }
 
@@ -235,6 +235,7 @@ summary:hover {
 }
 
 .btn {
+  margin-left: 1rem;
   color: #8C56A2;
   font-weight: bolder;
 }

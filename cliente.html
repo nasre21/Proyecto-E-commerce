@@ -1,355 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página de cliente</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/source/style.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="source/style.css" />
+  <link rel="stylesheet" href="source/style-tablet.css" />
+  <link rel="stylesheet" href="source/style-mobile.css" />
 
-  </head>
-  <body>
-<!-- Empieza el menú -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<div class="container-fluid d-flex justify-content-end position-relative">
-  <p class="parrafoFecha me-5 position-absolute">fecha</p>
-  <select class="mt-3 me-4" name="idiomas" id="idiomas">
-    <option value="">ES</option>
-    <option value="">EN</option>
-    <option disabled value="EUS"></option>
-  </select>
-</div>
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav d-flex mb-lg-0">
-        <li class="nav-item">
-          <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
-        </li>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-        <li id="link" class="nav-item dropdown mt-4">
-          <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Catalogo
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Perros</a></li>
-            <li><a class="dropdown-item" href="#">Gatos</a></li>
-            <li><a class="dropdown-item" href="#">Aves</a></li>
-          </ul>
-        </li>
-        <li id="logo-gato" class="nav-item">
-          <img src="/image/logoToPets-sin-blanco.png" alt="" />
-        </li>
-        <li id="search_">
-          <form id="search" class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button id="btn-login" class="btn btn border col" type="submit">
-              Search
-            </button>
-          </form>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
-              class="rounded-circle" alt="Avatar" loading="lazy" />
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Mi perfil</a>
-            <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
-            <a class="dropdown-item" href="#">Cerrar sesion</a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid d-flex justify-content-end position-relative">
+    <p class="parrafoFecha me-5 position-absolute">fecha</p>
+    <select class="mt-3 me-4" name="idiomas" id="idiomas">
+      <option value="">ES</option>
+      <option value="">EN</option>
+      <option disabled value="EUS"></option>
+    </select>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex mb-lg-0">
+          <li class="nav-item">
+            <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li id="link" class="nav-item dropdown mt-4">
+            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Perros</a></li>
+              <li><a class="dropdown-item" href="#">Gatos</a></li>
+              <li><a class="dropdown-item" href="#">Aves</a></li>
+            </ul>
+          </li>
+          <li id="logo-gato" class="nav-item">
+            <img src="/image/logoToPets-sin-blanco.png" alt="" />
+          </li>
+          <li id="search_">
+            <form id="search" class="d-flex" role="search">
+              <input id="input-search" class="form-control me-2" type="search" placeholder="Search"
+                aria-label="Search" />
+              <button id="btn-login" class="btn btn border col" type="submit">
+                Search
+              </button>
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                class="rounded-circle" alt="Avatar" loading="lazy" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Mi perfil</a>
+              <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
+              <a class="dropdown-item" href="#">Cerrar sesion</a>
+            </div>
+          </li>
+          <li>
+            <div class="carrito">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative"><span id="bubble"
+                  class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class=" container m-auto row d-flex flex-wrap border rounded py-5 position-relative">
+    <div class="imagen-usuario col-4 ms-5">
+      <img id="photo" src="image/perro-perfil-amarillo.png" alt="foto de perfil de cliente" />
+
+      <input type="file" id="file" />
+      <label for="file" id="uploadBtn" class="position-absolute text-center"><i class="fas fa-camera  "></i></label>
+
+      <div id="btn-sidebar" class="col-lg-7 col-md-12 botones btn border boton-modificar-perfil">
+        Modificar perfil
+      </div>
+    </div>
+    <div class="datos-usuario col ">
+
+      <h2>Datos personales</h2>
+     
+      <div class="d-flex flex-column ">
+        <div class="gap-5">
+          <label for="usuario">Usuario:</label>
+          <input type="text" name="" id="usuario" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="" id="nombre" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" name="" id="apellidos" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="edad">Fecha de nacimiento:</label>
+          <input type="text" name="" id="edad" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="correo-registro">Correo electronico:</label>
+          <input type="email" name="" id="correo-registro" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="correo-registro">Dirección:</label>
+          <input type="text" name="" id="correo-registro" class="mb-4 border-0" />
+          <input type="text" name="" id="correo-registro" class="mb-4 border-0 input-pagina-cliente" />
+
+          <div class="gap-5 input-pagina-cliente">
+            <input type="text" name="" id="correo-registro" class="mb-4 border-0" />
+            <input type="text" name="" id="correo-registro" class="mb-4 border-0" />
           </div>
-        </li>
-        <li>
-          <div class="carrito">
-            <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative"><span id="bubble"
-                class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-          </div>
-        </li>
-      </ul>
+        </div>
+
+        <div class="gap-5">
+          <label for="direccion">Telefono:</label>
+          <input type="text" name="" id="direccion" class="mb-4 border-0" />
+        </div>
+
+        <div class="gap-5">
+          <label for="direccion">DNI, NIE o Pasaporte</label>
+          <input type="text" name="" id="direccion" class="mb-4 border-0" />
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-<!-- Fin del menú -->
 
+  <!--Comienzo de la sección de pedidos  -->
 
-    <div class="container mt-5 p-5">
-        <div class="row align-items-center">
-          <div class="col-sm-1 col-md-5 col-lg-3 mx-auto">
-            <div class="user-img">
-              <img id="photo" src="image/perro-perfil-amarillo.png" alt="foto de perfil de cliente">
-              <input type="file" id="file">
-              <label for="file" id="uploadBtn"><i class="fas fa-camera"></i></label>
-            </div>
-            <div id="btn-sidebar" class="col-lg-7 col-md-12 botones btn border boton-modificar-perfil">Modificar perfil</div>
-        
-          </div>
-          <div class="col col-md-1 rounded div-datos-cliente p-4">
-            <div class="text-center">
-              <h2>Datos personales</h2>           
-          </div>
-          <div class="d-flex flex-column p-4"> 
-            <div class="gap-5">
-              <label for="usuario">Usuario:</label>
-              <input type="text" name="" id="usuario" class="mb-4 border-0">
-            </div>
-
-            <div class="gap-5">
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="" id="nombre" class="mb-4 border-0">
-            </div>
-
-            <div class="gap-5">
-              <label for="apellidos">Apellidos:</label>
-              <input type="text" name="" id="apellidos" class="mb-4 border-0"> 
-            </div>
-
-            <div class="gap-5">
-              <label for="edad">Fecha de nacimiento:</label>
-              <input type="text" name="" id="edad" class="mb-4 border-0">
-            </div> 
-
-            <div class="gap-5">
-              <label for="correo-registro">Correo electronico:</label>
-              <input type="email" name="" id="correo-registro" class="mb-4 border-0">
-            </div> 
-
-            <div class="gap-5">
-              <label for="correo-registro">Dirección:</label>
-              <input type="text" name="" id="correo-registro" class="mb-4 border-0">
-              <input type="text" name="" id="correo-registro" class="mb-4 border-0 input-pagina-cliente">
-
-            <div class="gap-5 input-pagina-cliente">
-              <input type="text" name="" id="correo-registro" class="mb-4 border-0">
-              <input type="text" name="" id="correo-registro" class="mb-4 border-0">
-            </div>
-            </div> 
-
-            <div class="gap-5">
-              <label for="direccion">Telefono:</label>
-              <input type="text" name="" id="direccion" class="mb-4 border-0"> 
-            </div>
-
-            <div class="gap-5">
-              <label for="direccion">DNI, NIE o Pasaporte</label>
-              <input type="text" name="" id="direccion" class="mb-4 border-0">
-            </div>
-        </div>
+  <div class="div-pedidos-curso container">
+    <div class="row align-items-center">
+      <div class="col-sm-1 col-md-12 col-lg-3">
+        <img class="imagen-caja" src="/image/openbox.jpg" alt="foto de perfil de cliente" />
       </div>
-
+      <div class="col rounded div-datos-cliente p-4">
+        <div class="text-center">
+          <h2>Pedidos en curso</h2>
         </div>
-      </div>
 
-<!--Comienzo de la sección de pedidos  -->
-
-      <div class="div-pedidos-curso container">
-        <div class="row align-items-center">
-          <div class="col-sm-1 col-md-12 col-lg-3 ">
-            <img class="imagen-caja" src="/image/openbox.jpg" alt="foto de perfil de cliente">
-          </div>
-          <div class="col rounded div-datos-cliente p-4">
-            <div class="text-center">
-              <h2>Pedidos en curso</h2>
-          </div>
-
-
-            
         <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000000</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000000</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
+          </div>
         </div>
         <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000001</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
-        </div>
-        <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000002</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
-        </div>
-      </div>
-        </div>
-      </div>
-
-      <div class="div-historico-pedidos container mt-5">
-        <div class="row align-items-center">
-          <div class="col-sm-1 col-md-12 col-lg-3 ">
-            <img class="imagen-caja" src="/image/closedbox.jpg" alt="foto de perfil de cliente">
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000001</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
           </div>
-          <div class="col rounded div-datos-cliente p-4">
-            <div class="text-center">
-              <h2>Historial de pedidos</h2>
+        </div>
+        <div class="row align-items-center mt-4 justify-content-center">
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000002</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
           </div>
-            
-            
-        <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000000</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
-        </div>
-        <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000001</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
-        </div>
-        <div class="row align-items-center mt-4 justify-content-center">
-            <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000002</p>
-            <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">Ver detalles</div>
         </div>
       </div>
-        </div>
-      </div>
-
-<!-- Empieza el Footer -->
-<footer class="text-center text-lg-start bg-white text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-
-    <!-- Grid container -->
-    <div class="container p-4 pb-0 d-flex justify-content-center">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #3b5998"
-          href="#!"
-          role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-
-        <!-- Twitter -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #55acee"
-          href="#!"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-
-        <!-- Google -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #dd4b39"
-          href="#!"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-
-        <!-- Instagram -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #ac2bac"
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-
-        
-      </section>
-      <!-- Section: Social media -->
     </div>
-    <!-- Grid container -->
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+  </div>
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start">
-      <!-- Grid row -->
-      <div class="row">
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Política de cookies
-                </h6>
-                <p>
-                  Lee aquí nuestra
-                  <a
-                    target="_blank"
-                    href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/"
-                    >política de cookies</a
-                  >
-                </p>
-              </div>
-              <!-- Grid column -->
+  <div class="div-historico-pedidos container mt-5">
+    <div class="row align-items-center">
+      <div class="col-sm-1 col-md-12 col-lg-3">
+        <img class="imagen-caja" src="/image/closedbox.jpg" alt="foto de perfil de cliente" />
+      </div>
+      <div class="col rounded div-datos-cliente p-4">
+        <div class="text-center">
+          <h2>Historial de pedidos</h2>
+        </div>
 
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                <p>
-                  Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
-                  Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-                <p>
-                  <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
-                  Peñascal F5
-                </p>
-                <p>
-                  <i class="fas fa-envelope me-3 text-secondary"></i>
-                  info@topets.com
-                </p>
-                <p>
-                  <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
-                  13
-                </p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
+        <div class="row align-items-center mt-4 justify-content-center">
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000000</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
           </div>
+        </div>
+        <div class="row align-items-center mt-4 justify-content-center">
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000001</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
+          </div>
+        </div>
+        <div class="row align-items-center mt-4 justify-content-center">
+          <p class="col-lg-6 col-md-6 texto-pedidos">Pedido Nº00000002</p>
+          <div id="btn-sidebar" class="col-lg-2 col-md-4 botones btn btn-sm border">
+            Ver detalles
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empieza el Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+
+      <!-- Grid container -->
+      <div class="container p-4 pb-0 d-flex justify-content-center">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+              class="fab fa-instagram"></i></a>
         </section>
-        <!-- Section: Links  -->
+        <!-- Section: Social media -->
       </div>
-      <!-- Grid row -->
+      <!-- Grid container -->
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Política de cookies
+                  </h6>
+                  <p>
+                    Lee aquí nuestra
+                    <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
+                      cookies</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
+                  <p>
+                    Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
+                    Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <p>
+                    <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
+                    Peñascal F5
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    info@topets.com
+                  </p>
+                  <p>
+                    <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
+                    13
+                  </p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
-  </section>
-  <!-- Section: Links  -->
+    <!-- Copyright -->
+  </footer>
 
-  <!-- Copyright -->
-  <div
-    class="text-center p-4"
-    style="background-color: rgba(0, 0, 0, 0.025)"
-  >
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+  <!-- Fin del Footer -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/js/cliente.js"></script>
+</body>
 
-
-<!-- Fin del Footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="/js/cliente.js"></script>
-  </body>
 </html>
