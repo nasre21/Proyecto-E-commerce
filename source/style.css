@@ -80,6 +80,74 @@
   display: flex;
 }
 
+/* slide */
+#carouselExampleIndicators img {
+  height: 40rem;
+}
+
+/* card */
+#catalogo-titulo {
+  padding: 3rem;
+}
+
+.cards-catalogo {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cads-plus {
+  width: 18rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#cads-plus:hover {
+  box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
+  transition: all;
+}
+
+.cads-plus img {
+  cursor: pointer;
+}
+
+#botones-car {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#botones-car input {
+  width: 2rem;
+}
+
+.card img {
+  display: flex;
+  padding: 2rem 0rem 1rem 5rem;
+  /* padding-left:5rem ;
+  padding-top: 2rem; */
+  width: 50%;
+  justify-content: center;
+  /* height: 5rem; */
+}
+
+summary:hover {
+  color: blueviolet;
+  transition: all 2s;
+}
+
+/* .hover-button a:hover {
+  background-color: #8E58A6;
+} */
+#btn-sidebar {
+  color: blueviolet;
+  border: dimgray;
+  transition: ease-in 1s;
+  /* padding-left: 4rem;
+  padding-right:4rem ; */
+}
+
 #photo {
   width: 15rem;
   border-radius: 2rem;
@@ -175,83 +243,6 @@
   border: 1px solid #AFBAEF;
   border-radius: 5px;
   margin-top: 2rem;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* slide */
-#carouselExampleIndicators img {
-  height: 40rem;
-}
-
-/* card */
-.cards-catalogo {
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#cads-plus {
-  width: 18rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  /* padding-bottom: 2rem; */
-  /* cursor: pointer; */
-}
-
-#cads-plus:hover {
-  box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
-  transition: all 2s;
-}
-
-#catalogo-texto:hover {
-  color: blueviolet;
-  transition: all 2s;
-}
-
-#catalogo-texto {
-  cursor: pointer;
-}
-
-#botones-car {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#botones-car input {
-  width: 2rem;
-}
-
-.card img {
-  display: flex;
-  padding: 2rem 0rem 1rem 5rem;
-  /* padding-left:5rem ;
-  padding-top: 2rem; */
-  width: 50%;
-  justify-content: center;
-  /* height: 5rem; */
-}
-
-summary:hover {
-  color: blueviolet;
-  transition: all 2s;
-}
-
-/* .hover-button a:hover {
-  background-color: #8E58A6;
-} */
-#btn-sidebar {
-  color: blueviolet;
-  border: dimgray;
-  transition: ease-in 1s;
-  /* padding-left: 4rem;
-  padding-right:4rem ; */
 }
 
 #registro-login {

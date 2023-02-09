@@ -27,6 +27,19 @@
             top: 40%;
         }
     }
+
+       //========================catalogo==================
+
+  .cards-catalogo{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #carouselExampleIndicators img{
+    height:auto;
+    }
     
     //==========================cliente=====================
     .imagen-caja {
@@ -38,18 +51,7 @@
         font-size: 1.2rem;
       }
 
-    //========================catalogo==================
-
-  .cards-catalogo{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  #carouselExampleIndicators img{
-    height:30rem;
-    }
+ 
 
 
     //=========================checkout========================

@@ -18,12 +18,6 @@
     width: 75%;
     top: 40%;
   }
-  .imagen-caja {
-    display: none;
-  }
-  .boton-modificar-perfil {
-    font-size: 1.2rem;
-  }
   .cards-catalogo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +25,13 @@
     justify-content: center;
   }
   #carouselExampleIndicators img {
-    height: 30rem;
+    height: auto;
+  }
+  .imagen-caja {
+    display: none;
+  }
+  .boton-modificar-perfil {
+    font-size: 1.2rem;
   }
   #d-flex-column {
     display: flex;

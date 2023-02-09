@@ -21,6 +21,26 @@
   .caja1 {
     flex-direction: column-reverse;
   }
+  #catalogo-titulo {
+    padding: 1rem;
+  }
+  .cads-plus {
+    margin-top: 0;
+  }
+  .cards-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+  }
+  #carouselExampleIndicators {
+    margin-top: 2rem;
+  }
+  #carouselExampleIndicators img {
+    height: auto;
+  }
   #section-comentarios {
     width: 80%;
     margin: auto;
@@ -50,17 +70,6 @@
   }
   .imagen-caja {
     display: none;
-  }
-  .cards-catalogo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 80%;
-  }
-  #carouselExampleIndicators img {
-    height: 20rem;
   }
   .container-resumen, .formulario-titulo {
     padding: 0;
