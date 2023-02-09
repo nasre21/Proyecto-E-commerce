@@ -1,139 +1,6 @@
-// //validar usuarios
-
-// const formulario = document.getElementById("formulario");
-// const inputs = document.querySelectorAll("#formulario input")
-
-// const select = document.getElementById("provincias");
-
-
-
-// let datosUsuario = {
-//     usuario: "",
-//     contraseña: "",
-//     nombre: "",
-//     apellido: "",
-//     nacimiento: "",
-//     correo: "",
-//     direccion: "",
-//     codigoPostal: "",
-//     provincia: "",
-//     numero: "",
-//     identidad: ""
-// }
-
-// const expresiones = {
-// 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-// 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-// 	password: /^.{4,12}$/, // 4 a 12 digitos.
-// 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-// 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.                    
-// }
-
-
-// const validarFormulario = (e) => {
-
-//     switch (e.targe.name){
-//         case  "usuario":
-            
-//         break;
-
-//         case  "nombre":
-        
-//         break;
-
-//         case  "apellido":
-        
-//         break;
-
-//         case  "fecha":
-        
-//         break;
-
-//         case  "correo":
-        
-//         break;
-
-//         case  "contraseña":
-        
-//         break;
-
-//         case  "direccion":
-        
-//         break;
-
-
-//         case  "portal":
-        
-//         break;
-
-//         case  "piso":
-        
-//         break;
-
-//         case  "codigopostal":
-        
-//         break;
-
-//         case  "provincias":
-        
-//         break;
-
-//         case  "telefono":
-        
-//         break;
-
-//         case  "identificacion":
-        
-//         break;
-//     }
-
-   
-
-
-// }
-
-
-
-
-
-// inputs.forEach(input => {
-//     input.addEventListener("keyup",validarFormulario);
-//     input.addEventListener("blur",validarFormulario);
-    
-  
-   
-
-// });
-
-// // formulario.addEventListener("submit", (e) => {
-// //     e.preventDefault();
-// // })
-
-// const form1 = document.getElementById('container-login-two');
-// const mail = document.getElementById('mail');
-// const password = document.getElementById('password');
-// const parrafo = document.getElementById('warnings');
-
-// boton.addEventListener('click', e=>{
-//     e.preventDefault()
-// });
-
-// // function validacion(correo){
-//     // let expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-
-//     // let esValido = expReg.test(correo); 
-
-//     if(esValido==true) {
-//         alert("El email es válido");
-
-//     }
-//     else{
-//         alert("El email no es válido");
-
-//     }
 
 function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo, direccion, codigoPostal, provincia, numero, identidad, portal, piso) {
-    const user = {
+    const user1 = {
         usuario: "pepe",
         contraseña: "123445",
         nombre: "Juanka",
@@ -165,12 +32,13 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
     //     identidad: "78564521L",
     //     tipoUsuario: "cliente"
     // };
-    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("user1", JSON.stringify(user1));
   }
 
   function getUserData() {
-    return JSON.parse(localStorage.getItem("user"));
+    return JSON.parse(localStorage.getItem("user1"));
   }
+   localStorage.removeItem("datosUsuario");
 
   function handleRegistration(event) {
     event.preventDefault();
@@ -209,14 +77,14 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
           return;
         }
       
-        const mail = document.getElementById("email").value;
+        const usuario = document.getElementById("email").value;
         const password = document.getElementById("pasword").value;
       
-        if (mail === user.correo && password === user.contrasenna) {
+        if (usuario === user.usuario && password === user.contraseña) {
           if (user.tipoUsuario === "administrador") {
             window.location.href = "index.html";
           } else {
-            window.location.href = "cliente";
+            window.location.href = "user.html";
           }
         } else {
           alert("Nombre de usuario o contraseña incorrectos.");
@@ -227,4 +95,4 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
       registrationForm.addEventListener("submit", handleRegistration);
 
       const loginForm = document.getElementById("btn");
-      loginForm.addEventListener("click", handleLogin);
+      loginForm.addEventListener("submit", handleLogin);
