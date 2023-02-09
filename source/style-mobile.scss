@@ -41,6 +41,7 @@
     .cads-plus {
         margin-top: 0;
     }
+
     .cards-catalogo{
     display: flex;
     flex-direction: column;
@@ -58,6 +59,26 @@
             }
     }
 
+    //========================checkout=================================
+    .container-resumen, .formulario-titulo {
+        padding: 0;
+
+        #titulo-resumen-compra {
+            margin-top: 0;
+        }
+
+        #card-mobile {
+            display: flex;    
+        }
+
+        #img-articulo {
+            display: none;
+        }
+
+        .formulario-titulo {
+            margin-top: 0.5rem;
+        }
+    }
  
     
 
@@ -111,25 +132,5 @@
 
   
 
-    //========================checkout=================================
-    .container-resumen, .formulario-titulo {
-        padding: 0;
-
-        #titulo-resumen-compra {
-            margin-top: 0;
-        }
-
-        #card-mobile {
-            display: flex;    
-        }
-
-        #img-articulo {
-            display: none;
-        }
-
-        .formulario-titulo {
-            margin-top: 0.5rem;
-        }
-    }
 }
 

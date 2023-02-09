@@ -137,15 +137,57 @@ summary:hover {
   transition: all 2s;
 }
 
-/* .hover-button a:hover {
-  background-color: #8E58A6;
-} */
 #btn-sidebar {
   color: blueviolet;
   border: dimgray;
   transition: ease-in 1s;
   /* padding-left: 4rem;
   padding-right:4rem ; */
+}
+
+.parrafo-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.container-resumen, .formulario-envio {
+  width: 45vw;
+  margin: 1rem;
+}
+.container-resumen .img-card, .formulario-envio .img-card {
+  padding: 1rem;
+  width: 100%;
+}
+.container-resumen .formulario-titulo, .formulario-envio .formulario-titulo {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color, inherit);
+}
+.container-resumen #btn, .formulario-envio #btn {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+.container-resumen #btn:hover, .formulario-envio #btn:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
+}
+
+#btn-modal {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+#btn-modal:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
 }
 
 #photo {
@@ -291,47 +333,6 @@ summary:hover {
   color: black;
 }
 #btn-login:hover {
-  color: #AEEBF2;
-  background-color: #8C56A2;
-  color: white;
-}
-
-.parrafo-intro {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.container-resumen, .formulario-envio {
-  width: 45vw;
-  margin: 1rem;
-}
-.container-resumen .formulario-titulo, .formulario-envio .formulario-titulo {
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
-  font-size: calc(1.325rem + 0.9vw);
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--bs-heading-color, inherit);
-}
-.container-resumen #btn, .formulario-envio #btn {
-  margin: 1rem 0 5rem 0;
-  padding: auto;
-  width: 5rem;
-  color: black;
-}
-.container-resumen #btn:hover, .formulario-envio #btn:hover {
-  color: #AEEBF2;
-  background-color: #8C56A2;
-  color: white;
-}
-
-#btn-modal {
-  margin: 1rem 0 5rem 0;
-  padding: auto;
-  width: 5rem;
-  color: black;
-}
-#btn-modal:hover {
   color: #AEEBF2;
   background-color: #8C56A2;
   color: white;
