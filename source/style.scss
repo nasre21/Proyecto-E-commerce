@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
-@import url(/source/_Footer.scss);
-@import url(/source/_compraRealizada.scss);
-@import url(source/carrito.scss);
-@import url(source/checkout.scss);
+
 $primary-color:#B2EBF9;
 $secondary-color:#AFBAEF;
 $terciary-color:#8C56A2;
@@ -26,49 +23,29 @@ $padding:20rem;
     }
 }
 
-//NavBar
+// ===================Barra navegación========================
 
-#search{
+#search {
+
     width: 15rem;
-     margin: 2rem 2rem 0 12rem;
- }
+    margin: 1rem 2rem 0 12rem;
+}
 
+#input-search{
+  margin-top: 1rem;
+  height: 2.5rem;
+}
 
- #logo-gato{
-    
-   
-     img{width: 6rem;   
-         margin-left: 22rem;
-        
+#logo-gato {
+    img {
+        width: 6rem;   
+        margin-left: 22rem;
     }   
 }
 
-
-
- #img-usuario{
-     margin-top: 1rem;
-     width: 3rem;
- }
-
-
-@media (max-width:411px) {
-    #logo-gato{
-        display: none;
-}
-#search_{
-display: none; 
-}
-
-#link{
-    margin-left: 3rem;
-}
-
-
-#img-usuario{
-    margin-left: 3rem;
-    
-}
-
+#img-usuario {
+    margin-top: 1rem;
+    width: 3rem;
 }
 
 #bubble{
@@ -82,59 +59,127 @@ display: none;
     right: 5rem;
 }
 
-
-
-
-//Estilo home
+//==========================Estilo home==========================
 .home-main {
-    background-image: url("../image/mascota_perro.jpg");
-    background-repeat: no-repeat;
-    background-size:  cover;
-    background-position: center;
-    max-width: 100vw;
-    height: 100vh;    
-    position: relative;
-    font-family: $font-primary;
-   
-    .titulo {
-        margin: auto;
-        padding-top: 5rem;
-        font-size: 5rem;
-        font-weight: bolder;
-        text-align: center;
-        color: $terciary-color;
-    }
+  background-image: url("../image/mascota_perro.jpg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position: center;
+  max-width: 100vw;
+  height: 100vh;    
+  position: relative;
+  font-family: $font-primary;
+ 
+  .titulo {
+      margin: auto;
+      padding-top: 5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      text-align: center;
+      color: $terciary-color;
+  }
 
-    .container {
-        width: 40%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 3px solid $terciary-color;
-        background-color: $complementary-color-two;
+  .container {
+      width: 40%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid $terciary-color;
+      background-color: $complementary-color-two;
 
-        p {
-            margin: 1rem;
-            font-size: large;
-            text-align: center;
-            
-            .entrar {
-                font-size: larger;
-                font-weight: bolder;
-            }
+      p {
+          margin: 1rem;
+          font-size: large;
+          text-align: center;
+          
+          .entrar {
+              font-size: larger;
+              font-weight: bolder;
+          }
 
-            a {
-                text-decoration:none;
-                color: $terciary-color;
-            }
-       }
-    }
+          a {
+              text-decoration:none;
+              color: $terciary-color;
+          }
+     }
+  }
 }
 
+//======================carrito====================
+#number{
+  width: 2rem;
+  
+}
 
-// descripcion del producto
+.caja1{
+  display: flex;
+}
+
+//=========================cliente========================
+#photo {
+    width: 15rem;
+    border-radius: 2rem;
+    position: relative;
+  }
+  #file {
+    display: none;
+  }
+  
+  #uploadBtn {
+    position: absolute;
+    width: 2rem;
+    border: solid #8C56A2;
+    border-radius: 2rem;
+    cursor: pointer;
+    color:#8C56A2;
+    background-color: #8c56a24b;
+    box-shadow: 2px 4px 4px #8E58A6;
+    margin-top: 15rem;
+    transform: translateX(-100%);
+  }
+    
+  .div-datos-cliente {
+      border: 1px solid #AFBAEF;
+      width: 50rem; 
+  }
+  .col-sm-1 {
+      text-align: center;
+    }
+  
+    .imagen-caja {
+      width: 13rem;
+    }
+  
+  .div-pedidos-curso {
+    margin-top: 5rem;
+  }
+  
+  .div-historico-pedidos {
+    margin-bottom: 3rem;
+  }
+  .btn {
+    color:#8C56A2;
+    font-weight: bolder;
+  }
+  
+  .boton-modificar-perfil {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .input-pagina-cliente {
+    margin-left: 4.7rem;
+  }
+  
+ 
+
+
+
+
+//==================descripcion del producto===============================
 #section-comentarios{
     margin: 3rem 0; 
     margin-bottom: 4rem;
@@ -145,17 +190,8 @@ display: none;
     width: 3rem;
 }
 
-
 #btn{
-    margin: 1rem 0 5rem 0;
-    width: 5rem;
-    color: black;
-    }
-
-#btn:hover{
-    color: $complementary-color-one;
-    background-color: #8C56A2;
-    color: white;
+    @include button-general;
 }
 
 #btn-sidebar:hover{
@@ -174,38 +210,82 @@ display: none;
     margin-top: 2rem;
 }
 
-@media (max-width:411px) {
+ //===========================catalogo===============
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* slide */
+  #carouselExampleIndicators img{
+  height:40rem;
+  }
+  
+  /* card */
+  .cards-catalogo {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+    #cads-plus{
+      width: 18rem;
+      margin-top: 3rem;
+      margin-bottom:2rem ;
+    /* padding-bottom: 2rem; */
+   /* cursor: pointer; */
+    }
+    #cads-plus:hover{
+      box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
+      transition: all 2s;
+  }
+    #catalogo-texto:hover{
+      color: blueviolet;
+      transition: all 2s;
+  }
+  #catalogo-texto{
+    cursor: pointer;
+  }
+  
+  #botones-car{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #botones-car input{
+    width: 2rem;
+  }  
+  
+  .card img{
+    display: flex;
+    padding: 2rem 0rem 1rem 5rem;
+   /* padding-left:5rem ;
+   padding-top: 2rem; */
+    width: 50%;
+    justify-content: center;
+  
+    /* height: 5rem; */
    
-    #section-comentarios{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 2rem;
+  }
+  
+  summary:hover{
+    color: blueviolet;
+    transition: all 2s;
     
+  }
+  /* .hover-button a:hover {
+    background-color: #8E58A6;
+  } */
+  
+  #btn-sidebar{
+    color: blueviolet;
+     border: dimgray ; 
+    transition: ease-in 1s;
+    /* padding-left: 4rem;
+    padding-right:4rem ; */
+  }
 
-    }
-
-    #caja-comentario{
-    width: 100%;
-    margin: 0 auto;
-
-    }
-
-    #comentarios-escritos{
-        width: 100%;
-    }
-
-
-    #descripcion-producto{
-        width: 100%;
-    }
-
-    #img-descripcion{
-        width: 100%;
-    }
-
-}
-
-//login
+//============================login=========================================
 #registro-login{
     color: $complementary-color-three;
 } 
@@ -234,7 +314,6 @@ display: none;
 }
 
 #email{
-
    width: 80%;
 }
 
@@ -242,17 +321,8 @@ display: none;
     width: 80%;
 }
 
-@media (max-width:411px) {
-    
-    #container-login-one {
-        display: none;
-    }
 
-
-}
-
-
-// registro de usuario 
+//=============================registro de usuario=========================================
 .registro-usuario{
      img{
         width: 8rem;
@@ -260,11 +330,11 @@ display: none;
 }
 
 #btn-login{
-    width: 5rem;
+    @include button-general;
 }
 
 
-//Checkout
+//======================================Checkout==============================================
 .parrafo-intro {
     text-align: center;
     padding-top: 2rem;
@@ -293,76 +363,8 @@ display: none;
 }
 
 
-/* Media queries for Tablet */
-@media screen and (max-width: 960px) {
-    //home
-    .home-main {
-        .titulo {
-            padding-top: 8rem;
-        }
-        
-        .home-container {
-            width: 75%;
-            top: 40%;
-        }
-    }
-
-    //checkout
-    #d-flex-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 98vw;
-        margin: auto;
-        
-        .container-resumen {
-            width: 90vw;
-            padding: 1rem;
-        }
-
-        .formulario-titulo {
-            margin-top: 1.5rem;
-        }
-
-        .formulario-envio {
-            width: 90vw;
-            padding: 1rem;
-        }
-    }
-}
-
-/* Media queries for mobile */
-@media screen and (max-width: 480px) {
-    //home
-    .home-main {
-        .titulo {
-            padding-top: 4rem;
-            font-size: 3rem;
-        }
-
-        .home-container {
-            width: 98%;
-        }
-    }
-
-    //checkout
-    .container-resumen, .formulario-titulo {
-        padding: 0;
-
-        #titulo-resumen-compra {
-            margin-top: 0;
-        }
-
-        #card-mobile {
-            display: flex;    
-        }
-
-        #img-articulo {
-            display: none;
-        }
-
-        .formulario-titulo {
-            margin-top: 0.5rem;
-        }
-    }
+//====================================footert===================
+#copy-footer{
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.025);
 }

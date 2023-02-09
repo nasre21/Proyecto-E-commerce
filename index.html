@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Topets</title>
-
   <link rel="stylesheet" href="source/style.css" />
-  <link rel="stylesheet" href="source/Footer.css" />
+  <link rel="stylesheet" href="source/style-tablet.css">
+  <link rel="stylesheet" href="source/style-mobile.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,8 +59,8 @@
             <img  src="/image/logoToPets-sin-blanco.png" alt="" />
           </li>
           <li id="search_">
-            <form id="search" class="d-flex " role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <form id="search" class="d-flex" role="search">
+              <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button id="btn-login" class="btn btn border col" type="submit">
                 Search
               </button>
@@ -199,7 +200,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+    <div id="copy-footer" class="text-center p-4" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
