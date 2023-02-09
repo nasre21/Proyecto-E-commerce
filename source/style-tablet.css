@@ -1,0 +1,57 @@
+@media screen and (max-width: 960px) {
+  #logo-gato {
+    display: none;
+  }
+  #search_ {
+    display: none;
+  }
+  #link {
+    margin-left: 3rem;
+  }
+  #img-usuario {
+    margin-left: 3rem;
+  }
+  .home-main .titulo {
+    padding-top: 8rem;
+  }
+  .home-main .home-container {
+    width: 75%;
+    top: 40%;
+  }
+  .imagen-caja {
+    display: none;
+  }
+  .boton-modificar-perfil {
+    font-size: 1.2rem;
+  }
+  .caja1 {
+    flex-direction: column-reverse;
+  }
+  .cards-catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  #carouselExampleIndicators img {
+    height: 30rem;
+  }
+  #d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98vw;
+    margin: auto;
+  }
+  #d-flex-column .container-resumen {
+    width: 90vw;
+    padding: 1rem;
+  }
+  #d-flex-column .formulario-titulo {
+    margin-top: 1.5rem;
+  }
+  #d-flex-column .formulario-envio {
+    width: 90vw;
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=style-tablet.css.map */
