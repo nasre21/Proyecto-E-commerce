@@ -44,7 +44,7 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
     event.preventDefault();
 
     const usuario = document.getElementById("usuario").value;
-    const contrasenna = document.getElementById("contraseña").value;
+    const contraseña = document.getElementById("contraseña").value;
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellidos").value;
     const nacimiento = document.getElementById("edad").value;
@@ -60,7 +60,7 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
 
     // const userType = document.getElementById("user-type").value;
 
-    saveUserData(usuario, contrasenna, nombre, apellido, nacimiento, correo, direccion, codigoPostal, provincia, numero, identidad, portal, piso);
+    saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo, direccion, codigoPostal, provincia, numero, identidad, portal, piso);
 
     alert("Registro exitoso. Por favor inicie sesión.");
   
@@ -84,7 +84,7 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
           if (user.tipoUsuario === "administrador") {
             window.location.href = "index.html";
           } else {
-            window.location.href = "user.html";
+            window.location.href = "cliente.html";
           }
         } else {
           alert("Nombre de usuario o contraseña incorrectos.");
