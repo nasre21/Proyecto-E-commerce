@@ -1,0 +1,80 @@
+@media (max-width: 498px) {
+  #logo-gato {
+    display: none;
+  }
+  #search_ {
+    display: none;
+  }
+  #link {
+    margin-left: 3rem;
+  }
+  #img-usuario {
+    margin-left: 3rem;
+  }
+  .home-main .titulo {
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+  .home-main .home-container {
+    width: 98%;
+  }
+  .caja1 {
+    flex-direction: column-reverse;
+  }
+  #section-comentarios {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  #caja-comentario {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #comentarios-escritos {
+    width: 100%;
+  }
+  #descripcion-producto {
+    width: 100%;
+  }
+  #img-descripcion {
+    width: 100%;
+  }
+  #container-login-one {
+    display: none;
+  }
+  .texto-pedidos {
+    text-align: center;
+  }
+  .input-pagina-cliente {
+    margin-left: 0rem;
+  }
+  .imagen-caja {
+    display: none;
+  }
+  .cards-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+  }
+  #carouselExampleIndicators img {
+    height: 20rem;
+  }
+  .container-resumen, .formulario-titulo {
+    padding: 0;
+  }
+  .container-resumen #titulo-resumen-compra, .formulario-titulo #titulo-resumen-compra {
+    margin-top: 0;
+  }
+  .container-resumen #card-mobile, .formulario-titulo #card-mobile {
+    display: flex;
+  }
+  .container-resumen #img-articulo, .formulario-titulo #img-articulo {
+    display: none;
+  }
+  .container-resumen .formulario-titulo, .formulario-titulo .formulario-titulo {
+    margin-top: 0.5rem;
+  }
+}/*# sourceMappingURL=style-mobile.css.map */
