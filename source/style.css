@@ -30,65 +30,6 @@
   right: 5rem;
 }
 
-#photo {
-  width: 15rem;
-  border-radius: 2rem;
-  position: relative;
-}
-
-#file {
-  display: none;
-}
-
-#uploadBtn {
-  position: absolute;
-  width: 2rem;
-  border: solid #8C56A2;
-  border-radius: 2rem;
-  cursor: pointer;
-  color: #8C56A2;
-  background-color: rgba(140, 86, 162, 0.2941176471);
-  box-shadow: 2px 4px 4px #8E58A6;
-  margin-top: 15rem;
-  transform: translateX(-100%);
-}
-
-.div-datos-cliente {
-  border: 1px solid #AFBAEF;
-  width: 50rem;
-}
-
-.col-sm-1 {
-  text-align: center;
-}
-
-.imagen-caja {
-  width: 13rem;
-}
-
-.div-pedidos-curso {
-  margin-top: 5rem;
-}
-
-.div-historico-pedidos {
-  margin-bottom: 3rem;
-}
-
-.btn {
-  color: #8C56A2;
-  font-weight: bolder;
-}
-
-.boton-modificar-perfil {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.input-pagina-cliente {
-  margin-left: 4.7rem;
-}
-
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
@@ -131,6 +72,184 @@
   color: #8C56A2;
 }
 
+#number {
+  width: 2rem;
+}
+
+.caja1 {
+  display: flex;
+}
+
+/* slide */
+#carouselExampleIndicators img {
+  height: 40rem;
+}
+
+/* card */
+#catalogo-titulo {
+  padding: 3rem;
+}
+
+.cards-catalogo {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cads-plus {
+  width: 18rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#cads-plus:hover {
+  box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
+  transition: all;
+}
+
+.cads-plus img {
+  cursor: pointer;
+}
+
+#botones-car {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#botones-car input {
+  width: 2rem;
+}
+
+.card img {
+  display: flex;
+  padding: 2rem 0rem 1rem 5rem;
+  /* padding-left:5rem ;
+  padding-top: 2rem; */
+  width: 50%;
+  justify-content: center;
+  /* height: 5rem; */
+}
+
+summary:hover {
+  color: blueviolet;
+  transition: all 2s;
+}
+
+#btn-sidebar {
+  color: blueviolet;
+  border: dimgray;
+  transition: ease-in 1s;
+  /* padding-left: 4rem;
+  padding-right:4rem ; */
+}
+
+.parrafo-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.container-resumen, .formulario-envio {
+  width: 45vw;
+  margin: 1rem;
+}
+.container-resumen .img-card, .formulario-envio .img-card {
+  padding: 1rem;
+  width: 100%;
+}
+.container-resumen .formulario-titulo, .formulario-envio .formulario-titulo {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color, inherit);
+}
+.container-resumen #btn, .formulario-envio #btn {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+.container-resumen #btn:hover, .formulario-envio #btn:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
+}
+
+#btn-modal {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+#btn-modal:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
+}
+
+#photo {
+  width: 15rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  top: 17rem;
+  left: 19rem;
+  width: 2rem;
+  border: solid #8C56A2;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: #8C56A2;
+  background-color: rgba(140, 86, 162, 0.2941176471);
+  box-shadow: 2px 4px 4px #8E58A6;
+  transform: translateX(-100%);
+}
+
+.div-datos-cliente {
+  border: 1px solid #AFBAEF;
+  width: 50rem;
+}
+
+.col-sm-1 {
+  text-align: center;
+}
+
+.imagen-caja {
+  width: 13rem;
+}
+
+.div-pedidos-curso {
+  margin-top: 5rem;
+}
+
+.div-historico-pedidos {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  margin-left: 1rem;
+  color: #8C56A2;
+  font-weight: bolder;
+}
+
+.boton-modificar-perfil {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.input-pagina-cliente {
+  margin-left: 4.7rem;
+}
+
 #section-comentarios {
   margin: 3rem 0;
   margin-bottom: 4rem;
@@ -167,91 +286,6 @@
   border: 1px solid #AFBAEF;
   border-radius: 5px;
   margin-top: 2rem;
-}
-
-#number {
-  width: 2rem;
-}
-
-.caja1 {
-  display: flex;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* slide */
-#carouselExampleIndicators img {
-  height: 40rem;
-}
-
-/* card */
-.cards-catalogo {
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#cads-plus {
-  width: 18rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  /* padding-bottom: 2rem; */
-  /* cursor: pointer; */
-}
-
-#cads-plus:hover {
-  box-shadow: 1px 0px 5px 1px rgb(105, 94, 94);
-  transition: all 2s;
-}
-
-#catalogo-texto:hover {
-  color: blueviolet;
-  transition: all 2s;
-}
-
-#catalogo-texto {
-  cursor: pointer;
-}
-
-#botones-car {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#botones-car input {
-  width: 2rem;
-}
-
-.card img {
-  display: flex;
-  padding: 2rem 0rem 1rem 5rem;
-  /* padding-left:5rem ;
-  padding-top: 2rem; */
-  width: 50%;
-  justify-content: center;
-  /* height: 5rem; */
-}
-
-summary:hover {
-  color: blueviolet;
-  transition: all 2s;
-}
-
-/* .hover-button a:hover {
-  background-color: #8E58A6;
-} */
-#btn-sidebar {
-  color: blueviolet;
-  border: dimgray;
-  transition: ease-in 1s;
-  /* padding-left: 4rem;
-  padding-right:4rem ; */
 }
 
 #registro-login {
@@ -300,47 +334,6 @@ summary:hover {
   color: black;
 }
 #btn-login:hover {
-  color: #AEEBF2;
-  background-color: #8C56A2;
-  color: white;
-}
-
-.parrafo-intro {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.container-resumen, .formulario-envio {
-  width: 45vw;
-  margin: 1rem;
-}
-.container-resumen .formulario-titulo, .formulario-envio .formulario-titulo {
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
-  font-size: calc(1.325rem + 0.9vw);
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--bs-heading-color, inherit);
-}
-.container-resumen #btn, .formulario-envio #btn {
-  margin: 1rem 0 5rem 0;
-  padding: auto;
-  width: 5rem;
-  color: black;
-}
-.container-resumen #btn:hover, .formulario-envio #btn:hover {
-  color: #AEEBF2;
-  background-color: #8C56A2;
-  color: white;
-}
-
-#btn-modal {
-  margin: 1rem 0 5rem 0;
-  padding: auto;
-  width: 5rem;
-  color: black;
-}
-#btn-modal:hover {
   color: #AEEBF2;
   background-color: #8C56A2;
   color: white;

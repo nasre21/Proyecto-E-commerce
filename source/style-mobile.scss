@@ -1,4 +1,4 @@
-@media (max-width:411px) {
+@media (max-width:498px) {
     //=============================navBar=======================================
     #logo-gato{
         display: none;
@@ -15,6 +15,72 @@
     #img-usuario{
         margin-left: 3rem;        
     }
+
+    //=============================home========================================
+    .home-main {
+        .titulo {
+            padding-top: 4rem;
+            font-size: 3rem;
+        }
+
+        .home-container {
+            width: 98%;
+        }
+    }
+
+    //===========================carrito=============
+    .caja1 {
+        flex-direction:column-reverse;
+    }
+
+    //=====================catalogo=================
+    #catalogo-titulo {
+        padding: 1rem;
+    }
+
+    .cads-plus {
+        margin-top: 0;
+    }
+
+    .cards-catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1rem ;
+    width: 80%;
+    }
+
+    #carouselExampleIndicators {
+        margin-top: 2rem;
+
+        img{
+            height:auto;
+            }
+    }
+
+    //========================checkout=================================
+    .container-resumen, .formulario-titulo {
+        padding: 0;
+
+        #titulo-resumen-compra {
+            margin-top: 0;
+        }
+
+        #card-mobile {
+            display: flex;    
+        }
+
+        #img-articulo {
+            display: none;
+        }
+
+        .formulario-titulo {
+            margin-top: 0.5rem;
+        }
+    }
+ 
+    
 
     //==================descripcion del producto===============================
     #section-comentarios{
@@ -50,17 +116,7 @@
     display: none;
     }
 
-    //=============================home========================================
-    .home-main {
-        .titulo {
-            padding-top: 4rem;
-            font-size: 3rem;
-        }
-
-        .home-container {
-            width: 98%;
-        }
-    }
+    
     //============================cliente==================
     .texto-pedidos {
         text-align: center;
@@ -74,40 +130,7 @@
         display: none;
       }
 
-    //=====================catalogo=================
-    .cards-catalogo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:1rem ;
-        width: 80%;
-      
-      }
-      #carouselExampleIndicators img{
-        height:20rem;
-        }
-    
+  
 
-    //========================checkout=================================
-    .container-resumen, .formulario-titulo {
-        padding: 0;
-
-        #titulo-resumen-compra {
-            margin-top: 0;
-        }
-
-        #card-mobile {
-            display: flex;    
-        }
-
-        #img-articulo {
-            display: none;
-        }
-
-        .formulario-titulo {
-            margin-top: 0.5rem;
-        }
-    }
 }
 

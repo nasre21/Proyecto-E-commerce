@@ -15,7 +15,7 @@
     #img-usuario{
         margin-left: 3rem;        
     }
-    
+
     //===============home========================
     .home-main {
         .titulo {
@@ -26,21 +26,6 @@
             width: 75%;
             top: 40%;
         }
-    }
-    //==========================cliente=====================
-    .imagen-caja {
-        display: none;
-      }
-    
-      .boton-modificar-perfil {
-        
-        font-size: 1.2rem;
-      }
-
-    //===========================carrito=============
-    .caja1{
-        flex-direction:column-reverse;
-
     }
 
     //========================catalogo==================
@@ -53,9 +38,8 @@
   
   }
   #carouselExampleIndicators img{
-    height:30rem;
+    height:auto;
     }
-
 
     //=========================checkout========================
     #d-flex-column {
@@ -79,4 +63,14 @@
             padding: 1rem;
         }
     }
+
+    //==========================cliente=====================
+    .imagen-caja {
+        display: none;
+      }
+    
+      .boton-modificar-perfil {
+        
+        font-size: 1.2rem;
+      }
 }
