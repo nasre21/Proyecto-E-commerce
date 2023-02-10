@@ -105,6 +105,7 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
         listaUsuarios =
         [
         ["pepe","123445","Juanka","Martinez", "16/04/1999", "usuario@usuario.com","Bolueta","9","3","48004","Bizkaia","612121213","78564521L", "administrador"],
+
         ["JM","12345","Jose","Perez", "08/11/1996", "info@usuario.com","Bolueta","9","3","48004","Bizkaia","612121213","78564521L", "cliente"]
       ]
 
@@ -120,17 +121,26 @@ function saveUserData(usuario, contraseña, nombre, apellido, nacimiento, correo
       for(let i = 0; i< listaUsuarios.length; i++) {
         if(pCorreo == listaUsuarios[i][5] && pContrasenna == listaUsuarios[i][1]) {
           bAcceso = true;
+          
           sessionStorage.setItem('usuarioActivo', listaUsuarios[i][2] + ' ' + listaUsuarios[i][3]);
           sessionStorage.setItem('rolUsuarioActivo', listaUsuarios[i][13]);
         }
       }
 
       
-      // listaUsuarios.forEach(elemento => {
-      //      if(pCorreo == indexOf(elemento[5]) && pContrasenna == elemento[1]) {
-      //     bAcceso = true;
-      //      sessionStorage.setItem('usuarioActivo', listaUsuarios[elemento][2] + ' ' + listaUsuarios[elemento][3]);
-      //      sessionStorage.setItem('rolUsuarioActivo', listaUsuarios[elemento][13]);
+      // listaUsuarios.forEach((elemento, index, listaUsuarios) => {
+      //   if(pCorreo == elemento[5] && pContrasenna == elemento[1]) {
+      //       bAcceso = true;
+
+      //       console.log(true);
+
+
+      //     //  sessionStorage.setItem('usuarioActivo', listaUsuarios[elemento][2] + ' ' + listaUsuarios[elemento][3]);
+      //     //  sessionStorage.setItem('rolUsuarioActivo', listaUsuarios[elemento][13]);
+
+
+      //   }else {
+      //     console.log(false);
       //   }
 
         
