@@ -1,5 +1,9 @@
 
+let fecha = document.getElementById("fecha");
 
+let dataFecha = new Date();
+
+fecha.innerHTML = dataFecha.toLocaleDateString()
 
 
 
