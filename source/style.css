@@ -72,7 +72,13 @@
   color: #8C56A2;
 }
 
-#number {
+.inputNumero {
+  text-align: center;
+  width: 2rem;
+}
+
+.btn-mas, .btn-menos {
+  background-color: #8C56A2;
   width: 2rem;
 }
 
