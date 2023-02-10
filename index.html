@@ -26,12 +26,11 @@
  
   <div class="container-fluid  d-flex justify-content-end position-relative">
     
-    <p  class="parrafoFecha me-5 position-absolute " id="fecha"></p>
-    <select class="mt-3 me-4" name="idiomas" id="flags">
-      <option data-language="es">ES</option>
-      <option data-language="en">EN</option>
-      <option disabled value="EUS"></option>
-    </select>
+    <p  class="parrafoFecha me-5 position-absolute ">fecha</p>
+    <div id="flags" class="flags">
+      <div class="flags_item" data-language="es"><p>es</p></div>
+      <div class="flags_item" data-language="en"><p>en</p></div>
+    </div>
   </div>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -92,13 +91,14 @@
   <main class="home-main container-fluid">
     <h1 class="titulo">Topets</h1>
     <div class="container home-container rounded-3" id="border">
-      <p>
+      <p  class="eslogan" data-section="home" data-rol="eslogan">
         Te damos la bienvenida a este ricón para amantes de las mascotas.
         Queremos que nuestras mascotas estén felices y bien cuidadas por eso
-        os ofrecemos una amplio catálogo de productos para ellas.<br /><span class="entrar">Encuentra lo que necesitan
+        os ofrecemos una amplio catálogo de productos para ellas.</p><br /><span class="entrar" data-section="home
+        " data-rol="eslogan2">Encuentra lo que necesitan
           en
           <a href="catalogo.html"><strong>Topets</strong></a></span>.
-      </p>
+      
     </div>
   </main>
   <!--acaba main de la home-->
@@ -207,8 +207,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
-  <script src="js/app.js"></script>
+  <script src="js/cambioIdioma.js"></script>
 </body>
 
 </html>
