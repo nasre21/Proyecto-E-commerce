@@ -1,5 +1,8 @@
 
+let fecha = document.getElementById("fecha");
 
+let dataFecha = new Date();
+document.getElementById("fecha").innerHTML = fecha;
 
 
 
