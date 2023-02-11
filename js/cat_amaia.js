@@ -77,98 +77,107 @@ const productos = [
             nombre: "Pelota",
             id: "perro"
         },
-        precio: 0
+        precio: 3.99
     },
     {
         id: "pelota-04",
-        nombre: "",
-        imagen: "",
+        nombre: "Trixie Junior Pelota de cuerda anudada",
+        descripcion: "Duradera bola de nudos de cuerda fuerte para cachorros, resiste a los dientes puntiagudos, las fibras ayudan a la higiene dental, de 3 colores, ideal para masticar y tirar, mezcla de algodón",
+        imagen: "../image/perros/pelotas/pelota04_trixie_junior_knotenball.jpg",
         categoria: {
-            nombre: "Gatos",
-            id: "gato"
+            nombre: "Pelota",
+            id: "perro"
         },
-        precio: 0
+        precio: 2.99
     },
     //Pienso
     {
         id: "pienso-01",
-        nombre: "",
-        imagen: "",
+        nombre: "Ultima Adult para gatos esterilizados - Pack mixto",
+        imagen: "../image/gatos/pienso/pienso01_ultima_affinity_esterilizado_pienso_pack_mixto_4.jpg",
+        descripcion: "Piensos de alta calidad para gatos esterilizados, elaborado con L-carnitina para controlar el peso y con pocas grasas. ¡Prueba ahora las diferentes variedades a un precio increíble!",
         categoria: {
-            nombre: "Gatos",
+            nombre: "Pienso",
             id: "gato"
         },
-        precio: 0
+        precio: 31.99
     },
     {
         id: "pienso-02",
-        nombre: "",
-        imagen: "",
+        nombre: "Ultima Nature No Grain Esterilizados con buey",
+        descripcion: "Pienso sin cereales para gatos esterilizados, receta con carne de vacuno fresca de origen francés, aderezada con verduras, equilibrada y sana, con ácidos grasos omega 3, buen sabor",
+        imagen: "../image/gatos/pienso/pienso02_1_kg_64199_8410650238852_cat_4.jpg",
         categoria: {
-            nombre: "Gatos",
+            nombre: "Pienso",
             id: "gato"
         },
-        precio: 0
+        precio: 9.99
     },
     {
         id: "pienso-03",
-        nombre: "",
-        imagen: "",
+        nombre: "Royal Canin Giant Starter Madre y Cachorro",
+        descripcion: "¡Nueva receta! Pienso completo para perras gestantes y lactantes de razas muy grandes y para  sus cachorros, apoyo del microbioma, para reforzar las defensas, croquetas rehidratables.",
+        imagen: "../image/perros/pienso/pienso01_royalcanin_giantbreed_starter_motherbabydog_hs.jpg",
         categoria: {
-            nombre: "Gatos",
-            id: "gato"
+            nombre: "Pienso",
+            id: "perro"
         },
-        precio: 0
+        precio: 71.55
     },
     {
         id: "pienso-04",
-        nombre: "",
-        imagen: "",
+        nombre: "Royal Canin Giant Adult",
+        descripcion: "Pienso para perros muy grandes, de más de 45kg, a partir de 18 o 24 meses. Con ingredientes que favorecen la salud de cartílago y articulaciones. Con croquetas extragrandes y complejo de antioxidantes",
+        imagen: "../image/perros/pienso/pienso02_adultgiant_mv_eretailkit.jpg",
         categoria: {
-            nombre: "Gatos",
-            id: "gato"
+            nombre: "Pienso",
+            id: "perro"
         },
-        precio: 0
+        precio: 56.99
     },
     //Correas
     {
         id: "correa-01",
-        nombre: "",
-        imagen: "",
+        nombre: "Arnés Trixie Soft con correa para gatos",
+        descripcion: "Arnés suave con correa incluida, ideal para pasear gatos de interior, hecho de malla transpirable con acolchado para mayor comodidad, de ajuste continuo, correa con asa, no es posible elegir el color",
+        imagen: "../image/gatos/correas/correa01_trixie_softgeschirr_leine_katze_hs_01_5.jpg",
         categoria: {
-            nombre: "Gatos",
+            nombre: "Correa",
             id: "gato"
         },
-        precio: 0
+        precio: 14.49
     },
     {
         id: "correa-02",
-        nombre: "",
-        imagen: "",
+        nombre: "Arnés Trixie para gatos",
+        descripcion: "Arnés con correa para gatos, con un sistema de cierre especial. El material es de nailon suave. Medidas (cuello y pecho): 26-43 cm, incl. 120 cm de correa",
+        imagen: "../image/gatos/correas/correa02_trixiekatzengeschirr_schwarz_06_2011_4.jpg",
         categoria: {
-            nombre: "Gatos",
+            nombre: "Correa",
             id: "gato"
         },
-        precio: 0
+        precio: 4.99
     },
     {
         id: "correa-03",
-        nombre: "",
-        imagen: "",
+        nombre: "Correa ajustable de cuero Heim marrón para perros",
+        descripcion: "Correa multiposición remachada, regulable de 3 formas, hecha de cuero marrón suave y engrasado.",
+        imagen: "../image/perros/correas/correa01_heim_fuehrleine_1.jpg",
         categoria: {
-            nombre: "Gatos",
-            id: "gato"
+            nombre: "Correa",
+            id: "perro"
         },
-        precio: 0
+        precio: 16.99
     },
     {
         id: "correa-04",
-        nombre: "",
-        imagen: "",
+        nombre: "Correa ajustable Heim negra para perros",
+        descripcion: "Correa multiposición de cuero suave y engrasado. Es de color negro y la longitud se puede regular tres veces. De fabricación alemana y hecha a mano para que cada correa sea única.",
+        imagen: "../image/perros/correas/correa02_heim_soft_fl_1_1.jpg",
         categoria: {
-            nombre: "Gatos",
-            id: "gato"
+            nombre: "Correa",
+            id: "perro"
         },
-        precio: 0
+        precio: 16.99
     }
 ];
