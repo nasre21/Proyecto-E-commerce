@@ -181,3 +181,42 @@ const productos = [
         precio: 16.99
     }
 ];
+
+const contenedorProductos = document.querySelector("#cards-catalogo");
+
+function cargarProductos() {
+    productos.forEach(producto => {
+        const div = document.createElement("div");
+        div.classList.add("card", "cads-plus");
+        div. innerHTML = `
+        <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">${producto.titulo}</h5>
+            <p class="card-text"> ${producto.descripcion}</p>
+            <p class="card-text">${producto.precio} <span>€</span></p>
+            <div id="botones-car" class="container">
+                <button id="btn-sidebar" class="botones btn border">Agregar al carrito</button>
+                <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+            </div>
+        </div>
+        `
+    })
+}
+
+/* 
+<div class="card cads-plus">
+<img id="imagen1" src="/image/perros/dog-comida.png" class="card-img-top" alt="..." />
+<div class="card-body">
+  <h5 class="card-title">Card title</h5>
+  <p class="card-text">
+    Some quick example text to build on the card title and make up the
+    bulk of the card's content.
+  </p>
+  <div id="botones-car" class="container">
+    <button id="btn-sidebar" class="botones btn border">
+      Agregar al carrito
+    </button>
+    <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+  </div>
+</div>
+</div> */
