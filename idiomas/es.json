@@ -17,6 +17,11 @@
         "cantidad":"Cantidad",
         "precio":"Precio",
         "resumen":"Resumen"
+    },
+
+    "checkout":{
+        "cliente":"¿Ya eres cliente? ¡<a href=login-page.html>Inicia sesión</a>!<br> Si no, rellena el siguiente formulario.",
+        "resumen":"Resumen de compra"
     }
 }
 
