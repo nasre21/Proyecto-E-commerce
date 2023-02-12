@@ -16,5 +16,5 @@ const changeLanguage = async (language) => {
 };
 
 flagsElement.addEventListener('click', (e) => {
-    changeLanguage(e.target.parentElement.dataset.language);
+    changeLanguage(e.target.value);
 });
