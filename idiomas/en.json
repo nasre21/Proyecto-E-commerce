@@ -10,6 +10,13 @@
         "titulo2":"Who we are",
         "titulo2.1":"Topets is made up of: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri and Jessica Mosteiro",
         "titulo3":"CONTACT"
+    },
+    
+    "carrito":{
+        "titulo":"Your chart",
+        "cantidad":"Quantity",
+        "precio":"Price",
+        "resumen":"Summary"
     }
 }
 

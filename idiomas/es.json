@@ -10,6 +10,13 @@
         "titulo2":"Quienes somos",
         "titulo2.1":"Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri y Jessica Mosteiro",
         "titulo3":"CONTACTO"
+    },
+    
+    "carrito":{
+        "titulo":"Tu carrito",
+        "cantidad":"Cantidad",
+        "precio":"Precio",
+        "resumen":"Resumen"
     }
 }
 

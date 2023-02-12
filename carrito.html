@@ -23,12 +23,11 @@
  
   <div class="container-fluid  d-flex justify-content-end position-relative">
     
-    <p  class="parrafoFecha me-5 position-absolute " id="fecha"></p>
-    <select class="mt-3 me-4" name="idiomas" id="idiomas">
-      <option value="">ES</option>
-      <option value="">EN</option>
-      <option disabled value="EUS"></option>
-    </select>
+    <p  class="parrafoFecha me-5 position-absolute ">fecha</p>
+    <div id="flags" class="flags">
+      <div class="flags_item" data-language="es"><p>es</p></div>
+      <div class="flags_item" data-language="en"><p>en</p></div>
+    </div>
   </div>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -84,7 +83,7 @@
       </div>
     </div>
   </nav>
-  <h2 class="p-4">Tu carrito</h2>
+  <h2 class="p-4" data-section="carrito" data-value="titulo">Tu carrito</h2>
   <div class=" caja1 w-100 justify-content-center m-lg-3 p-4 ">
     <!-- div de la izquierda---------- -->
     <div class="divizq w-100 me-5  ">
@@ -95,7 +94,7 @@
           <div class="">
             <h5 class="border-bottom">Pienso de Gato</h5>
             <div class="d-flex">
-              <p>Cantidad:</p>
+              <p data-section="carrito" data-value="cantidad">Cantidad:</p>
               <div class="d-flex justify-content-end w-100 gap-1">
                 <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
                 <input class="number inputNumero rounded" type="text" id="number1" value="0">
@@ -104,7 +103,7 @@
             </div>
           </div>
           <div class="d-flex border-bottom">
-            <p>Precio:</p>
+            <p data-section="carrito" data-value="precio">Precio:</p>
             <p class="d-flex justify-content-end w-100">55€</p>
           </div>
         </div>
@@ -115,7 +114,7 @@
           <div class="">
             <h5 class="border-bottom">Pienso de Gato</h5>
             <div class="d-flex">
-              <p>Cantidad:</p>
+              <p data-section="carrito" data-value="cantidad">Cantidad:</p>
               <div class="d-flex justify-content-end w-100 gap-1">
                 <button class="btn-mas border rounded " onclick="changeValue('number2', 'decrease')">-</button>
                 <input class="number inputNumero rounded " type="text" id="number2" value="0">
@@ -124,7 +123,7 @@
             </div>
           </div>
           <div class="d-flex border-bottom">
-            <p>Precio:</p>
+            <p data-section="carrito" data-value="precio">Precio:</p>
             <p class="d-flex justify-content-end w-100">55€</p>
           </div>
         </div>
@@ -133,7 +132,7 @@
     </div>
     <!-- div de la derecha------------ -->
     <div class="divderecha w-100 me-4 ">
-      <h3 class="border-bottom border-3 border-dark mb-5">Resumen</h3>
+      <h3 class="border-bottom border-3 border-dark mb-5" data-section="carrito" data-value="resumen">Resumen</h3>
       <div class="totalSin d-flex">
         <p class="w-75">Total Productos:</p>
         <p id="precioSinDescuento" class="text-end">150€</p>
@@ -180,23 +179,6 @@
           <!-- Instagram -->
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
               class="fab fa-instagram"></i></a>
-
-          <!-- Linkedin -->
-          <!-- <a
-                class="btn text-white btn-floating m-1"
-                style="background-color: #0082ca"
-                href="#!"
-                role="button"
-                ><i class="fab fa-linkedin-in"></i
-              ></a> -->
-          <!-- Github -->
-          <!-- <a
-                class="btn text-white btn-floating m-1"
-                style="background-color: #333333"
-                href="#!"
-                role="button"
-                ><i class="fab fa-github"></i
-              ></a> -->
         </section>
         <!-- Section: Social media -->
       </div>
@@ -218,10 +200,10 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p>
+                  <p  data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -232,8 +214,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                  <p>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -243,7 +225,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -270,7 +252,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+    <div id="copy-footer" class="text-center p-4" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
@@ -280,6 +262,7 @@
 <script src="js/app.js"></script>
 <script src="/catalogo.js"></script>
 <script src="/checkout.html"></script>
+<script src="js/cambioIdioma.js"></script>
 </body>
 
 </html>
