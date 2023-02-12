@@ -1,7 +1,15 @@
 {
     "home": {
         "eslogan": "We welcome you to this corner for pet lovers. We want our pets to be happy and well cared for, so we offer you a wide catalog of products for them.",
-        "eslogan2": "Find what they need in Topets."
+        "eslogan2": "Find what they need in "
+    },
+
+    "footer":{
+        "titulo1": "COOKIES POLICY",
+        "titulo1.1": "Read our cookies policy here",
+        "titulo2":"Who we are",
+        "titulo2.1":"Topets is made up of: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri and Jessica Mosteiro",
+        "titulo3":"CONTACT"
     }
 }
- 
+

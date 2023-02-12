@@ -7,11 +7,11 @@ const changeLanguage = async (language) => {
     const texts = await requestJson.json();
      console.log(texts);
      
-    for(textToChange of textsToChange) {
+    for(const textToChange of textsToChange) {
         const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
         
-        console.log(section, value);
+        textToChange.innerHTML = texts[section][value];
     }
 };
 

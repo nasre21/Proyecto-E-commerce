@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="source/style.css" />
   <link rel="stylesheet" href="source/style-tablet.css">
   <link rel="stylesheet" href="source/style-mobile.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -91,13 +91,12 @@
   <main class="home-main container-fluid">
     <h1 class="titulo">Topets</h1>
     <div class="container home-container rounded-3" id="border">
-      <p  class="eslogan" data-section="home" data-rol="eslogan">
+      <p  class="eslogan" data-section="home" data-value="eslogan">
         Te damos la bienvenida a este ricón para amantes de las mascotas.
         Queremos que nuestras mascotas estén felices y bien cuidadas por eso
-        os ofrecemos una amplio catálogo de productos para ellas.</p><br /><span class="entrar" data-section="home
-        " data-rol="eslogan2">Encuentra lo que necesitan
-          en
-          <a href="catalogo.html"><strong>Topets</strong></a></span>.
+        os ofrecemos una amplio catálogo de productos para ellas.</p><span class="entrar" data-section="home" data-value="eslogan2">Encuentra lo que necesitan
+          en</span>
+          <a href="catalogo.html"><strong>Topets</strong></a>.
       
     </div>
   </main>
@@ -148,10 +147,10 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p>
+                  <p  data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -162,8 +161,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                  <p>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -173,7 +172,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -207,6 +206,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+
   <script src="js/cambioIdioma.js"></script>
 </body>
 
