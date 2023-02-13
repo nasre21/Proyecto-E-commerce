@@ -78,11 +78,26 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
-          <li>
-            <div class="carrito ">
-              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-          </div>
-          </li>
+          <li class="submenu">
+            <img src="/image/cart.png" id="img-carrito">
+            <div id="carrito">
+                    
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            </div>
+    </li>
         </ul>
       </div>
     </div>
@@ -215,7 +230,22 @@
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            bulk of the card's co <!-- Linkedin -->
+          <!-- <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a> -->
+          <!-- Github -->
+          <!-- <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a> -->ntent.
           </p>
           <div id="botones-car" class="container">
             <button id="btn-sidebar" class="botones btn border">
@@ -358,22 +388,7 @@
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
               class="fab fa-instagram"></i></a>
 
-          <!-- Linkedin -->
-          <!-- <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #0082ca"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a> -->
-          <!-- Github -->
-          <!-- <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #333333"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a> -->
+         
         </section>
         <!-- Section: Social media -->
       </div>
@@ -454,6 +469,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="/js/"></script>
   <script src="js/app.js"></script>
   <script src="/js/catalogo.js"></script>
   <script src="/js/cat_amaia.js"></script>
