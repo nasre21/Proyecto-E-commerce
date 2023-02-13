@@ -186,7 +186,9 @@ const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
+const botonesAgregar = document.querySelectorAll(".btn-sidebar");
 
+//cargar los productos en el catalogo
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
@@ -218,8 +220,8 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button id="btn-sidebar" class="botones btn border">Agregar al carrito</button>
-                    <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+                    <button class="botones btn border btn-sidebar">Agregar al carrito</button>
+                    <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
             </div>
             `;
@@ -228,4 +230,25 @@ function cargarProductos(productosElegidos) {
     })
 }
 
-cargarProductos();
+cargarProductos(productos);
+
+//cargar productos según categoria
+linkCategorias.forEach(link => {
+    link.addEventListener('click', (e) => {
+        linkCategorias.forEach(link => link.classList.remove("active"));
+        e.target.classList.add("active");
+        
+        if(e.target.id != "todo") {
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
+            const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
+            cargarProductos(productosLink);
+        } else {
+            tituloCatalogo.innerText = "Catalogo completo";
+            cargarProductos(productos);
+        }
+    })
+})
+
+//agregar productos al carrito
+
