@@ -19,15 +19,37 @@
   width: 3rem;
 }
 
-#bubble {
-  font-size: 0.8rem;
-  bottom: 0.5rem;
-  right: 1.3rem;
-}
-
 .parrafoFecha {
   top: 1rem;
   right: 5rem;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: rgb(206, 199, 199);
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+#vaciar-carrito {
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  color: #8E58A6;
+  text-decoration: none;
+  text-align: center;
 }
 
 .home-main {
@@ -117,14 +139,14 @@
   cursor: pointer;
 }
 
-.botones-car {
+#botones-car {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.botones-car input {
+#botones-car input {
   width: 2rem;
 }
 
