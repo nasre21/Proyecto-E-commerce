@@ -40,14 +40,15 @@
           <li class="nav-item">
             <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
+        
           <li id="link" class="nav-item dropdown mt-4">
             <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Catalogo
             </a>
             <ul class="dropdown-menu">
-              <li><a id="todo" class="link-categoria active dropdown-item" href="#">Todos</a></li>
-              <li><a id="perro" class="link-categoria dropdown-item" href="#">Perros</a></li>
-              <li><a id="gato" class="link-categoria dropdown-item" href="#">Gatos</a></li>
+              <li><a class="dropdown-item" href="#">Perros</a></li>
+              <li><a class="dropdown-item" href="#">Gatos</a></li>
+              <li><a class="dropdown-item" href="#">Aves</a></li>
             </ul>
           </li>
           <li id="logo-gato" class="nav-item ">
@@ -73,8 +74,9 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
+<<<<<<< HEAD
           <li class="submenu">
-                            <img src="img/cart.png" id="img-carrito">
+                            <img src="/image/cart.png" id="img-carrito">
                             <div id="carrito">
                                     
                                     <table id="lista-carrito" class="u-full-width">
@@ -93,6 +95,13 @@
                                     <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
                     </li>
+=======
+          <li>
+            <div class="carrito ">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+          </div>
+          </li>
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
         </ul>
       </div>
     </div>
@@ -135,12 +144,20 @@
   <div class="container">
     <h2 id="catalogo-titulo" class="text-center">Catalogo completo</h2>
     <div id="cards-catalogo" class="container cards-catalogo">
+<<<<<<< HEAD
+     
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
   </div>
   <!----------fin catalogo ------->
   <!-- catalogo oculto  -->
   <details>
     <summary class="text-center fs-3 fw-bold">Ver mas</summary>
     <div id="cards-catalogo-oculto" class="container cards-catalogo">
+<<<<<<< HEAD
+      
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
     </div>
   </details>
   <!-- afin catalogo oculto -->
@@ -169,23 +186,11 @@
           <!-- Instagram -->
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
               class="fab fa-instagram"></i></a>
+<<<<<<< HEAD
 
-          <!-- Linkedin -->
-          <!-- <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #0082ca"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a> -->
-          <!-- Github -->
-          <!-- <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #333333"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a> -->
+         
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
         </section>
         <!-- Section: Social media -->
       </div>
@@ -207,10 +212,10 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p>
+                  <p  data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -221,8 +226,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                  <p>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -232,7 +237,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -259,19 +264,20 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+    <div id="copy-footer" class="text-center p-4" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-  <script src="/js/pruebacarrito.js"></script>
+  
   <script src="js/app.js"></script>
   <script src="/js/catalogo.js"></script>
   <script src="/js/cat_amaia.js"></script>
   <script src="/js/description_producto.js"></script>
   <script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/cambioIdioma.js"></script>
 </body>
 </html>

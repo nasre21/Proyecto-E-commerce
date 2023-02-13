@@ -197,7 +197,7 @@ function cargarProductos(productosElegidos) {
         if (index < 6) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
-            div. innerHTML = `
+            div.innerHTML = `
             <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
@@ -213,12 +213,12 @@ function cargarProductos(productosElegidos) {
         } else {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
-            div. innerHTML = `
+            div.innerHTML = `
             <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
-                <p class="card-text">${producto.precio} <span>€</span></p>
+                 <p class="card-text"> ${producto.precio}<span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
                     <button class="botones btn border btn-sidebar">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
