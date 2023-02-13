@@ -180,7 +180,11 @@ const productos = [
         },
         precio: 16.99
     }
+
 ];
+
+
+
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
@@ -224,3 +228,10 @@ function cargarProductos() {
 }
 
 cargarProductos();
+
+// localStorage.setItem("productos", JSON.stringify(productos));
+
+// let recuperarDatos = localStorage.getItem("productos");
+// let pasarObjeto = JSON.parse(recuperarDatos);
+// const img = document.querySelectorAll(".card-img-top");
+// img.forEach()
