@@ -13,7 +13,8 @@ showDate();
 
 // suma y resta productos del carrito
 function changeValue(id, operation) {
-    var value = parseInt(document.getElementById(id).value, 10);
+    var value 
+    = parseInt(document.getElementById(id).value, 10);
     value = isNaN(value) ? 0 : value;
     if (operation === "increase") {
       value++;
