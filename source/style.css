@@ -117,14 +117,14 @@
   cursor: pointer;
 }
 
-.botones-car {
+#botones-car {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.botones-car input {
+#botones-car input {
   width: 2rem;
 }
 

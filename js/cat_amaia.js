@@ -184,9 +184,14 @@ const productos = [
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
+const linkCategorias = document.querySelectorAll(".link-categoria");
+const tituloCatalogo = document.querySelector("#catalogo-titulo");
 
-function cargarProductos() {
-    productos.forEach((producto, index) => {
+function cargarProductos(productosElegidos) {
+    contenedorProductos.innerHTML = "";
+    contenedorOcultoProductos.innerHTML = "";
+
+    productosElegidos.forEach((producto, index) => {
         if (index < 6) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
@@ -223,4 +228,18 @@ function cargarProductos() {
     })
 }
 
-cargarProductos();
+cargarProductos(productos);
+
+linkCategorias.forEach(link => {
+    link.addEventListener('click', (e) => {
+        linkCategorias.forEach(link => link.classList.remove("active"));
+        e.target.classList.add("active");
+        
+        if(e.target.id != "todo") {
+            const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
+            cargarProductos(productosLink);
+        } else {
+            cargarProductos(productos);
+        }
+    })
+})
