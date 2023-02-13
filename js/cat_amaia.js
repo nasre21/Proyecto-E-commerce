@@ -252,3 +252,7 @@ linkCategorias.forEach(link => {
 
 //agregar productos al carrito
 
+cargarProductos();
+
+// agregar al carrito 
+
