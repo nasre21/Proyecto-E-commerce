@@ -74,11 +74,29 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
-          <li>
-            <div class="carrito ">
-              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-          </div>
-          </li>
+
+          <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+=======
+
         </ul>
       </div>
     </div>
@@ -121,12 +139,14 @@
   <div class="container">
     <h2 id="catalogo-titulo" class="text-center">Catalogo completo</h2>
     <div id="cards-catalogo" class="container cards-catalogo">
+     
   </div>
   <!----------fin catalogo ------->
   <!-- catalogo oculto  -->
   <details>
     <summary class="text-center fs-3 fw-bold">Ver mas</summary>
     <div id="cards-catalogo-oculto" class="container cards-catalogo">
+      
     </div>
   </details>
   <!-- afin catalogo oculto -->
@@ -155,6 +175,8 @@
           <!-- Instagram -->
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
               class="fab fa-instagram"></i></a>
+
+         
         </section>
         <!-- Section: Social media -->
       </div>
