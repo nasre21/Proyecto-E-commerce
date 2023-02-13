@@ -1,24 +1,20 @@
+// mostrar fecha en pantalla 
+function showDate() {
+  const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  const date = new Date();
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  document.getElementById("fecha").innerHTML = `${day} de ${month} del ${year}`;
+}
 
-let fecha = document.getElementById("fecha");
-
-let dataFecha = new Date();
-document.getElementById("fecha").innerHTML = fecha;
-
-
-
-
-
-
-
-
-
-
-
+showDate();
 
 
 // suma y resta productos del carrito
 function changeValue(id, operation) {
-    var value = parseInt(document.getElementById(id).value, 10);
+    var value 
+    = parseInt(document.getElementById(id).value, 10);
     value = isNaN(value) ? 0 : value;
     if (operation === "increase") {
       value++;

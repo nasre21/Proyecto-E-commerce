@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,15 +20,12 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 </head>
-
 <body>
- 
   <div class="container-fluid  d-flex justify-content-end position-relative">
-    
     <p  class="parrafoFecha me-5 position-absolute " id="fecha"></p>
-    <select class="mt-3 me-4" name="idiomas" id="flags">
-      <option data-language="es">ES</option>
-      <option data-language="en">EN</option>
+    <select name="idiomas" id="flags" class="flags mt-3 me-4">
+      <option class="flags_item" data-language="es"><p>es</p></option>
+      <option class="flags_item" data-language="en"><p>en</p></option>
       <option disabled value="EUS"></option>
     </select>
   </div>
@@ -44,15 +40,14 @@
           <li class="nav-item">
             <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
-        
           <li id="link" class="nav-item dropdown mt-4">
             <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Catalogo
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Perros</a></li>
-              <li><a class="dropdown-item" href="#">Gatos</a></li>
-              <li><a class="dropdown-item" href="#">Aves</a></li>
+              <li><a id="todo" class="link-categoria active dropdown-item" href="#">Todos</a></li>
+              <li><a id="perro" class="link-categoria dropdown-item" href="#">Perros</a></li>
+              <li><a id="gato" class="link-categoria dropdown-item" href="#">Gatos</a></li>
             </ul>
           </li>
           <li id="logo-gato" class="nav-item ">
@@ -78,17 +73,31 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
-          <li>
-            <div class="carrito ">
-              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-          </div>
-          </li>
+          <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- -----------acaba navigacion------------ -->
-
+  <!-- -----------acaba navegacion------------ -->
   <!-- slide -->
   <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="true">
     <div class="carousel-indicators">
@@ -121,219 +130,20 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- Catalogo con js -->
-  
-
-
-
-  <!-- ----------- catalogo de imagenes----------- -->
-
+  <!-- fin slide -->
+  <!------------- catalogo de imagenes----------- -->
   <div class="container">
-    <h2 id="catalogo-titulo" class="text-center">Catalogo</h2>
-    <div class="container cards-catalogo">
-      <div  class="card cads-plus">
-        <img id="imagen1" src="/image/perros/dog-comida.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div  class="card cads-plus">
-        <img id="imagen2" src="/image/gatos/img_de_gato3.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div  class="card cads-plus">
-        <img id="imagen3" src="/image/perros/frontline.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div  class="card cads-plus">
-        <img id="imagen4" src="./image/perros/scalibar.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img id="imagen5" src="/image/gatos/gato-danoup-removebg-preview.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="cads-plus card">
-        <img id="imagen6" src="/image/gatos/comida de cato.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 id="catalogo-titulo" class="text-center">Catalogo completo</h2>
+    <div id="cards-catalogo" class="container cards-catalogo">
   </div>
-
-  <!-- catalogo 2  -->
+  <!----------fin catalogo ------->
+  <!-- catalogo oculto  -->
   <details>
     <summary class="text-center fs-3 fw-bold">Ver mas</summary>
-    <div class="container cards-catalogo">
-      <div id="cads-plus" class="card cads-plus">
-        <img src="/image/gatos/hamster.png" id="imagen7" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img src="/image/perros/seresto dog.png" id="imagen8" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img src="/image/perros/impluse.png" class="card-img-top" id="imagen9" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img src="./image/perros/acana-perros.png" class="card-img-top" id="imagen10" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img src="/image/gatos/cat-comida.png" id="imagen11" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
-      <div class="card cads-plus">
-        <img src="/image/gatos/comida de cato.jpg" id="imagen12" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div id="botones-car" class="container">
-            <button id="btn-sidebar" class="botones btn border">
-              Agregar al carrito
-            </button>
-            <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
-          </div>
-        </div>
-      </div>
+    <div id="cards-catalogo-oculto" class="container cards-catalogo">
     </div>
   </details>
-  <!-- aqui termina slide -->
-
+  <!-- afin catalogo oculto -->
   <!-- footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
     <!-- Section: Social media -->
@@ -456,10 +266,12 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="/js/pruebacarrito.js"></script>
   <script src="js/app.js"></script>
   <script src="/js/catalogo.js"></script>
+  <script src="/js/cat_amaia.js"></script>
+  <script src="/js/description_producto.js"></script>
   <script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>

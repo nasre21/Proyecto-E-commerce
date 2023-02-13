@@ -13,6 +13,13 @@ const buTon11 = document.getElementById("imagen11");
 const buTon12 = document.getElementById("imagen12");
 
 
+const pruducto = document.getElementById("product");
+const catalogo1 = document.getElementById("catalogo1");
+
+
+
+
+
 
 
 
@@ -34,53 +41,57 @@ const buTon12 = document.getElementById("imagen12");
 
 
 
+
 function open1(){
-   document.location.assign("/descripcionproducto.html");
+   window.location.assign("/descripcionproducto.html");
+
+   catalogo1.repla
+
    }
   
 
 function open2(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
   
 function open3(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
   
 function open4(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
   
 function open5(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
   
 function open6(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
   
 function open7(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
 
 function open8(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
     }
 
 function open9(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
 
 function open10(){
-   document.location.assign("/descripcionproducto.html");
+   window.location.assign("/descripcionproducto.html");
   }
 
 function open11(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
 
 function open12(){
-  document.location.assign("/descripcionproducto.html");
+  window.location.assign("/descripcionproducto.html");
   }
 
   // catalogo
