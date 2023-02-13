@@ -198,14 +198,14 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
-                <p class="card-text">${producto.precio} <span>€</span></p>
+                <p class="card-text precio">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button id="btn-sidebar" class="botones btn border">Agregar al carrito</button>
-                    <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+                    <button class="btn-sidebar botones btn border">Agregar al carrito</button>
+                    <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
             `;
@@ -214,11 +214,11 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
-                 <p class="card-text"> ${producto.precio}<span>€</span></p>
+                <p class="card-text precio"> ${producto.precio}<span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
                     <button class="botones btn border btn-sidebar">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
