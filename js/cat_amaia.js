@@ -190,7 +190,7 @@ const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
-const botonesAgregar = document.querySelectorAll(".btn-sidebar");
+
 
 //cargar los productos en el catalogo
 function cargarProductos(productosElegidos) {
