@@ -239,7 +239,7 @@ linkCategorias.forEach(link => {
         e.target.classList.add("active");
         
         if(e.target.id != "todo") {
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.target.id);
             tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
             const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
             cargarProductos(productosLink);
@@ -251,4 +251,6 @@ linkCategorias.forEach(link => {
 })
 
 //agregar productos al carrito
-
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".btn-sidebar");
+}
