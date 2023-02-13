@@ -236,14 +236,13 @@ function cargarProductos(productosElegidos) {
 
 cargarProductos(productos);
 
-//cargar productos según categoria
 linkCategorias.forEach(link => {
     link.addEventListener('click', (e) => {
         linkCategorias.forEach(link => link.classList.remove("active"));
         e.target.classList.add("active");
         
         if(e.target.id != "todo") {
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.target.id);
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
             const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
             cargarProductos(productosLink);
@@ -253,8 +252,3 @@ linkCategorias.forEach(link => {
         }
     })
 })
-
-//agregar productos al carrito
-function actualizarBotonesAgregar() {
-    botonesAgregar = document.querySelectorAll(".btn-sidebar");
-}
