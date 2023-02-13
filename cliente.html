@@ -38,14 +38,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav d-flex mb-lg-0">
+        <ul class="navbar-nav d-flex mb-lg-0 ">
           <li class="nav-item">
             <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
-
+        
           <li id="link" class="nav-item dropdown mt-4">
-            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Catalogo
             </a>
             <ul class="dropdown-menu">
@@ -54,22 +53,21 @@
               <li><a class="dropdown-item" href="#">Aves</a></li>
             </ul>
           </li>
-          <li id="logo-gato" class="nav-item">
-            <img src="/image/logoToPets-sin-blanco.png" alt="" />
+          <li id="logo-gato" class="nav-item ">
+            <img  src="/image/logoToPets-sin-blanco.png" alt="" />
           </li>
           <li id="search_">
             <form id="search" class="d-flex" role="search">
-              <input id="input-search" class="form-control me-2" type="search" placeholder="Search"
-                aria-label="Search" />
+              <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button id="btn-login" class="btn btn border col" type="submit">
                 Search
               </button>
             </form>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+              <img id="img-usuario"  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
                 class="rounded-circle" alt="Avatar" loading="lazy" />
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -79,10 +77,9 @@
             </div>
           </li>
           <li>
-            <div class="carrito">
-              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative"><span id="bubble"
-                  class="badge badge-primary text-bg-danger position-absolute">0</span></i>
-            </div>
+            <div class="carrito ">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+          </div>
           </li>
         </ul>
       </div>
@@ -266,10 +263,10 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p>
+                  <p  data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -280,8 +277,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                  <p>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -291,7 +288,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -318,7 +315,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+    <div id="copy-footer" class="text-center p-4" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
@@ -331,6 +328,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="/js/cliente.js"></script>
+  <script src="js/cambioIdioma.js"></script>
 </body>
 
 </html>
