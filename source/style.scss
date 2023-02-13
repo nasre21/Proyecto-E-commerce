@@ -55,18 +55,17 @@ $padding:20rem;
 }
 .submenu {
   position: relative;
-  top:2rem;
-  left:1rem ;
 }
+
 .submenu #carrito{
   display: none;
 }
 .submenu:hover #carrito{
   display: block;
   position: absolute;
-  left: -14rem;
+  right:0;
 
-  top: 3rem;
+  top:100%;
   z-index: 1;
   background-color: rgb(206, 199, 199);
   padding: 20px;
