@@ -1,0 +1,26 @@
+{
+    "home": {
+        "eslogan": "Ongi etorria ematen dizuegu maskota zaleentzako txoko honetara. Gure maskotak pozik eta ondo zainduta egotea nahi dugu, horregatik produktuen katalogo zabala eskaintzen dizuegu.",
+        "eslogan2": "Aurkitu behar dutena hemen <a href=catalogo.html><strong>Topets</strong></a>"
+    },
+
+    "footer":{
+        "titulo1": "COOKIES POLITIKA",
+        "titulo1.1":"Irakurri gure cookie-politika hemen",
+        "titulo2":"Guri buruz",
+        "titulo2.1":"Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri y Jessica Mosteiro",
+        "titulo3":"KONTAKTU"
+    },
+    
+    "carrito":{
+        "titulo":"Zure saskia",
+        "cantidad":"Zenbatekoa",
+        "precio":"Prezioa",
+        "resumen":"Laburpen"
+    },
+
+    "checkout":{
+        "cliente":"Klientea zara? <a href=login-page.html>Hasi saioa</a>!<br> Hala ez bada, bete beheko formularioa.",
+        "resumen":"Resumen de compra"
+    }
+}
