@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,11 +20,8 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 </head>
-
 <body>
- 
   <div class="container-fluid  d-flex justify-content-end position-relative">
-    
     <p  class="parrafoFecha me-5 position-absolute " id="fecha"></p>
     <select name="idiomas" id="flags" class="flags mt-3 me-4">
       <option class="flags_item" data-language="es"><p>es</p></option>
@@ -78,6 +74,7 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
+<<<<<<< HEAD
           <li class="submenu">
                             <img src="/image/cart.png" id="img-carrito">
                             <div id="carrito">
@@ -98,12 +95,18 @@
                                     <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
                     </li>
+=======
+          <li>
+            <div class="carrito ">
+              <i class="fa-solid fa-cart-shopping fa-2xl mt-5 ms-4 position-relative "><span id="bubble" class="badge badge-primary text-bg-danger position-absolute">0</span></i>
+          </div>
+          </li>
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
         </ul>
       </div>
     </div>
   </nav>
-  <!-- -----------acaba navigacion------------ -->
-
+  <!-- -----------acaba navegacion------------ -->
   <!-- slide -->
   <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="true">
     <div class="carousel-indicators">
@@ -136,25 +139,28 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- Catalogo con js -->
-
-  <!-- ----------- catalogo de imagenes----------- -->
-
+  <!-- fin slide -->
+  <!------------- catalogo de imagenes----------- -->
   <div class="container">
-    <h2 id="catalogo-titulo" class="text-center">Catalogo</h2>
+    <h2 id="catalogo-titulo" class="text-center">Catalogo completo</h2>
     <div id="cards-catalogo" class="container cards-catalogo">
+<<<<<<< HEAD
      
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
   </div>
-
-  <!-- catalogo 2  -->
+  <!----------fin catalogo ------->
+  <!-- catalogo oculto  -->
   <details>
     <summary class="text-center fs-3 fw-bold">Ver mas</summary>
     <div id="cards-catalogo-oculto" class="container cards-catalogo">
+<<<<<<< HEAD
       
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
     </div>
   </details>
-  <!-- aqui termina slide -->
-
+  <!-- afin catalogo oculto -->
   <!-- footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
     <!-- Section: Social media -->
@@ -180,8 +186,11 @@
           <!-- Instagram -->
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
               class="fab fa-instagram"></i></a>
+<<<<<<< HEAD
 
          
+=======
+>>>>>>> a23e2246da737335b0355fe01e7c3612fe894db5
         </section>
         <!-- Section: Social media -->
       </div>
@@ -203,10 +212,10 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p>
+                  <p  data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -217,8 +226,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Quienes somos</h6>
-                  <p>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -228,7 +237,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -255,7 +264,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+    <div id="copy-footer" class="text-center p-4" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
@@ -269,7 +278,6 @@
   <script src="/js/description_producto.js"></script>
   <script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
- 
+  <script src="js/cambioIdioma.js"></script>
 </body>
-
 </html>
