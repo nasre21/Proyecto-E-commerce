@@ -201,8 +201,8 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button id="btn-sidebar" class="botones btn border">Agregar al carrito</button>
-                    <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+                    <button class="botones btn border">Agregar al carrito</button>
+                    <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
             `;
@@ -217,8 +217,8 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button id="btn-sidebar" class="botones btn border">Agregar al carrito</button>
-                    <input type="number" min="0" name="contadorcarrito" id="contadorcarrito" class="w-25 text-center" />
+                    <button class="botones btn border ">Agregar al carrito</button>
+                    <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
             </div>
             `;
@@ -246,3 +246,10 @@ linkCategorias.forEach(link => {
     })
 })
 
+
+
+// trabajando en el carrito
+
+function actualizarBotones(){
+    const btn = document.querySelectorAll(".botones");
+}
