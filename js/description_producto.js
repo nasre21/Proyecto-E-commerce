@@ -1,5 +1,6 @@
 
 let contenedorId = document.getElementById("contenedor-description");
+let 
 function mostrarProducto(){
 
  let consigueProducto = localStorage.getItem("productos");

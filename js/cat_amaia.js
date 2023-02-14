@@ -181,17 +181,19 @@ const productos = [
         precio: 16.99
     }
 ];
+
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos", listaProductos);
+
+
 
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
+let botones = document.querySelectorAll(".botones");
 
-
-//cargar los productos en el catalogo
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
@@ -200,7 +202,7 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
@@ -216,13 +218,13 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div. innerHTML = `
-            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img id="imagen1" id= ${producto.id} class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
-                <div class="container botones-car" id="${producto.id}">
-                    <button class="botones btn border ">Agregar al carrito</button>
+                <div class="container botones-car"id="${producto.id}>
+                    <button class="botones btn border" ">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -265,10 +267,12 @@ function actualizarBotonesAgregar() {
 
 
    function agregarAlCarrito(e){
-       const idBoton = e.currentTarget.parentElement.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
-     console.log(idBoton);
-       
+       const idBoton = e.target.parentElement.id;
+        const productoAgregado = productos.find(producto => producto.id === idBoton);
+     console.log(productoAgregado);
+
+       productosEnCarrito.push(productoAgregado);
+       console.log(productosEnCarrito);
   }
 
 
