@@ -1,4 +1,5 @@
 // PRODUCTOS
+
 const productos = [
     //Rascadores
     {
@@ -10,7 +11,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 60.99
+        precio: 60.99,
+        cantidad:1
     },
     {
         id: "rascador-02",
@@ -21,7 +23,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 9.49
+        precio: 9.49,
+        cantidad:1
     },
     {
         id: "rascador-03",
@@ -32,7 +35,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 25.99
+        precio: 25.99,
+        cantidad:1
     },
     {
         id: "rascador-0",
@@ -43,7 +47,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 47.99
+        precio: 47.99,
+        cantidad:1
     },
     //Pelotas
     {
@@ -55,7 +60,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 3.99
+        precio: 3.99,
+        cantidad:1
     },
     {
         id: "pelota-02",
@@ -66,7 +72,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 2.29
+        precio: 2.29,
+        cantidad:1
     },
     {
         id: "pelota-03",
@@ -77,7 +84,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 3.99
+        precio: 3.99,
+        cantidad:1
     },
     {
         id: "pelota-04",
@@ -88,7 +96,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 2.99
+        precio: 2.99,
+        cantidad:1
     },
     //Pienso
     {
@@ -100,7 +109,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 31.99
+        precio: 31.99,
+        cantidad:1
     },
     {
         id: "pienso-02",
@@ -111,7 +121,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 9.99
+        precio: 9.99,
+        cantidad:1
     },
     {
         id: "pienso-03",
@@ -122,7 +133,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 71.55
+        precio: 71.55,
+        cantidad:1
     },
     {
         id: "pienso-04",
@@ -133,7 +145,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 56.99
+        precio: 56.99,
+        cantidad:1
     },
     //Correas
     {
@@ -145,7 +158,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 14.49
+        precio: 14.49,
+        cantidad:1
     },
     {
         id: "correa-02",
@@ -156,7 +170,8 @@ const productos = [
             nombre: "Gatos",
             id: "gato"
         },
-        precio: 4.99
+        precio: 4.99,
+        cantidad:1
     },
     {
         id: "correa-03",
@@ -167,7 +182,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 16.99
+        precio: 16.99,
+        cantidad:1
     },
     {
         id: "correa-04",
@@ -178,7 +194,8 @@ const productos = [
             nombre: "Perros",
             id: "perro"
         },
-        precio: 16.99
+        precio: 16.99,
+        cantidad:1
     }
 ];
 
@@ -269,10 +286,15 @@ function actualizarBotonesAgregar() {
    function agregarAlCarrito(e){
        const idBoton = e.target.parentElement.id;
         const productoAgregado = productos.find(producto => producto.id === idBoton);
-     console.log(productoAgregado);
 
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+          
+    }else{     
+      
+        productoAgregado.cantidad = parseInt(e.target.parentElement.querySelector(".contadorcarrito").value);
        productosEnCarrito.push(productoAgregado);
-       console.log(productosEnCarrito);
+       }
+        console.log(productosEnCarrito);
   }
 
 
