@@ -1,11 +1,10 @@
 
 let contenedorId = document.getElementById("contenedor-description");
-let 
 function mostrarProducto(){
 
  let consigueProducto = localStorage.getItem("productos");
  let productosObjeto = JSON.parse(consigueProducto);
- let idProducto = localStorage.getItem("productoSeleccionado");
+ let idProducto = localStorage.getItem("nombreProducto");
  let productosId = JSON.parse(idProducto);
 
  productosObjeto.forEach((element) => {
