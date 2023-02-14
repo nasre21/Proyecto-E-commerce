@@ -206,7 +206,7 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button class="botones btn border">Agregar al carrito</button>
+                    <button  class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -230,6 +230,7 @@ function cargarProductos(productosElegidos) {
             contenedorOcultoProductos.append(div);
         }
     })
+    actualizarBotonesAgregar()
 }
 
 cargarProductos(productos);
@@ -251,10 +252,26 @@ linkCategorias.forEach(link => {
     })
 })
 
-
-
 // trabajando en el carrito
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".botones");
 
-function actualizarBotones(){
-    const btn = document.querySelectorAll(".botones");
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
 }
+
+   const productosEnCarrito = [];
+
+
+   function agregarAlCarrito(e){
+       const idBoton = e.currentTarget.parentElement.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+     console.log(idBoton);
+       
+  }
+
+
+
+
+
