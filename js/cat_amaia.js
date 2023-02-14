@@ -200,7 +200,7 @@ const productos = [
 ];
 
 listaProductos = JSON.stringify(productos);
-localStorage.setItem("listaProductos", listaProductos);
+localStorage.setItem("listaProductos",listaProductos);
 
 
 
@@ -211,6 +211,16 @@ const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
+
+//const imagen = document.querySelectorAll()
+
+contenedorProductos.addEventListener('click', (eventoClick)=>{
+    console.log(eventoClick.target.id);
+    let productoSeleccionado=eventoClick.target.id
+    localStorage.setItem("nombreProducto", productoSeleccionado);
+    window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+});
+
 
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
