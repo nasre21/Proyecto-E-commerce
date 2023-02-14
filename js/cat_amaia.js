@@ -257,4 +257,7 @@ linkCategorias.forEach(link => {
 
 function actualizarBotones(){
     const btn = document.querySelectorAll(".botones");
-}
+
+   btn.forEach(boton => {
+    boton.addEventListener('click', agregarAlCarrito)}
+)}
