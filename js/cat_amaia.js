@@ -208,7 +208,7 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text precio">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button class="btn-sidebar botones btn border">Agregar al carrito</button>
+                    <button class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
