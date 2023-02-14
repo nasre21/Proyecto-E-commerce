@@ -1,14 +1,19 @@
 
 let contenedorId = document.getElementById("contenedor-description");
+
 function mostrarProducto(){
-
- let consigueProducto = localStorage.getItem("productos");
+ // alert("hellow")
+ let consigueProducto = localStorage.getItem("listaProductos");
  let productosObjeto = JSON.parse(consigueProducto);
+//  alert(productosObjeto)
  let idProducto = localStorage.getItem("nombreProducto");
- let productosId = JSON.parse(idProducto);
-
+ let productosId = idProducto;
+//  alert(productosObjeto)
+//  alert(productosId)
  productosObjeto.forEach((element) => {
+  // alert(productosId)
     if(element.id === productosId){
+     
         contenedorId.innerHTML = ` <div id="contenedor-description" class="caja border row mb-3 container mx-auto">
         <div id="img-descripcion" class="container  d-flex flex-column col-6 ">
           <img id="imagen-descripcion2" class="w-25 m-auto mt-5 mb-3" src=${element.imagen} alt="" />
