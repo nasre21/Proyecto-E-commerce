@@ -21,3 +21,11 @@ function changeValue(id, operation) {
   
   const total = (price1 + price2) * (1 - discount);
   document.getElementById("total").innerHTML = total;
+
+
+//agregar al carrito
+
+const productosEnCarrito = JSON.parse(localStorage.getItem("productosEnCarrito "));
+
+console.log(productosEnCarrito);
+  

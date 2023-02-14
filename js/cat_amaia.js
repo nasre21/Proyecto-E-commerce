@@ -298,7 +298,7 @@ function actualizarBotonesAgregar() {
        productosEnCarrito.push(productoAgregado);
        }
        actualizarNumerito ();
-       localStorage.setItem("productosEnCarrito ", JSON.stringify(productosEnCarrito));
+       localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
   };
 
 function actualizarNumerito (){
@@ -306,6 +306,8 @@ function actualizarNumerito (){
     numerito.innerHTML = nuevoNumerito
    
 }
+
+
 
 
 
