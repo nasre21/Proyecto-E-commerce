@@ -210,6 +210,7 @@ const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto
 const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
+const numerito = document.querySelector("#bubble");
 
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -242,7 +243,7 @@ function cargarProductos(productosElegidos) {
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car"id="${producto.id}>
                     <button class="botones btn border" ">Agregar al carrito</button>
-                    <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
+                    <input type="number" min="0"  name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
             </div>
             `;
@@ -284,18 +285,27 @@ function actualizarBotonesAgregar() {
 
 
    function agregarAlCarrito(e){
+    
        const idBoton = e.target.parentElement.id;
         const productoAgregado = productos.find(producto => producto.id === idBoton);
 
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
-          
+     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton) ;
+          productosEnCarrito[index].cantidad += 1;;
     }else{     
       
-        productoAgregado.cantidad = parseInt(e.target.parentElement.querySelector(".contadorcarrito").value);
+        productoAgregado.cantidad = +1;
        productosEnCarrito.push(productoAgregado);
        }
-        console.log(productosEnCarrito);
-  }
+       actualizarNumerito ();
+       localStorage.setItem("productosEnCarrito ", JSON.stringify(productosEnCarrito));
+  };
+
+function actualizarNumerito (){
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerHTML = nuevoNumerito
+   
+}
 
 
 
