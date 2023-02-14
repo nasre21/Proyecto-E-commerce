@@ -180,7 +180,6 @@ const productos = [
         },
         precio: 16.99
     }
-
 ];
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos", listaProductos);
@@ -192,29 +191,22 @@ const linkCategorias = document.querySelectorAll(".link-categoria");
 const tituloCatalogo = document.querySelector("#catalogo-titulo");
 
 
-contenedorProductos.addEventListener('click', (eventoClick)=>{
-    console.log(eventoClick.target.id);
-    let productoSeleccionado=eventoClick.target.id
-    localStorage.setItem("nombreProducto", productoSeleccionado);
-    window.location.href = "descripcionproducto.html";
-});
 //cargar los productos en el catalogo
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
-
     productosElegidos.forEach((producto, index) => {
         if (index < 6) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img class="card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
-                <p class="card-text precio">${producto.precio} <span>€</span></p>
+                <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button class="btn-sidebar botones btn border">Agregar al carrito</button>
+                    <button class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -223,14 +215,14 @@ function cargarProductos(productosElegidos) {
         } else {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
-            div.innerHTML = `
-            <img class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            div. innerHTML = `
+            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
-                <p class="card-text precio"> ${producto.precio}<span>€</span></p>
+                <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button class="botones btn border btn-sidebar">Agregar al carrito</button>
+                    <button class="botones btn border ">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -243,12 +235,12 @@ function cargarProductos(productosElegidos) {
 cargarProductos(productos);
 
 linkCategorias.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener("click", (e) => {
         linkCategorias.forEach(link => link.classList.remove("active"));
         e.target.classList.add("active");
-        
+
         if(e.target.id != "todo") {
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.target.id);
             tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
             const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
             cargarProductos(productosLink);
@@ -258,3 +250,11 @@ linkCategorias.forEach(link => {
         }
     })
 })
+
+
+
+// trabajando en el carrito
+
+function actualizarBotones(){
+    const btn = document.querySelectorAll(".botones");
+}

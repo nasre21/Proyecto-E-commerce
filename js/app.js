@@ -10,30 +10,30 @@ function showDate() {
 
 showDate();
 
+//cambiar idioma
+const flagsElement = document.getElementById('flags');
 
-// suma y resta productos del carrito
-function changeValue(id, operation) {
-    var value 
-    = parseInt(document.getElementById(id).value, 10);
-    value = isNaN(value) ? 0 : value;
-    if (operation === "increase") {
-      value++;
-    } else if (operation === "decrease") {
-      value = (value > 0) ? value - 1 : 0;
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async (language) => {
+    const requestJson = await fetch(`../idiomas/${language}.json`);
+    const texts = await requestJson.json();
+     console.log(texts);
+     
+    for(const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+        
+        textToChange.innerHTML = texts[section][value];
     }
-    document.getElementById(id).value = value;
-  }
+};
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.value);
+});
 
 
 
-
-//  esto hace la suma del carrito
-  const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-  const price2 = parseFloat(document.getElementById("envio").innerHTML);
-  const discount = parseFloat(document.getElementById("descuento").innerHTML)/100;
-  
-  const total = (price1 + price2) * (1 - discount);
-  document.getElementById("total").innerHTML = total;
 
 
   
