@@ -21,6 +21,15 @@
     "checkout":{
         "cliente":"Already a customer? <a href=login-page.html>Log in</a>!<br> If not, fill in the following form.",
         "resumen":"Purchase Summary"
+    },
+
+    "login-page":{
+        "correo":"Mail:",
+        "contraseña":"Password:",
+        "iniciar":"Log in",
+        "olvidado":"I forgot my password!!",
+        "crear":"Sign in"
     }
 }
+
 
