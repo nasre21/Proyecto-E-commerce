@@ -13,9 +13,10 @@
     
     "carrito":{
         "titulo":"Tu carrito",
-        "cantidad":"Cantidad",
-        "precio":"Precio",
+        "descuento":"Descuento",
+        "precio":"Precio envio",
         "resumen":"Resumen"
+
     },
 
     "checkout":{
@@ -35,6 +36,9 @@
         "formulario":"Formulario de Registro",
         "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
         "enviar":"Enviar"
+    },
+    "catalogo":{
+        "titulo":"Catalogo completo"
     }
 }
 
