@@ -1,47 +1,62 @@
-const inputusuario = document.querySelector("#usuario");
-const inputnombre = document.querySelector("#nombre");
-const inputapellidos = document.querySelector("#apellidos");
-// const inputedad = document.querySelector("#edad").value;
-// const inputcorreo = document.querySelector("#correo-registro").value;
-// const inputpassword = document.querySelector("#password").value;
-// const inputcalle = document.querySelector("#calle").value;
-// const inputportal = document.querySelector("#portal").value;
-// const inputpiso = document.querySelector("#piso").value;
-// const inputcodigoPostal = document.querySelector("#codigopostal").value;
-// const inputprovincia = document.querySelector("#provincia").value;
-// const inputtelefono = document.querySelector("#telefono").value;
-// const inputidentificacion = document.querySelector("#identificacion").value;
+const inputUsuario = document.querySelector("#usuario");
+const inputNombre = document.querySelector("#nombre");
+const inputApellidos = document.querySelector("#apellidos");
+const inputEdad = document.querySelector("#edad");
+const inputCorreo = document.querySelector("#correo-registro");
+const inputPassword = document.querySelector("#password");
+const inputCalle = document.querySelector("#calle");
+const inputPortal = document.querySelector("#portal");
+const inputPiso = document.querySelector("#piso");
+const inputCodigoPostal = document.querySelector("#codigopostal");
+const inputProvincia = document.querySelector("#provincia");
+const inputTelefono = document.querySelector("#telefono");
+const inputIdentificacion = document.querySelector("#identificacion");
+
 const botonEnviar = document.querySelector("#registro");
 
-const usuarios = [];
+const usuarios = obtenerUsuarios();
+console.log("usuarios de linea17" + usuarios);
 
-botonEnviar.addEventListener("click", guardarUsuario);
+botonEnviar.addEventListener("click", registroUsuario);
 
-function guardarUsuario(event) {
+function registroUsuario(event) {
     event.preventDefault();
-
-    usuario= inputusuario.value;
-    nombre= inputnombre.value;
-    apellidos= inputapellidos.value;
-    // inputedad: edad,
-    // inputcorreo: correo,
-    // inputpassword: password,
-    // inputcalle: calle,
-    // inputportal: portal,
-    // inputpiso: piso,
-    // inputcodigoPostal: codigoPostal,
-    // inputprovincia: provincia,
-    // inputtelefono: telefono,
-    // inputidentificacion: identificacion
-    let user = {
-        usuario: inputusuario.value,
-        nombre: inputnombre.value,
-        apellidos: inputapellidos.value,
-    }
-    usuarios.push(user);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    console.log(usuarios);
+    cogerDatosUsuario();
+    guardarUsuario();
+    irAIniciarSesion();
 }
+
+function cogerDatosUsuario() {
+    let user = {
+        usuario: inputUsuario.value,
+        nombre: inputNombre.value,
+        apellidos: inputApellidos.value,
+        edad: inputEdad.value, 
+        password: inputCorreo.value,
+        calle: inputCalle.value,
+        portal: inputPortal.value,
+        piso: inputPiso.value,
+        codigoPostal: inputCodigoPostal.value,
+        provincia: inputProvincia.value,
+        telefono: inputTelefono.value,
+        identificacion: inputIdentificacion.value
+    }
+    console.log("user es " + JSON.stringify(user));
+    usuarios.push(user);
+    console.log("usuarios es " + JSON.stringify(usuarios));
+}
+
+ function guardarUsuario() {
+     localStorage.setItem("usuarios", JSON.stringify(usuarios));
+ }
+
+ function irAIniciarSesion() {
+     window.location.href="./login-page.html"
+ }
+
+ function obtenerUsuarios() {
+    return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
+ }
 
 
 
