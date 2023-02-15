@@ -198,15 +198,11 @@ const productos = [
         cantidad:1
     }
 ];
+
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos",listaProductos);
 
-contenedorProductos.addEventListener('click', (eventoClick)=>{
-    console.log(eventoClick.target.id);
-    let productoSeleccionado=eventoClick.target.id
-    localStorage.setItem("nombreProducto", productoSeleccionado);
-    window.location.href = "descripcionproducto.html";
-});
+
 
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
@@ -216,17 +212,44 @@ const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
-//const imagen = document.querySelectorAll()
 
-contenedorProductos.addEventListener('click', (eventoClick)=>{
+const imagenes = document.querySelectorAll(".image-prudoctos");
+
+
+// imagen.for
+for(let i=0; i< imagenes.length; i++){
+   let imagee=  imagenes[i];
+imagee.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id
     localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
-});
+    cambiar(imagenes[i]);
+})
+}
 
+// function cambiar(){
+//     let valor = imagenes.getAttribute("class");
+//     if (valor == "image-prudoctos") {  
+//         corazon.setAttribute("class", "image-prudoctos"); 
+ 
+//   }
 
-//cargar los productos en el catalogo
+// }
+// let corazones= document.getElementsByClassName("corazon-vacio")
+//     console.log(corazones) for( let i=0; i< corazones.length; i++){
+//     corazones[i].addEventListener("click", ()=>{ 
+//     cambiar(corazones[i]);  
+//     }) 
+//     }   
+//     function cambiar(corazon) {     
+//     let valor =  corazon.getAttribute("class");  
+//     if (valor == "fa-regular fa-heart corazon-vacio") {  
+//     corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
+//     }else {         
+//      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
+//      } }
+
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
@@ -235,13 +258,13 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img class="card-img-top"  src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="image-prudoctos card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button class="botones btn border">Agregar al carrito</button>
+                    <button  class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -251,7 +274,7 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div. innerHTML = `
-            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img id= ${producto.id} class="image-prudoctos card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
@@ -265,6 +288,7 @@ function cargarProductos(productosElegidos) {
             contenedorOcultoProductos.append(div);
         }
     })
+    actualizarBotonesAgregar()
 }
 
 cargarProductos(productos);
@@ -286,12 +310,13 @@ linkCategorias.forEach(link => {
     })
 })
 
-
-
 // trabajando en el carrito
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".botones");
 
-function actualizarBotones(){
-    const btn = document.querySelectorAll(".botones");
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
 }
 
    const productosEnCarrito = [];

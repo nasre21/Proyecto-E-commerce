@@ -13,29 +13,20 @@
     
     "carrito":{
         "titulo":"Your chart",
-        "cantidad":"Quantity",
-        "precio":"Price",
-        "resumen":"Summary"
+        "descuento":"discount",
+        "precio":"shipping price",
+        "resumen":"summary"
+
     },
 
     "checkout":{
         "cliente":"Already a customer? <a href=login-page.html>Log in</a>!<br> If not, fill in the following form.",
         "resumen":"Purchase Summary"
-    },
-
-    "login-page":{
-        "correo":"Mail:",
-        "contraseña":"Password:",
-        "iniciar":"Log in",
-        "olvidado":"I forgot my password!!",
-        "crear":"Sign in"
-    },
-    
-    "formulario":{
-        "formulario":"Registration Form",
-        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Accept terms and conditions.",
-        "enviar":"Send"
     }
+    ,"catalogo":{
+        "titulo":"Catalogue completed"
+    }
+  
 }
 
 
