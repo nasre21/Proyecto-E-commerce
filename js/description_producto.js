@@ -1,17 +1,22 @@
 
 let contenedorId = document.getElementById("contenedor-description");
+
 function mostrarProducto(){
-
- let consigueProducto = localStorage.getItem("productos");
+ // alert("hellow")
+ let consigueProducto = localStorage.getItem("listaProductos");
  let productosObjeto = JSON.parse(consigueProducto);
- let idProducto = localStorage.getItem("productoSeleccionado");
- let productosId = JSON.parse(idProducto);
-
+//  alert(productosObjeto)
+ let idProducto = localStorage.getItem("nombreProducto");
+ let productosId = idProducto;
+//  alert(productosObjeto)
+//  alert(productosId)
  productosObjeto.forEach((element) => {
+  // alert(productosId)
     if(element.id === productosId){
+     
         contenedorId.innerHTML = ` <div id="contenedor-description" class="caja border row mb-3 container mx-auto">
-        <div id="img-descripcion" class="container  d-flex flex-column col-6 ">
-          <img id="imagen-descripcion2" class="w-25 m-auto mt-5 mb-3" src=${element.imagen} alt="" />
+        <div id="img-descripcion" class="imagenes container  d-flex flex-column col-6 ">
+          <img  id="imagen-descripcion2" class="w-25 m-auto mt-5 mb-3" src=${element.imagen} alt="" />
   
           <div class="botones d-flex justify-content-center mb-5">
             <input type="number" class="input-number me-2" min="0" />
