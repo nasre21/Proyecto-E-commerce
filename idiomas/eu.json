@@ -1,7 +1,6 @@
 {
     "home": {
-        "eslogan": "Ongi etorria ematen dizuegu maskota zaleentzako txoko honetara. Gure maskotak pozik eta ondo zainduta egotea nahi dugu, horregatik produktuen katalogo zabala eskaintzen dizuegu.",
-        "eslogan2": "Aurkitu behar dutena hemen <a href=catalogo.html><strong>Topets</strong></a>"
+        "eslogan": "Ongi etorria ematen dizuegu maskota zaleentzako txoko honetara. Gure maskotak pozik eta ondo zainduta egotea nahi dugu, horregatik produktuen katalogo zabala eskaintzen dizugu.<br/><span class='entrar'>Sartu <a href=catalogo.html><strong>Topets</strong></a> eta aurkitu behar dutena.</span>"
     },
 
     "footer":{
