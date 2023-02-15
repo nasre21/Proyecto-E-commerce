@@ -13,9 +13,9 @@
     
     "carrito":{
         "titulo":"Your chart",
-        "descuento":"discount",
-        "precio":"shipping price",
-        "resumen":"summary"
+        "descuento":"Discount",
+        "precios":"Shipping price:",
+        "ressumen":"Summary"
 
     },
 

@@ -14,8 +14,8 @@
     "carrito":{
         "titulo":"Tu carrito",
         "descuento":"Descuento",
-        "precio":"Precio envio",
-        "resumen":"Resumen"
+        "precios":"Precio envio:",
+        "ressumen":"Resumen"
 
     },
 
