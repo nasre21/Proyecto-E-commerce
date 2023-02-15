@@ -22,6 +22,9 @@
     "checkout":{
         "cliente":"Already a customer? <a href=login-page.html>Log in</a>!<br> If not, fill in the following form.",
         "resumen":"Purchase Summary"
+    },
+    "catalogo":{
+        
     }
 }
 

@@ -212,15 +212,44 @@ const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
-//const imagen = document.querySelectorAll()
+
+const imagenes = document.querySelectorAll(".image-prudoctos");
+
+
+// imagen.for
+//imagenes.forEach(element =>{
 
 contenedorProductos.addEventListener('click', (eventoClick)=>{
-    console.log(eventoClick.target.id);
+   // console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id
     localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
-});
+    })
+// })
 
+
+
+// function cambiar(){
+//     let valor = imagenes.getAttribute("class");
+//     if (valor == "image-prudoctos") {  
+//         corazon.setAttribute("class", "image-prudoctos"); 
+ 
+//   }
+
+// }
+// let corazones= document.getElementsByClassName("corazon-vacio")
+//     console.log(corazones) for( let i=0; i< corazones.length; i++){
+//     corazones[i].addEventListener("click", ()=>{ 
+//     cambiar(corazones[i]);  
+//     }) 
+//     }   
+//     function cambiar(corazon) {     
+//     let valor =  corazon.getAttribute("class");  
+//     if (valor == "fa-regular fa-heart corazon-vacio") {  
+//     corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
+//     }else {         
+//      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
+//      } }
 
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -230,7 +259,7 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img class="card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="image-prudoctos card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
@@ -246,7 +275,7 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div. innerHTML = `
-            <img id="imagen1" id= ${producto.id} class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img id= ${producto.id} class="image-prudoctos card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
