@@ -29,6 +29,12 @@
         "iniciar":"Iniciar sesión",
         "olvidado":"Has olvidado tu Contraseña !!",
         "crear":"Crear cuenta"
+    },
+    
+    "formulario":{
+        "formulario":"Formulario de Registro",
+        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
+        "enviar":"Enviar"
     }
 }
 

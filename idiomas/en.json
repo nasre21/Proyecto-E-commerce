@@ -29,6 +29,12 @@
         "iniciar":"Log in",
         "olvidado":"I forgot my password!!",
         "crear":"Sign in"
+    },
+    
+    "formulario":{
+        "formulario":"Registration Form",
+        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Accept terms and conditions.",
+        "enviar":"Send"
     }
 }
 
