@@ -20,11 +20,11 @@ function mostrarProducto(){
   
           <div class="botones d-flex justify-content-center mb-5">
             <input type="number" class="input-number me-2" min="0" />
-            <div id="btn-sidebar" class="botones btn  border">Agregar al carrito</div>
+            <div class="botones btn  border">Agregar al carrito</div>
           </div>
         </div>
   
-        <div id="descripcion-producto"
+        <div
           class="descripcion-producto d-flex justify-content-center mb-5 mt-5  col-6 flex-wrap ">
           <h2 class="col-12">${element.nombre}</h2>
           <p class="col-12">
