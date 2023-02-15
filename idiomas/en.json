@@ -10,12 +10,20 @@
         "titulo2.1":"Topets is made up of: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri and Jessica Mosteiro",
         "titulo3":"CONTACT"
     },
-    
-    "carrito":{
-        "titulo":"Your chart",
-        "descuento":"Discount",
-        "precios":"Shipping price:",
-        "ressumen":"Summary"
+        "carrito":{
+            "titulo":"Your chat",
+            "items": "2 Ittems",
+            "pienso": "Cat food",
+            "cantidad":"Amount",
+            "precio":"Price",
+
+            "piensos": "Cat food",
+            "cantidadd":"Amount",
+            "precioss":"Price",
+            "ressumen":"Summary",
+            "descuento":"Discount",
+            "precios":"Price"
+            
 
     },
 
