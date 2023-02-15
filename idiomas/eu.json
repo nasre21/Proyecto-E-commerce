@@ -1,7 +1,6 @@
 {
     "home": {
-        "eslogan": "Ongi etorria ematen dizuegu maskota zaleentzako txoko honetara. Gure maskotak pozik eta ondo zainduta egotea nahi dugu, horregatik produktuen katalogo zabala eskaintzen dizuegu.",
-        "eslogan2": "Aurkitu behar dutena hemen <a href=catalogo.html><strong>Topets</strong></a>"
+        "eslogan": "Ongi etorria ematen dizuegu maskota zaleentzako txoko honetara. Gure maskotak pozik eta ondo zainduta egotea nahi dugu, horregatik produktuen katalogo zabala eskaintzen dizugu.<br/><span class='entrar'>Sartu <a href=catalogo.html><strong>Topets</strong></a> eta aurkitu behar dutena.</span>"
     },
 
     "footer":{
@@ -22,5 +21,20 @@
     "checkout":{
         "cliente":"Klientea zara? <a href=login-page.html>Hasi saioa</a>!<br> Hala ez bada, bete beheko formularioa.",
         "resumen":"Resumen de compra"
+    },
+
+    "login-page":{
+        "correo":"Correo:",
+        "contraseña":"Contraseña:",
+        "iniciar":"Iniciar sesión",
+        "olvidado":"Has olvidado tu Contraseña !!",
+        "crear":"Crear cuenta"
+    },
+    
+    "formulario":{
+        "formulario":"Formulario de Registro",
+        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
+        "enviar":"Enviar"
     }
 }
+

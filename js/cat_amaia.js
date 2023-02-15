@@ -198,11 +198,15 @@ const productos = [
         cantidad:1
     }
 ];
-
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos",listaProductos);
 
-
+contenedorProductos.addEventListener('click', (eventoClick)=>{
+    console.log(eventoClick.target.id);
+    let productoSeleccionado=eventoClick.target.id
+    localStorage.setItem("nombreProducto", productoSeleccionado);
+    window.location.href = "descripcionproducto.html";
+});
 
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
@@ -251,6 +255,7 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
 //      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
 //      } }
 
+//cargar los productos en el catalogo
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
@@ -259,13 +264,17 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
+<<<<<<< HEAD
             <img class="image-prudoctos card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
+=======
+            <img class="card-img-top"  src="${producto.imagen}" alt="${producto.nombre}" />
+>>>>>>> 8e3b56d0732b13c47d13b543be2709a8b1c52ad4
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
                 <div class="container botones-car" id="${producto.id}">
-                    <button  class="botones btn border">Agregar al carrito</button>
+                    <button class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
             </div>
@@ -275,7 +284,11 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div. innerHTML = `
+<<<<<<< HEAD
             <img id= ${producto.id} class="image-prudoctos card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+=======
+            <img id="imagen1" class="card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+>>>>>>> 8e3b56d0732b13c47d13b543be2709a8b1c52ad4
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
@@ -289,7 +302,6 @@ function cargarProductos(productosElegidos) {
             contenedorOcultoProductos.append(div);
         }
     })
-    actualizarBotonesAgregar()
 }
 
 cargarProductos(productos);
@@ -311,13 +323,12 @@ linkCategorias.forEach(link => {
     })
 })
 
-// trabajando en el carrito
-function actualizarBotonesAgregar() {
-    botonesAgregar = document.querySelectorAll(".botones");
 
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
-    });
+
+// trabajando en el carrito
+
+function actualizarBotones(){
+    const btn = document.querySelectorAll(".botones");
 }
 
    const productosEnCarrito = [];

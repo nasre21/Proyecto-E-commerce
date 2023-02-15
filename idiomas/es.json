@@ -1,7 +1,6 @@
 {
     "home": {
-        "eslogan": "Te damos la bienvenida a este ricón para amantes de las mascotas. Queremos que nuestras mascotas estén felices y bien cuidadas por eso os ofrecemos una amplio catálogo de productos para ellas.",
-        "eslogan2": "Encuentra lo que necesitan en <a href=catalogo.html><strong>Topets</strong></a>"
+        "eslogan": "Te damos la bienvenida a este ricón para amantes de las mascotas. Queremos que nuestras mascotas estén felices y bien cuidadas por eso os ofrecemos una amplio catálogo de productos para ellas.<br/><span class='entrar'>Entra en <a href='catalogo.html'><strong>Topets</strong></a> y encuentra lo que necesitan.</span>"
     },
 
     "footer":{
@@ -22,6 +21,20 @@
     "checkout":{
         "cliente":"¿Ya eres cliente? ¡<a href=login-page.html>Inicia sesión</a>!<br> Si no, rellena el siguiente formulario.",
         "resumen":"Resumen de compra"
+    },
+
+    "login-page":{
+        "correo":"Correo:",
+        "contraseña":"Contraseña:",
+        "iniciar":"Iniciar sesión",
+        "olvidado":"Has olvidado tu Contraseña !!",
+        "crear":"Crear cuenta"
+    },
+    
+    "formulario":{
+        "formulario":"Formulario de Registro",
+        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
+        "enviar":"Enviar"
     }
 }
 
