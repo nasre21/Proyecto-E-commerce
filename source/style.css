@@ -219,6 +219,18 @@ summary:hover {
   color: white;
 }
 
+#registro {
+  margin: 1rem 0 5rem 0;
+  padding: auto;
+  width: 5rem;
+  color: black;
+}
+#registro:hover {
+  color: #AEEBF2;
+  background-color: #8C56A2;
+  color: white;
+}
+
 #photo {
   width: 15rem;
   border-radius: 2rem;

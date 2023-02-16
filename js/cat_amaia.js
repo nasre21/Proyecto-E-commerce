@@ -222,9 +222,9 @@ const imagenes = document.querySelectorAll(".image-prudoctos");
 contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id
+    let imagen = 
     localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
-    cambiar(imagenes[i]);
 })
 // }
 
@@ -250,7 +250,7 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
 //      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
 //      } }
 
-function cargarProductos(productosElegidos) {
+function cargarProductosEnCatalogo(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
     productosElegidos.forEach((producto, index) => {
@@ -263,7 +263,7 @@ function cargarProductos(productosElegidos) {
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
-                <div class="container botones-car" id="${producto.id}">
+                <div class="container botones-car" id= ${producto.id}>
                     <button  class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
@@ -279,7 +279,7 @@ function cargarProductos(productosElegidos) {
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
-                <div class="container botones-car"id="${producto.id}>
+                <div class="container botones-car" id= ${producto.id}>
                     <button class="botones btn border" ">Agregar al carrito</button>
                     <input type="number" min="0"  name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
@@ -291,7 +291,7 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar()
 }
 
-cargarProductos(productos);
+cargarProductosEnCatalogo(productos);
 
 linkCategorias.forEach(link => {
     link.addEventListener("click", (e) => {
