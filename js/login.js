@@ -12,17 +12,16 @@ function obtenerUsuarios() {
 
 function iniciarSesion() {
     buscarUsuario();
-    validarDatosUsuario();
+   // validarDatosUsuario();
     //redireccionar();
 }
 
 function buscarUsuario() {
     loginMail = inputLoginMail.value;
-    loginPass = inputLoginPass.value;
-    let usuario;
-    usuarios.forEach(user => {
-       if (user.correo === loginMail) usuario = user;
-    });
-    console.log(usuario);
-    return usuario;
+    let usuario = usuarios.some(data => data.correo === loginMail);
+    if(!usuario) {
+        alert("nooooo")
+    } else {
+        return usuario;
+    }
 }
