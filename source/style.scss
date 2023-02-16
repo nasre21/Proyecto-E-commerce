@@ -24,6 +24,9 @@ $padding:20rem;
 }
 
 // ===================Barra navegación========================
+.navbar{
+  --bs-navbar-nav-link-padding-x:0rem!important;
+}
 
 #search {
 
