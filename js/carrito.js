@@ -32,15 +32,6 @@ function changeValue(id, operation) {
   })
 
 
-
-const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-const price2 = parseFloat(document.getElementById("envio").innerHTML);
-const discount = parseFloat(document.getElementById("descuento").innerHTML) / 100;
-
-const total = (price1 + price2) * (1 - discount);
-document.getElementById("total").innerHTML = total;
-
-
 //agregar al carrito
 
 const productosEnCarrito = JSON.parse(localStorage.getItem("productosEnCarrito "));
