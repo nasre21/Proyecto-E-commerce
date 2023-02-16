@@ -213,12 +213,40 @@ let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
 
-const imagenes = document.querySelectorAll(".image-prudoctos");
+// const imagenes = document.querySelectorAll(".imagen-productos");
+// imagenes = Array(imagenes)
+// alert(imagenes[0])
+// console.log(imagenes)
+//  for( let i=0; i< imagenes.length; i++){
+//     imagenes[i].addEventListener("click", ()=>{ 
+//         alert(imagenes[i])
+//         cambiarImagenes(imagenes[i]);  
+//         }) 
+// }
 
+// // function cambiarImagenes(imagen) {   
+//     let valor2 = imagen.id  
+//     console.log(valor2)
+//         // let valor =  corazon.getAttribute("class");  
+//         // if (valor == "fa-regular fa-heart corazon-vacio") {  
+//         // corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
+//         // }else {         
+//         //  corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
+//         //  } 
+//         }
+
+
+// let corazones= document.getElementsByClassName("corazon-vacio")
+//     console.log(corazones) for( let i=0; i< corazones.length; i++){
+//     corazones[i].addEventListener("click", ()=>{ 
+//     cambiar(corazones[i]);  
+//     }) 
+//     }   
 
 // imagen.for
 // for(let i=0; i< imagenes.length; i++){
 //    let imagee=  imagenes[i];
+
 contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id
@@ -226,7 +254,6 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
     localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
 })
-// }
 
 // function cambiar(){
 //     let valor = imagenes.getAttribute("class");
@@ -250,7 +277,7 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
 //      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
 //      } }
 
-function cargarProductos(productosElegidos) {
+function cargarProductosEnCatalogo(productosElegidos) {
     contenedorProductos.innerHTML = "";
     contenedorOcultoProductos.innerHTML = "";
     productosElegidos.forEach((producto, index) => {
@@ -258,12 +285,12 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div.innerHTML = `
-            <img class="image-prudoctos card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
+            <img class="imagen-productos card-img-top" id= ${producto.id} src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
-                <div class="container botones-car" id=">
+                <div class="container botones-car" id= ${producto.id}>
                     <button  class="botones btn border">Agregar al carrito</button>
                     <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" />
                 </div>
@@ -274,12 +301,12 @@ function cargarProductos(productosElegidos) {
             const div = document.createElement("div");
             div.classList.add("card", "cads-plus");
             div. innerHTML = `
-            <img id= ${producto.id} class="image-prudoctos card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
+            <img id= ${producto.id} class="imagen-productos card-img-top" src="${producto.imagen}" alt="${producto.nombre}" />
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text"> ${producto.descripcion}</p>
                 <p class="card-text">${producto.precio} <span>€</span></p>
-                <div class="container botones-car"id="${producto.id}>
+                <div class="container botones-car" id= ${producto.id}>
                     <button class="botones btn border" ">Agregar al carrito</button>
                     <input type="number" min="0"  name="contadorcarrito" class="contadorcarrito w-25 text-center" />
                 </div>
@@ -291,7 +318,7 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar()
 }
 
-cargarProductos(productos);
+cargarProductosEnCatalogo(productos);
 
 linkCategorias.forEach(link => {
     link.addEventListener("click", (e) => {

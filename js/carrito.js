@@ -15,12 +15,21 @@ function changeValue(id, operation) {
 
 
 //  esto hace la suma del carrito
-const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-const price2 = parseFloat(document.getElementById("envio").innerHTML);
-const discount = parseFloat(document.getElementById("descuento").innerHTML) / 100;
+  const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
+  const price2 = parseFloat(document.getElementById("envio").innerHTML);
+  const totalConIva = (price1 + price2);
+  document.getElementById("total").innerHTML = totalConIva;
 
-const total = (price1 + price2) * (1 - discount);
-document.getElementById("total").innerHTML = total;
+  //aplicar el descuento de iva
+  const descuento = document.getElementById("descuento");
+  descuento.addEventListener("change", () => {
+    if(descuento.checked){
+      const quitarIva = totalConIva * (100 - 21)/100;
+      document.getElementById("total").innerHTML = quitarIva;
+    }else{
+      document.getElementById("total").innerHTML = totalConIva;
+    }
+  })
 
 
 //agregar al carrito
