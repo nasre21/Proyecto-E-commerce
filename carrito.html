@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="source/style.css" />
   <link rel="stylesheet" href="source/style-tablet.css">
   <link rel="stylesheet" href="source/style-mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,13 +20,17 @@
 </head>
 
 <body>
- 
+
   <div class="container-fluid  d-flex justify-content-end position-relative">
-    
-    <p  class="parrafoFecha me-5 position-absolute ">fecha</p>
+
+    <p class="parrafoFecha me-5 position-absolute ">fecha</p>
     <select name="idiomas" id="flags" class="flags mt-3 me-4">
-      <option class="flags_item" data-language="es"><p>es</p></option>
-      <option class="flags_item" data-language="en"><p>en</p></option>
+      <option class="flags_item" data-language="es">
+        <p>es</p>
+      </option>
+      <option class="flags_item" data-language="en">
+        <p>en</p>
+      </option>
       <option disabled value="EUS"></option>
     </select>
   </div>
@@ -41,9 +45,10 @@
           <li class="nav-item">
             <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
           </li>
-        
+
           <li id="link" class="nav-item dropdown mt-4">
-            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Catalogo
             </a>
             <ul class="dropdown-menu">
@@ -53,11 +58,12 @@
             </ul>
           </li>
           <li id="logo-gato" class="nav-item ">
-            <img  src="/image/logoToPets-sin-blanco.png" alt="" />
+            <img src="/image/logoToPets-sin-blanco.png" alt="" />
           </li>
           <li id="search_">
             <form id="search" class="d-flex" role="search">
-              <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <input id="input-search" class="form-control me-2" type="search" placeholder="Search"
+                aria-label="Search" />
               <button id="btn-login" class="btn btn border col" type="submit">
                 Search
               </button>
@@ -66,7 +72,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <img id="img-usuario"  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+              <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
                 class="rounded-circle" alt="Avatar" loading="lazy" />
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -75,9 +81,29 @@
               <a class="dropdown-item" href="#">Cerrar sesion</a>
             </div>
           </li>
-          <li>
-            <div class="carrito ">
-          </div>
+          <li class="submenu">
+            <div class="carrito-img">
+              <span id="bubble" class="badge badge-primary text-bg-danger position-absolute"></span>
+
+              <img src="/image/cart.png" id="img-carrito">
+            </div>
+            <div id="carrito">
+
+              <table id="lista-carrito" class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+
+              <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -86,8 +112,8 @@
   <h2 class="p-4" data-section="carrito" data-value="titulo">Tu carrito</h2>
   <div class=" caja1 w-100 justify-content-center m-lg-3 p-4 ">
     <!-- div de la izquierda---------- -->
-    <div class="divizq w-100 me-5  ">
-      <h3 class="mb-4 border-bottom border-3 border-dark ">2 Items</h3>
+    <!-- <div id="carrito-vacio" class=" divizq w-100 me-5  ">
+      <h3 class="mb-4 border-bottom border-3 border-dark "></h3>
       <div class="tarjeta d-flex mb-2 ">
         <img class="m-3" src="image/gatos/comida de cato.jpg" alt="">
         <div class="descripcion w-100 row align-items-center">
@@ -130,8 +156,8 @@
       </div>
 
     </div>
-    <!-- div de la derecha------------ -->
-    <div class="divderecha w-100 me-4 ">
+     div de la derecha
+    <div id="carrito-productos" class="divderecha w-100 me-4 ">
       <h3 class="border-bottom border-3 border-dark mb-5" data-section="carrito" data-value="resumen">Resumen</h3>
       <div class="totalSin d-flex">
         <p class="w-75">Total Productos:</p>
@@ -148,9 +174,12 @@
       <div class="d-flex border-bottom border-2 border-dark-subtle mt-5 mb-4">
         <h4 class="w-75"> Total:</h4>
         <p id="total" class="h4 text-end"></p>
+      </div> -->
+      <div id="carrito-acciones" class="carrito-acciones">
+        <button id="carrito-accion-vaciar" class="carrito-accion-vaciar">Vaciar carrito</button>
+        
+        <button id="carrito-acciones-comprar" class="botones btn btn  border w-50">Checkout</button>
       </div>
-      <button  id="btn" class="botones btn btn  border w-25">Checkout</button>
-
     </div>
   </div>
 
@@ -203,7 +232,7 @@
                   <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
                     Política de cookies
                   </h6>
-                  <p  data-section="footer" data-value="titulo1.1">
+                  <p data-section="footer" data-value="titulo1.1">
                     Lee aquí nuestra
                     <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
                       cookies</a>
@@ -214,8 +243,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
-                  <p  data-section="footer" data-value="titulo2.1">
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p data-section="footer" data-value="titulo2.1">
                     Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
                     Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
                   </p>
@@ -225,7 +254,7 @@
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo3">Contacto</h6>
                   <p>
                     <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
                     Peñascal F5
@@ -252,7 +281,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div id="copy-footer" class="text-center p-4" >
+    <div id="copy-footer" class="text-center p-4">
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
@@ -261,9 +290,9 @@
   <!-- Footer -->
   <script src="js/app.js"></script>
   <script src="js/carrito.js"></script>
-<script src="/catalogo.js"></script>
-<script src="/checkout.html"></script>
-<script src="js/cambioIdioma.js"></script>
+  <script src="/catalogo.js"></script>
+  <script src="/checkout.html"></script>
+  <script src="js/cambioIdioma.js"></script>
 </body>
 
 </html>
