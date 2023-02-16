@@ -11,17 +11,47 @@ function obtenerUsuarios() {
     }
 
 function iniciarSesion() {
-    buscarUsuario();
-   // validarDatosUsuario();
+    let usuario = buscarUsuario()
+    validarDatosUsuario(usuario);
     //redireccionar();
 }
 
+
+
 function buscarUsuario() {
+
     loginMail = inputLoginMail.value;
-    let usuario = usuarios.some(data => data.correo === loginMail);
-    if(!usuario) {
-        alert("nooooo")
-    } else {
-        return usuario;
+    
+    let exist = usuarios.some(data => data.correo === loginMail);
+    if(!exist) {
+        alert("Usuario no registrado");
+    }else {
+        usuarios.map()
     }
+
+}
+
+
+
+function validarDatosUsuario(usuario){
+   
+    console.log(usuario);
+
+    loginPass = inputLoginPass.value;
+
+    if (usuario.password !== loginPass) {
+        
+        alert("Contraseña incorrecta");
+ 
+       
+
+        console.log(usuario.password)
+
+    }else {
+        
+        window.location.href = "/";
+        console.log(loginPass)
+      
+    }
+
 }
