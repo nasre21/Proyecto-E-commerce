@@ -253,7 +253,7 @@ const numerito = document.querySelector("#bubble");
 //     localStorage.setItem("nombreProducto", productoSeleccionado);
 //     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
 // })
-// // }
+// }
 
 // function cambiar(){
 //     let valor = imagenes.getAttribute("class");
