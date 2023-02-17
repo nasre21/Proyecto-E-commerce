@@ -249,13 +249,23 @@ const numerito = document.querySelector("#bubble");
 
 contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
-    let productoSeleccionado=eventoClick.target.id
-    localStorage.setItem("nombreProducto", productoSeleccionado);
-    window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+    let productoSeleccionado=eventoClick.target.id;
+    let nodo= eventoClick.target.nodeName;
+    // alert(nodo);
+    if(nodo=="IMG"){
+        localStorage.setItem("nombreProducto", productoSeleccionado);
+        window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+    }
+    
 })
 
-// }
 
+// }
+// let imageen = document.querySelector("img").nodeName;
+// contenedorProductos.addEventListener("click",(e)=>{
+//     imageen = e.target.id;
+
+// })
 // function cambiar(){
 //     let valor = imagenes.getAttribute("class");
 //     if (valor == "image-prudoctos") {  
