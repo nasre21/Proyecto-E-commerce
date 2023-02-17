@@ -44,7 +44,7 @@ console.log(productosEnCarrito);
      const div = document.createElement("div");
      div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
      div.innerHTML = 
-     ` <div class="carrito-productos tarjeta d-flex mb-2 ">
+     ` <div class="carrito-productos tarjeta d-flex mb-2 w-100">
      <img class="m-3" src="${producto.imagen}" alt="${producto.nombre}">
      <div class="descripcion w-100 row align-items-center">
        <div class="">
