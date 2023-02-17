@@ -50,8 +50,6 @@ console.log(productosEnCarrito);
 
 if (productosEnCarrito) {
 
-
-
    productosEnCarrito.forEach(producto => {
 
       precioporcantidad = producto.precio * producto.cantidad
