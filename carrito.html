@@ -1,298 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Carrito</title>
+    <link rel="stylesheet" href="source/style.css" />
+    <link rel="stylesheet" href="source/style-tablet.css" />
+    <link rel="stylesheet" href="source/style-mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Carrito</title>
-  <link rel="stylesheet" href="source/style.css" />
-  <link rel="stylesheet" href="source/style-tablet.css">
-  <link rel="stylesheet" href="source/style-mobile.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <div class="container-fluid  d-flex justify-content-end position-relative">
-
-    <p class="parrafoFecha me-5 position-absolute ">fecha</p>
-    <select name="idiomas" id="flags" class="flags mt-3 me-4">
-      <option class="flags_item" data-language="es">
-        <p>es</p>
-      </option>
-      <option class="flags_item" data-language="en">
-        <p>en</p>
-      </option>
-      <option disabled value="EUS"></option>
-    </select>
-  </div>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav d-flex mb-lg-0 ">
-          <li class="nav-item">
-            <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
-          </li>
-
-          <li id="link" class="nav-item dropdown mt-4">
-            <a class="nav-link dropdown-toggle" href="/catalogo.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Catalogo
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Perros</a></li>
-              <li><a class="dropdown-item" href="#">Gatos</a></li>
-              <li><a class="dropdown-item" href="#">Aves</a></li>
-            </ul>
-          </li>
-          <li id="logo-gato" class="nav-item ">
-            <img src="/image/logoToPets-sin-blanco.png" alt="" />
-          </li>
-          <li id="search_">
-            <form id="search" class="d-flex" role="search">
-              <input id="input-search" class="form-control me-2" type="search" placeholder="Search"
-                aria-label="Search" />
-              <button id="btn-login" class="btn btn border col" type="submit">
-                Search
-              </button>
-            </form>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
-                class="rounded-circle" alt="Avatar" loading="lazy" />
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Mi perfil</a>
-              <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
-              <a class="dropdown-item" href="#">Cerrar sesion</a>
-            </div>
-          </li>
-          <li class="submenu">
-            <div class="carrito-img">
-              <span id="bubble" class="badge badge-primary text-bg-danger position-absolute"></span>
-
-              <img src="/image/cart.png" id="img-carrito">
-            </div>
-            <div id="carrito">
-
-              <table id="lista-carrito" class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>Imagen</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-              
-              <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <body>
+    <div class="container-fluid d-flex justify-content-end position-relative">
+      <p class="parrafoFecha me-5 position-absolute">fecha</p>
+      <select name="idiomas" id="flags" class="flags mt-3 me-4">
+        <option class="flags_item" data-language="es">
+          <p>es</p>
+        </option>
+        <option class="flags_item" data-language="en">
+          <p>en</p>
+        </option>
+        <option disabled value="EUS"></option>
+      </select>
     </div>
-  </nav>
-  <div id="prueba"></div>
-  <h2 class="p-4" data-section="carrito" data-value="titulo">Tu carrito</h2>
-  <div class=" caja1 w-100 justify-content-center m-lg-3 p-4 ">
-     <!-- <div id="carrito-vacio" class="carrito-producto divizq w-100 me-5  ">
-      <h3 class="mb-4 border-bottom border-3 border-dark "></h3>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex mb-lg-0">
+            <li class="nav-item">
+              <a
+                id="link"
+                class="nav-link active ms-5 me-5 mt-4"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li id="link" class="nav-item dropdown mt-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/catalogo.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Catalogo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perros</a></li>
+                <li><a class="dropdown-item" href="#">Gatos</a></li>
+                <li><a class="dropdown-item" href="#">Aves</a></li>
+              </ul>
+            </li>
+            <li id="logo-gato" class="nav-item">
+              <img src="/image/logoToPets-sin-blanco.png" alt="" />
+            </li>
+            <li id="search_">
+              <form id="search" class="d-flex" role="search">
+                <input
+                  id="input-search"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button id="btn-login" class="btn btn border col" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  id="img-usuario"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                  class="rounded-circle"
+                  alt="Avatar"
+                  loading="lazy"
+                />
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Mi perfil</a>
+                <a
+                  id="nombre-usuario"
+                  class="dropdown-item"
+                  href="login-page.html"
+                  >Login</a
+                >
+                <a class="dropdown-item" href="#">Cerrar sesion</a>
+              </div>
+            </li>
+            <li class="submenu">
+              <div class="carrito-img">
+                <span
+                  id="bubble"
+                  class="badge badge-primary text-bg-danger position-absolute"
+                ></span>
+
+                <img src="/image/cart.png" id="img-carrito" />
+              </div>
+              <div id="carrito">
+                <table id="lista-carrito" class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+
+                <a href="#" id="vaciar-carrito" class="button u-full-width"
+                  >Vaciar Carrito</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 class="p-4" data-section="carrito" data-value="titulo">Tu carrito</h2>
+    <div class="caja1 w-100 justify-content-center m-lg-3 p-4">
+      <div id="carrito-vacio" class="carrito-producto divizq w-100 me-5  ">
       <div class="carrito-productos tarjeta d-flex mb-2 ">
-        <img class="m-3" src="image/gatos/comida de cato.jpg" alt="">
-        <div class="descripcion w-100 row align-items-center">
-          <div class="">
-            <h5 data-section="carrito" data-value="pienso" class="border-bottom">Pienso de Gato</h5>
-            <div class="d-flex">
-              <p data-section="carrito" data-value="cantidad">Cantidad:</p>
-              <div class="d-flex justify-content-end w-100 gap-1">
-                <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
-                <input class="number inputNumero rounded" type="text" id="number1" value="0">
-                <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex border-bottom">
-            <p data-section="carrito" data-value="precio">Precio:</p>
-            <p class="d-flex justify-content-end w-100">55€</p>
-          </div>
-        </div>
+       
       </div>
-      <!-- <div class="tarjeta d-flex mb-2 ">
-        <img class="m-3" src="image/gatos/comida de cato.jpg" alt="">
-        <div class="descripcion w-100 row align-items-center">
-          <div class="">
-            <h5 data-section="carrito" data-value="piensos" class="border-bottom">Pienso de Gato</h5>
-            <div class="d-flex">
-              <p data-section="carrito" data-value="cantidadd">Cantidad:</p>
-              <div class="d-flex justify-content-end w-100 gap-1">
-                <button class="btn-mas border rounded " onclick="changeValue('number2', 'decrease')">-</button>
-                <input class="number inputNumero rounded " type="text" id="number2" value="0">
-                <button class="btn-mas border rounded " onclick="changeValue('number2', 'increase')">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex border-bottom">
-            <p data-section="carrito" data-value="precios">Precio:</p>
-            <p class="d-flex justify-content-end w-100"><span>€</span></p>
-          </div>
-        </div>
-      </div> -->
-
+      
     </div> 
-    
-    <div id="carrito-productos" class="divderecha w-100 me-4 ">
-      <h3 class="border-bottom border-3 border-dark mb-5" data-section="carrito" data-value="resumen">Resumen</h3>
-      <div class="totalSin d-flex">
-        <p data-section="carrito" data-value="prudocto" class="w-75">Total Productos:</p>
-        <p id="precioSinDescuento" class="text-end">85<span>€</span></p>
-      </div>
-      <div class="envio d-flex">
-        <p data-section="carrito" data-value="precios" class="w-75">Precio envio:</p>
-        <p id="envio" class="text-end">15<span>€</span></p>
-      </div>
-      <div class="d-flex border-bottom border-2 border-dark-subtle">
-        <p data-section="carrito" data-value="descuento" class="w-75"><input id="descuento" type="checkbox"> Descuento:</p>
-        <p id="descuento" class="text-end">21<span>%</span></p>
-      </div>
-      <div class="d-flex border-bottom border-2 border-dark-subtle mt-5 mb-4">
-        <h4 data-section="carrito" data-value="prudocto" class="w-75"> Total:</h4>
-        <p id="total" class="h4 text-end"></p>
-      </div> 
-      <div id="carrito-acciones" class="carrito-acciones">
-        <button id="carrito-accion-vaciar" class="carrito-accion-vaciar">Vaciar carrito</button>
-        
-        <button id="carrito-accion-comprar" class="botones btn btn  border w-50">Checkout</button>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-white text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-
-      <!-- Grid container -->
-      <div class="container p-4 pb-0 d-flex justify-content-center">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
-              class="fab fa-facebook-f"></i></a>
-
-          <!-- Twitter -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
-              class="fab fa-twitter"></i></a>
-
-          <!-- Google -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
-              class="fab fa-google"></i></a>
-
-          <!-- Instagram -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
-              class="fab fa-instagram"></i></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Section: Links  -->
-          <section class="">
-            <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
-                    Política de cookies
-                  </h6>
-                  <p data-section="footer" data-value="titulo1.1">
-                    Lee aquí nuestra
-                    <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
-                      cookies</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo2">Quienes somos</h6>
-                  <p data-section="footer" data-value="titulo2.1">
-                    Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
-                    Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo3">Contacto</h6>
-                  <p>
-                    <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
-                    Peñascal F5
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope me-3 text-secondary"></i>
-                    info@topets.com
-                  </p>
-                  <p>
-                    <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
-                    13
-                  </p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-          </section>
-          <!-- Section: Links  -->
+      <div id="carrito-productos" class="divderecha w-100 me-4">
+        <h3
+          class="border-bottom border-3 border-dark mb-5"
+          data-section="carrito"
+          data-value="resumen"
+        >
+          Resumen
+        </h3>
+        <div class="totalSin d-flex">
+          <p data-section="carrito" data-value="prudocto" class="w-75">
+            Total Productos:
+          </p>
+          <p id="precioSinDescuento" class="text-end"><span>€</span></p>
         </div>
-        <!-- Grid row -->
+        <div class="envio d-flex">
+          <p data-section="carrito" data-value="precios" class="w-75">
+            Precio envio:
+          </p>
+          <p id="envio" class="text-end">15<span>€</span></p>
+        </div>
+        <div class="d-flex border-bottom border-2 border-dark-subtle">
+          <p data-section="carrito" data-value="descuento" class="w-75">
+            Descuento:
+          </p>
+          <p id="descuento" class="text-end">10 <span>%</span></p>
+        </div>
+        <div class="d-flex border-bottom border-2 border-dark-subtle mt-5 mb-4">
+          <h4 data-section="carrito" data-value="prudocto" class="w-75">
+            Total:
+          </h4>
+          <p id="total" class="h4 text-end"></p>
+        </div>
+        <div id="carrito-acciones" class="carrito-acciones">
+          <button id="carrito-accion-vaciar" class="carrito-accion-vaciar">
+            Vaciar carrito
+          </button>
+
+          <button
+            id="carrito-accion-comprar"
+            class="botones btn btn border w-50"
+          >
+            Checkout
+          </button>
+        </div>
       </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div id="copy-footer" class="text-center p-4">
-      © 2023 Copyright:
-      <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  <script src="js/carrito.js"></script>
-  <!-- <script src="js/app.js"></script>
-  <script src="/catalogo.js"></script> -->
-  <!-- <script src="/checkout.html"></script>
-  <script src="js/cambioIdioma.js"></script> -->
-</body>
 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 d-flex justify-content-center">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6
+                      class="text-uppercase fw-bold mb-4"
+                      data-section="footer"
+                      data-value="titulo1"
+                    >
+                      Política de cookies
+                    </h6>
+                    <p data-section="footer" data-value="titulo1.1">
+                      Lee aquí nuestra
+                      <a
+                        target="_blank"
+                        href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/"
+                        >política de cookies</a
+                      >
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6
+                      class="text-uppercase fw-bold mb-4"
+                      data-section="footer"
+                      data-value="titulo2"
+                    >
+                      Quienes somos
+                    </h6>
+                    <p data-section="footer" data-value="titulo2.1">
+                      Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
+                      Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6
+                      class="text-uppercase fw-bold mb-4"
+                      data-section="footer"
+                      data-value="titulo3"
+                    >
+                      Contacto
+                    </h6>
+                    <p>
+                      <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
+                      Peñascal F5
+                    </p>
+                    <p>
+                      <i class="fas fa-envelope me-3 text-secondary"></i>
+                      info@topets.com
+                    </p>
+                    <p>
+                      <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
+                      13
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div id="copy-footer" class="text-center p-4">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="js/carrito.js"></script>
+    <!-- <script src="js/app.js"></script>
+  <script src="/catalogo.js"></script> -->
+    <!-- <script src="/checkout.html"></script>
+  <script src="js/cambioIdioma.js"></script> -->
+  </body>
 </html>

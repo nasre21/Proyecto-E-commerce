@@ -246,10 +246,6 @@ const numerito = document.querySelector("#bubble");
 // imagen.for
 // for(let i=0; i< imagenes.length; i++){
 //    let imagee=  imagenes[i];
-<<<<<<< HEAD
-=======
-
->>>>>>> 79c19dc102c33927eef27c74e88974c8e02c30a9
 // contenedorProductos.addEventListener('click', (eventoClick)=>{
 //     console.log(eventoClick.target.id);
 //     let productoSeleccionado=eventoClick.target.id
@@ -257,10 +253,6 @@ const numerito = document.querySelector("#bubble");
 //     localStorage.setItem("nombreProducto", productoSeleccionado);
 //     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
 // })
-<<<<<<< HEAD
-// }
-=======
->>>>>>> 79c19dc102c33927eef27c74e88974c8e02c30a9
 
 // function cambiar(){
 //     let valor = imagenes.getAttribute("class");

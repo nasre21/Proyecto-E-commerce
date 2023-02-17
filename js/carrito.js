@@ -28,7 +28,7 @@ function changeValue(id, operation) {
 let productosEnCarrito = localStorage.getItem("productosEnCarrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
-const carritoVacio = document.querySelector("#carritoVacio");
+const carritoVacio = document.querySelector(".carrito-producto");
 const carritoProductos = document.querySelector("#carrito-Productos");
 const carritoAcciones = document.querySelector("#carritoAcciones");
 const btnVaciar = document.querySelector("#carrito-accion-vaciar");
@@ -40,34 +40,36 @@ if (productosEnCarrito) {
 
 console.log(productosEnCarrito);
 
-  productosEnCarrito.forEach(producto => {
-    const div = document.createElement("div");
-    div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
-    div.innerHTML = 
-    `<img class="m-3" src="${producto.imagen}" alt="${producto.nombre}">
-    <div class="descripcion w-100 row align-items-center">
-      <div class="">
-        <h5 data-section="carrito" data-value="pienso" class="border-bottom">${producto.nombre}</h5>
-        <div class="d-flex">
-          <p data-section="carrito" data-value="cantidad">Cantidad: ${producto.cantidad}</p>
-          <div class="d-flex justify-content-end w-100 gap-1">
-            <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
-            <input class="number inputNumero rounded" type="text" id="number1" value="0">
-            <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex border-bottom">
-        <p data-section="carrito" data-value="precio">Precio:</p>
-        <p class="d-flex justify-content-end w-100">${producto.precio}€</p>
-      </div>
-    </div>
-    `
-    caja1.appendChild(div);
+   productosEnCarrito.forEach(producto => {
+     const div = document.createElement("div");
+     div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
+     div.innerHTML = 
+     ` <div class="carrito-productos tarjeta d-flex mb-2 ">
+     <img class="m-3" src="${producto.imagen}" alt="${producto.nombre}">
+     <div class="descripcion w-100 row align-items-center">
+       <div class="">
+         <h5 data-section="carrito" data-value="pienso" class="border-bottom">${producto.nombre}</h5>
+         <div class="d-flex">
+           <p data-section="carrito" data-value="cantidad">Cantidad:</p>
+           <div class="d-flex justify-content-end w-100 gap-1">
+             <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
+             <input class="number inputNumero rounded" type="text" id="number1" value="0">
+             <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
+           </div>
+         </div>
+       </div>
+       <div class="d-flex border-bottom">
+         <p data-section="carrito" data-value="precio">Precio:</p>
+         <p class="d-flex justify-content-end w-100">${producto.precio}€</p>
+       </div>
+     </div>
+   </div>
+     `
+     carritoVacio.appendChild(div);
     
     
-  });
+   });
 
-}
+ }
   
 
