@@ -42,17 +42,21 @@ window.addEventListener('mouseout', function(event) {
   });
 
 
-// mostrar fecha en pantalla 
-function showDate() {
-  const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-  const date = new Date();
-  const day = date.getDate();
-  const month = months[date.getMonth()];
-  const year = date.getFullYear();
-  document.getElementById("fecha").innerHTML = `${day} de ${month} del ${year}`;
-}
-
-showDate();
+  //Funcion para mostrar fecha
+  function showDate() {
+    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const date = new Date();
+    const day = days[date.getDay()];
+    const dia = date.getDate();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    document.getElementById("fecha").innerHTML = `${day} ${dia} de ${month} del ${year} a las ${hour}:${minutes}`;
+  }
+  
+  showDate();
 
   
 
