@@ -14,7 +14,6 @@ function changeValue(id, operation) {
 
 
 
-<<<<<<< HEAD
 // //  esto hace la suma del carrito
 // const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
 // const price2 = parseFloat(document.getElementById("envio").innerHTML);
@@ -22,24 +21,6 @@ function changeValue(id, operation) {
 
 // const total = (price1 + price2) * (1 - discount);
 // document.getElementById("total").innerHTML = total;
-=======
-//  esto hace la suma del carrito
-  const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-  const price2 = parseFloat(document.getElementById("envio").innerHTML);
-  const totalConIva = (price1 + price2);
-  document.getElementById("total").innerHTML = totalConIva;
-
-  //aplicar el descuento de iva
-  const descuento = document.getElementById("descuento");
-  descuento.addEventListener("change", () => {
-    if(descuento.checked){
-      const quitarIva = totalConIva * (100 - 21)/100;
-      document.getElementById("total").innerHTML = quitarIva;
-    }else{
-      document.getElementById("total").innerHTML = totalConIva;
-    }
-  })
->>>>>>> 79c19dc102c33927eef27c74e88974c8e02c30a9
 
 
 //agregar al carrito
