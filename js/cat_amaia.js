@@ -1,6 +1,19 @@
 // PRODUCTOS
 
 const productos = [
+    //jaulas
+    {
+        id: "jaula-01",
+        nombre: "Jaula Ferplast Planeta para pájaros",
+        descripcion: "Jaula grande para canarios, pinzones, loros pequeños o grupos de pájaros. Rejillas estrechas, con 8 puertas, totalmente equipada. Dispone de un soporte para almacenamiento con cuatro ruedas.",
+        imagen: "../image/pajaros/jaulas/jaula01_jaulavogelvoliere_planeta_9.jpg",
+        categoria: {
+            nombre: "Pajaros",
+            id: "pajaro"
+        },
+        precio: 172.99,
+        cantidad:1
+    },
     //Rascadores
     {
         id: "rascador-01",
@@ -202,9 +215,6 @@ const productos = [
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos",listaProductos);
 
-
-
-
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
@@ -225,10 +235,9 @@ localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
     }
     
-})
+});
+
 //terminar aqui Nasser
-
-
 
 function cargarProductosEnCatalogo(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -282,10 +291,10 @@ linkCategorias.forEach(link => {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.target.id);
             tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
             const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
-            cargarProductos(productosLink);
+            cargarProductosEnCatalogo(productosLink);
         } else {
             tituloCatalogo.innerText = "Catalogo completo";
-            cargarProductos(productos);
+            cargarProductosEnCatalogo(productos);
         }
     })
 })
