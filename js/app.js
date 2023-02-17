@@ -49,9 +49,11 @@ window.addEventListener('mouseout', function(event) {
     const date = new Date();
     const day = days[date.getDay()];
     const dia = date.getDate();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
     const month = months[date.getMonth()];
     const year = date.getFullYear();
-    document.getElementById("fecha").innerHTML = `${day} ${dia} de ${month} del ${year}`;
+    document.getElementById("fecha").innerHTML = `${day} ${dia} de ${month} del ${year} a las ${hour}:${minutes}`;
   }
   
   showDate();
