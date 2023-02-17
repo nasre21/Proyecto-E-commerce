@@ -22,8 +22,6 @@ flagsElement.addEventListener('click', (e) => {
 });
 
 
-
-
 //popup de salida
 // Agrega un event listener a la ventana
 window.addEventListener('mouseout', function(event) {
@@ -43,6 +41,18 @@ window.addEventListener('mouseout', function(event) {
     }
   });
 
+
+// mostrar fecha en pantalla 
+function showDate() {
+  const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  const date = new Date();
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  document.getElementById("fecha").innerHTML = `${day} de ${month} del ${year}`;
+}
+
+showDate();
   //Funcion para mostrar fecha
   function showDate() {
     const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
