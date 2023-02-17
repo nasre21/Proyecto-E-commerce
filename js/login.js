@@ -76,3 +76,14 @@ function redireccionar(usuario) {
     }
 
 }
+
+// Cerrar session
+
+// const cerrar = document.querySelector("#cerrar");
+
+// cerrar.addEventListener("click", ()=>{
+//     window.location.href ="login-page.html"
+// });
+
+
+
