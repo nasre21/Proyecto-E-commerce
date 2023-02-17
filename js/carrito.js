@@ -38,8 +38,6 @@ console.log(productosEnCarrito);
 
 if (productosEnCarrito) {
 
-console.log(productosEnCarrito);
-
    productosEnCarrito.forEach(producto => {
      const div = document.createElement("div");
      div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
