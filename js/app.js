@@ -29,13 +29,13 @@ flagsElement.addEventListener('click', (e) => {
 window.addEventListener('mouseout', function(event) {
     // Si el puntero del ratón sale de la ventana
     if (event.clientY < 0) {
-      // Muestra el modal
+      // Muestra el popup
       var modal = document.getElementById('myModal');
       modal.style.display = "block";
     }
   });
   
-  // Agrega un event listener para cerrar el modal cuando se hace clic en cualquier parte fuera del modal
+  // cerrar popup al clickar fuera
   var modal = document.getElementById('myModal');
   window.addEventListener('click', function(event) {
     if (event.target == modal) {

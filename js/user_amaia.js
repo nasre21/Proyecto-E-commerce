@@ -15,7 +15,8 @@ const inputIdentificacion = document.querySelector("#identificacion");
 const botonEnviar = document.querySelector("#registro");
 
 const usuarios = obtenerUsuarios();
-console.log("usuarios de linea17" + usuarios);
+
+console.log(usuarios);
 
 botonEnviar.addEventListener("click", registroUsuario);
 
@@ -32,7 +33,8 @@ function cogerDatosUsuario() {
         nombre: inputNombre.value,
         apellidos: inputApellidos.value,
         edad: inputEdad.value, 
-        password: inputCorreo.value,
+        correo: inputCorreo.value,
+        password: inputPassword.value,
         calle: inputCalle.value,
         portal: inputPortal.value,
         piso: inputPiso.value,
@@ -46,17 +48,14 @@ function cogerDatosUsuario() {
     console.log("usuarios es " + JSON.stringify(usuarios));
 }
 
- function guardarUsuario() {
-     localStorage.setItem("usuarios", JSON.stringify(usuarios));
- }
+function guardarUsuario() {
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+}
 
- function irAIniciarSesion() {
-     window.location.href="./login-page.html"
- }
+function irAIniciarSesion() {
+    window.location.href="./login-page.html"
+}
 
- function obtenerUsuarios() {
-    return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
- }
-
-
-
+function obtenerUsuarios() {
+return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
+}
