@@ -212,6 +212,7 @@ const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
+//imagenes
 
 contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
