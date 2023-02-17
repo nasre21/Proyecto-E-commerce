@@ -1,4 +1,5 @@
 //login
+
 const inputLoginMail = document.querySelector("#loginMail");
 const inputLoginPass = document.querySelector("#loginPass");
 const botonLogin = document.querySelector("#btn ");
@@ -10,7 +11,8 @@ function obtenerUsuarios() {
     return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
     }
 
-function iniciarSesion() {
+
+    function iniciarSesion() {
     let usuario = buscarUsuario()
     validarDatosUsuario(usuario);
     //redireccionar();
@@ -24,9 +26,15 @@ function buscarUsuario() {
     
     let exist = usuarios.some(data => data.correo === loginMail);
     if(!exist) {
+
         alert("Usuario no registrado");
+
     }else {
-        usuarios.map()
+
+        let usuario = usuarios.find(user => user.correo === loginMail);
+        return usuario;
+
+        console.log(usuario)
     }
 
 }
@@ -42,14 +50,13 @@ function validarDatosUsuario(usuario){
     if (usuario.password !== loginPass) {
         
         alert("Contraseña incorrecta");
- 
-       
 
         console.log(usuario.password)
 
     }else {
         
         window.location.href = "/";
+
         console.log(loginPass)
       
     }
