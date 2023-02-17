@@ -1,26 +1,10 @@
-// suma y resta productos del carrito
-function changeValue(id, operation) {
-  var value
-    = parseInt(document.getElementById(id).value, 10);
-  value = isNaN(value) ? 0 : value;
-  if (operation === "increase") {
-    value++;
-  } else if (operation === "decrease") {
-    value = (value > 0) ? value - 1 : 0;
-  }
-  document.getElementById(id).value = value;
-}
 
 
 
 
-// //  esto hace la suma del carrito
-// const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-// const price2 = parseFloat(document.getElementById("envio").innerHTML);
-// const discount = parseFloat(document.getElementById("descuento").innerHTML) / 100;
 
-// const total = (price1 + price2) * (1 - discount);
-// document.getElementById("total").innerHTML = total;
+
+
 
 
 //agregar al carrito
@@ -33,14 +17,19 @@ const carritoProductos = document.querySelector("#carrito-Productos");
 const carritoAcciones = document.querySelector("#carritoAcciones");
 const btnVaciar = document.querySelector("#carrito-accion-vaciar");
 let  caja1 = document.querySelector(".caja1");
+let totalPrecio = 0
+let precioporcantidad = 0
 
-console.log(productosEnCarrito);
+// console.log(productosEnCarrito);
 
 if (productosEnCarrito) {
 
-console.log(productosEnCarrito);
-
    productosEnCarrito.forEach(producto => {
+
+      precioporcantidad = producto.precio * producto.cantidad
+      
+      
+
      const div = document.createElement("div");
      div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
      div.innerHTML = 
@@ -52,24 +41,46 @@ console.log(productosEnCarrito);
          <div class="d-flex">
            <p data-section="carrito" data-value="cantidad">Cantidad:</p>
            <div class="d-flex justify-content-end w-100 gap-1">
-             <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
-             <input class="number inputNumero rounded" type="text" id="number1" value="0">
-             <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
+           <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" value="${producto.cantidad}">
            </div>
          </div>
        </div>
        <div class="d-flex border-bottom">
          <p data-section="carrito" data-value="precio">Precio:</p>
-         <p class="d-flex justify-content-end w-100">${producto.precio}€</p>
+         <p class="d-flex justify-content-end w-100 precioIndividual">${producto.precio}€</p>
+       </div>
+       <div class="d-flex border-bottom">
+         <p data-section="carrito" data-value="precio">Precio Total:</p>
+         <p class="d-flex justify-content-end w-100 precioIndividual">${precioporcantidad}€</p>
        </div>
      </div>
    </div>
      `
      carritoVacio.appendChild(div);
-    
-    
+     totalPrecio += precioporcantidad
+     
    });
-
+   
+   console.log(totalPrecio)
+   document.getElementById("precioSinDescuento").innerHTML = totalPrecio;
  }
-  
 
+
+
+
+//  esto hace la suma del carrito
+const price1 = parseInt(totalPrecio)
+const price2 = parseInt(document.getElementById("envio").innerHTML);
+const totalConIva = (price1 + price2);
+document.getElementById("total").innerHTML = totalConIva;
+
+//aplicar el descuento de iva
+const descuento = document.getElementById("descuento");
+descuento.addEventListener("change", () => {
+  if(descuento.checked){
+    const quitarIva = totalConIva * (100 - 21)/100;
+    document.getElementById("total").innerHTML = quitarIva;
+  }else{
+    document.getElementById("total").innerHTML = totalConIva;
+  }
+})
