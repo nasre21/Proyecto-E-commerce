@@ -213,80 +213,20 @@ let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
 
-// const imagenes = document.querySelectorAll(".imagen-productos");
-// imagenes = Array(imagenes)
-// alert(imagenes[0])
-// console.log(imagenes)
-//  for( let i=0; i< imagenes.length; i++){
-//     imagenes[i].addEventListener("click", ()=>{ 
-//         alert(imagenes[i])
-//         cambiarImagenes(imagenes[i]);  
-//         }) 
-// }
-
-// // function cambiarImagenes(imagen) {   
-//     let valor2 = imagen.id  
-//     console.log(valor2)
-//         // let valor =  corazon.getAttribute("class");  
-//         // if (valor == "fa-regular fa-heart corazon-vacio") {  
-//         // corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
-//         // }else {         
-//         //  corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
-//         //  } 
-//         }
-
-
-// let corazones= document.getElementsByClassName("corazon-vacio")
-//     console.log(corazones) for( let i=0; i< corazones.length; i++){
-//     corazones[i].addEventListener("click", ()=>{ 
-//     cambiar(corazones[i]);  
-//     }) 
-//     }   
-
-// imagen.for
-// for(let i=0; i< imagenes.length; i++){
-//    let imagee=  imagenes[i];
-
 contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id;
     let nodo= eventoClick.target.nodeName;
-    // alert(nodo);
+    //alert(nodo);
     if(nodo=="IMG"){
-        localStorage.setItem("nombreProducto", productoSeleccionado);
-        window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+
+localStorage.setItem("nombreProducto", productoSeleccionado);
+    window.location.assign("descripcionproducto.html?"+productoSeleccionado);
     }
     
 })
 
 
-// }
-// let imageen = document.querySelector("img").nodeName;
-// contenedorProductos.addEventListener("click",(e)=>{
-//     imageen = e.target.id;
-
-// })
-// function cambiar(){
-//     let valor = imagenes.getAttribute("class");
-//     if (valor == "image-prudoctos") {  
-//         corazon.setAttribute("class", "image-prudoctos"); 
- 
-//   }
-
-// }
-// let corazones= document.getElementsByClassName("corazon-vacio")
-//     console.log(corazones) for( let i=0; i< corazones.length; i++){
-//     corazones[i].addEventListener("click", ()=>{ 
-//     cambiar(corazones[i]);  
-//     }) 
-//     }   
-//     function cambiar(corazon) {     
-//     let valor =  corazon.getAttribute("class");  
-//     if (valor == "fa-regular fa-heart corazon-vacio") {  
-//     corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
-//     }else {         
-//      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
-//      } }
 
 function cargarProductosEnCatalogo(productosElegidos) {
     contenedorProductos.innerHTML = "";
