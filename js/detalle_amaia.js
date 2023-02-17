@@ -1,10 +1,24 @@
 const imagenes = document.querySelectorAll(".imagen-productos");
-const productos = JSON.parse(localStorage.getItem("listaProductos")) === null? []: JSON.parse(localStorage.getItem("listaProductos"))
+//console.log(imagenes);
 
-imagenes.forEach( imagen => {
-    imagen.addEventListener("click", mostrarDetalle);
+//console.log(productos);
+
+detalleProducto = [];
+
+imagenes.forEach(elemento => {
+    elemento.addEventListener("click", (event) => {
+        console.log(event)
+        let image = event.target.src;
+        detalleProducto.push(image);
+        
+        let name = event.target.nextSibling.nextSibling.firstChild.nextSibling.textContent;
+        detalleProducto.push(name);
+        
+        let description = event.target.nextSibling.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.textContent;
+        detalleProducto.push(description);
+        
+        let price = event.target.nextSibling.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.textContent;
+        detalleProducto.push(price);
+         console.log(detalleProducto)
+    });
 });
-
-function mostrarDetalle() {
-    
-}
