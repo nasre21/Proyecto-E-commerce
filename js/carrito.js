@@ -14,84 +14,62 @@ function changeValue(id, operation) {
 
 
 
-//  esto hace la suma del carrito
-  const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
-  const price2 = parseFloat(document.getElementById("envio").innerHTML);
-  const totalConIva = (price1 + price2);
-  document.getElementById("total").innerHTML = totalConIva;
+// //  esto hace la suma del carrito
+// const price1 = parseFloat(document.getElementById("precioSinDescuento").innerHTML);
+// const price2 = parseFloat(document.getElementById("envio").innerHTML);
+// const discount = parseFloat(document.getElementById("descuento").innerHTML) / 100;
 
-  //aplicar el descuento de iva
-  const descuento = document.getElementById("descuento");
-  descuento.addEventListener("change", () => {
-    if(descuento.checked){
-      const quitarIva = totalConIva * (100 - 21)/100;
-      document.getElementById("total").innerHTML = quitarIva;
-    }else{
-      document.getElementById("total").innerHTML = totalConIva;
-    }
-  })
+// const total = (price1 + price2) * (1 - discount);
+// document.getElementById("total").innerHTML = total;
 
 
 //agregar al carrito
 
-const productosEnCarrito = JSON.parse(localStorage.getItem("productosEnCarrito "));
+let productosEnCarrito = localStorage.getItem("productosEnCarrito");
+productosEnCarrito = JSON.parse(productosEnCarrito);
 
-const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
-const contenedorProductos = document.querySelector("#carrito-productos");
-const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
-const contenedorCarritoComprado = document.querySelector("#carrito-acciones-comprar");
+const carritoVacio = document.querySelector(".carrito-producto");
+const carritoProductos = document.querySelector("#carrito-Productos");
+const carritoAcciones = document.querySelector("#carritoAcciones");
+const btnVaciar = document.querySelector("#carrito-accion-vaciar");
+let  caja1 = document.querySelector(".caja1");
+
+console.log(productosEnCarrito);
 
 if (productosEnCarrito) {
-  contenedorCarritoVacio.classList.add("disabled");
-  contenedorProductos.classList.remove("disabled");
-  contenedorCarritoAcciones.classList.remove("disabled");
-  contenedorCarritoComprado.classList.add("disabled");
 
-  productosEnCarrito.forEach(producto => {
-    const div = document.createElement("div");
-    div.classList.add("carrito-productos");
-        div.innerHTML = 
-        ` <div class=" caja1 w-100 justify-content-center m-lg-3 p-4 ">
-        <h3 class="mb-4 border-bottom border-3 border-dark "></h3>
-      <div class="tarjeta d-flex mb-2 ">
-        <img class="m-3" src="${productos.imagen}" alt="${productos.titulo}">
-        <div class="descripcion w-100 row align-items-center">
-          <div class="">
-            <h5 class="border-bottom">${productos.nombre}</h5>
-            <div class="d-flex">
-              <p data-section="carrito" data-value="cantidad">${productos.cantidad}</p>
-              <div class="d-flex justify-content-end w-100 gap-1">
-                <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
-                <input class="number inputNumero rounded" type="text" id="number1" value="0">
-                <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex border-bottom">
-            <p data-section="carrito" data-value="precio">Precio:</p>
-            <p class="d-flex justify-content-end w-100">${productos.precio}</p>
-          </div>
-        </div>
-      </div>
-      div de la derecha
-      <div id="carrito-productos" class="divderecha w-100 me-4 ">
-        <h3 class="border-bottom border-3 border-dark mb-5" data-section="carrito" data-value="resumen">Resumen</h3>
-        <div class="envio d-flex">
-          <p class="w-75">Precio envio:</p>
-          <p id="envio" class="text-end">15<span>€</span></p>
-        </div>
-        <div class="d-flex border-bottom border-2 border-dark-subtle">
-          <p class="w-75">Sub Total:</p>
-          <p id="subtotal" class="text-end">${producto.precio * producto.cantidad}</p>
-        </div>
-        <button class="carrito-producto-eliminar" id="${productos.id}"><i class="bi bi-trash-fill"></i></button>
-        <div class="d-flex border-bottom border-2 border-dark-subtle mt-5 mb-4">
-          <h4 class="w-75"> Total:</h4>
-          <p id="total" class="h4 text-end"></p>
+console.log(productosEnCarrito);
 
-    `
-  })
+   productosEnCarrito.forEach(producto => {
+     const div = document.createElement("div");
+     div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
+     div.innerHTML = 
+     ` <div class="carrito-productos tarjeta d-flex mb-2 w-100">
+     <img class="m-3" src="${producto.imagen}" alt="${producto.nombre}">
+     <div class="descripcion w-100 row align-items-center">
+       <div class="">
+         <h5 data-section="carrito" data-value="pienso" class="border-bottom">${producto.nombre}</h5>
+         <div class="d-flex">
+           <p data-section="carrito" data-value="cantidad">Cantidad:</p>
+           <div class="d-flex justify-content-end w-100 gap-1">
+             <button class="btn-mas border rounded " onclick="changeValue('number1', 'decrease')">-</button>
+             <input class="number inputNumero rounded" type="text" id="number1" value="0">
+             <button class=" btn-menos border rounded" onclick="changeValue('number1', 'increase')">+</button>
+           </div>
+         </div>
+       </div>
+       <div class="d-flex border-bottom">
+         <p data-section="carrito" data-value="precio">Precio:</p>
+         <p class="d-flex justify-content-end w-100">${producto.precio}€</p>
+       </div>
+     </div>
+   </div>
+     `
+     carritoVacio.appendChild(div);
+    
+    
+   });
+
+ }
   
-}else{
 
-}
