@@ -5,7 +5,7 @@ Proyecto-E-commerce: una tienda online llamada "Topets" en la que se venden prod
 # Mapa Web
 
 Home: Página principal con menú y footer.
-Formulario de registro: Formulario para que los clientes se ouedan registrar en la página.
+Formulario de registro: Formulario para que los clientes se quedan registrar en la página.
 Página de Login: Página para iniciar sesión que reconoce si un usuario está registrado o no.
 Catálogo: Catálogo de los productos que se venden. Tienen varias categorias: perros y gatos que se pueden filtrar desde la barra de menú.
 Checkout: Página de pago, con resumen de la compra realizada por el cliente.

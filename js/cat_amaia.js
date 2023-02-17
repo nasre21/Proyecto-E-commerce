@@ -253,6 +253,10 @@ const numerito = document.querySelector("#bubble");
 //     localStorage.setItem("nombreProducto", productoSeleccionado);
 //     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
 // })
+<<<<<<< HEAD
+// }
+=======
+>>>>>>> 79c19dc102c33927eef27c74e88974c8e02c30a9
 
 // function cambiar(){
 //     let valor = imagenes.getAttribute("class");
