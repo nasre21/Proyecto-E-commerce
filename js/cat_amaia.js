@@ -246,13 +246,14 @@ const numerito = document.querySelector("#bubble");
 // imagen.for
 // for(let i=0; i< imagenes.length; i++){
 //    let imagee=  imagenes[i];
-// contenedorProductos.addEventListener('click', (eventoClick)=>{
-//     console.log(eventoClick.target.id);
-//     let productoSeleccionado=eventoClick.target.id
-//     let imagen = 
-//     localStorage.setItem("nombreProducto", productoSeleccionado);
-//     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
-// })
+
+contenedorProductos.addEventListener('click', (eventoClick)=>{
+    console.log(eventoClick.target.id);
+    let productoSeleccionado=eventoClick.target.id
+    localStorage.setItem("nombreProducto", productoSeleccionado);
+    window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+})
+
 // }
 
 // function cambiar(){
