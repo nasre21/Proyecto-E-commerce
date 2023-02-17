@@ -55,7 +55,8 @@ if (productosEnCarrito) {
    productosEnCarrito.forEach(producto => {
 
       precioporcantidad = producto.precio * producto.cantidad
-      console.log(precioporcantidad)
+      
+      
 
      const div = document.createElement("div");
      div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
@@ -78,13 +79,12 @@ if (productosEnCarrito) {
        </div>
        <div class="d-flex border-bottom">
          <p data-section="carrito" data-value="precio">Precio Total:</p>
-         <p class="d-flex justify-content-end w-100 precioIndividual">€</p>
+         <p class="d-flex justify-content-end w-100 precioIndividual">${precioporcantidad}€</p>
        </div>
      </div>
    </div>
      `
      carritoVacio.appendChild(div);
-    
      
    });
    
