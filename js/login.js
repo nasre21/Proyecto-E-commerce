@@ -15,7 +15,6 @@ function obtenerUsuarios() {
     function iniciarSesion() {
     let usuario = buscarUsuario()
     validarDatosUsuario(usuario);
-    //redireccionar();
 }
 
 
@@ -55,10 +54,25 @@ function validarDatosUsuario(usuario){
 
     }else {
         
-        window.location.href = "/";
+        redireccionar(usuario);
+       
 
         console.log(loginPass)
       
+    }
+
+}
+
+function redireccionar(usuario) {
+
+    console.log(typeof(usuario.correo));
+
+    if (usuario.correo.includes("@topets.com")) {
+
+
+        window.location.href = "./intranet.html";
+    }else {
+        window.location.href = "/";
     }
 
 }
