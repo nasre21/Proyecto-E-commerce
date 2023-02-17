@@ -46,7 +46,7 @@ let  caja1 = document.querySelector(".caja1");
 let totalPrecio = 0
 let precioporcantidad = 0
 
-console.log(productosEnCarrito);
+// console.log(productosEnCarrito);
 
 if (productosEnCarrito) {
 
@@ -83,10 +83,13 @@ if (productosEnCarrito) {
    </div>
      `
      carritoVacio.appendChild(div);
-     
+
+     console.log(precioporcantidad)
    });
    
    
  }
-  
+
+
+
 
