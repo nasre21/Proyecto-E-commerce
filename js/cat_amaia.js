@@ -1,6 +1,19 @@
 // PRODUCTOS
 
 const productos = [
+    //jaulas
+    {
+        id: "jaula-01",
+        nombre: "Jaula Ferplast Planeta para pájaros",
+        descripcion: "Jaula grande para canarios, pinzones, loros pequeños o grupos de pájaros. Rejillas estrechas, con 8 puertas, totalmente equipada. Dispone de un soporte para almacenamiento con cuatro ruedas.",
+        imagen: "../image/pajaros/jaulas/jaula01_jaulavogelvoliere_planeta_9.jpg",
+        categoria: {
+            nombre: "Pajaros",
+            id: "pajaro"
+        },
+        precio: 172.99,
+        cantidad:1
+    },
     //Rascadores
     {
         id: "rascador-01",
@@ -202,9 +215,6 @@ const productos = [
 listaProductos = JSON.stringify(productos);
 localStorage.setItem("listaProductos",listaProductos);
 
-
-
-
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
@@ -212,70 +222,22 @@ const tituloCatalogo = document.querySelector("#catalogo-titulo");
 let botones = document.querySelectorAll(".botones");
 const numerito = document.querySelector("#bubble");
 
+//imagenes Nasser
 
-// const imagenes = document.querySelectorAll(".imagen-productos");
-// imagenes = Array(imagenes)
-// alert(imagenes[0])
-// console.log(imagenes)
-//  for( let i=0; i< imagenes.length; i++){
-//     imagenes[i].addEventListener("click", ()=>{ 
-//         alert(imagenes[i])
-//         cambiarImagenes(imagenes[i]);  
-//         }) 
-// }
+contenedorProductos.addEventListener('click', (eventoClick)=>{
+    console.log(eventoClick.target.id);
+    let productoSeleccionado=eventoClick.target.id;
+    let nodo= eventoClick.target.nodeName;
+    //alert(nodo);
+    if(nodo=="IMG"){
 
-// // function cambiarImagenes(imagen) {   
-//     let valor2 = imagen.id  
-//     console.log(valor2)
-//         // let valor =  corazon.getAttribute("class");  
-//         // if (valor == "fa-regular fa-heart corazon-vacio") {  
-//         // corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
-//         // }else {         
-//         //  corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
-//         //  } 
-//         }
+localStorage.setItem("nombreProducto", productoSeleccionado);
+    window.location.assign("descripcionproducto.html?"+productoSeleccionado);
+    }
+    
+});
 
-
-// let corazones= document.getElementsByClassName("corazon-vacio")
-//     console.log(corazones) for( let i=0; i< corazones.length; i++){
-//     corazones[i].addEventListener("click", ()=>{ 
-//     cambiar(corazones[i]);  
-//     }) 
-//     }   
-
-// imagen.for
-// for(let i=0; i< imagenes.length; i++){
-//    let imagee=  imagenes[i];
-// contenedorProductos.addEventListener('click', (eventoClick)=>{
-//     console.log(eventoClick.target.id);
-//     let productoSeleccionado=eventoClick.target.id
-//     let imagen = 
-//     localStorage.setItem("nombreProducto", productoSeleccionado);
-//     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
-// })
-// }
-
-// function cambiar(){
-//     let valor = imagenes.getAttribute("class");
-//     if (valor == "image-prudoctos") {  
-//         corazon.setAttribute("class", "image-prudoctos"); 
- 
-//   }
-
-// }
-// let corazones= document.getElementsByClassName("corazon-vacio")
-//     console.log(corazones) for( let i=0; i< corazones.length; i++){
-//     corazones[i].addEventListener("click", ()=>{ 
-//     cambiar(corazones[i]);  
-//     }) 
-//     }   
-//     function cambiar(corazon) {     
-//     let valor =  corazon.getAttribute("class");  
-//     if (valor == "fa-regular fa-heart corazon-vacio") {  
-//     corazon.setAttribute("class", "fa-solid fa-heart-circle-check corazon-vacio");    
-//     }else {         
-//      corazon.setAttribute("class", "fa-regular fa-heart corazon-vacio");    
-//      } }
+//terminar aqui Nasser
 
 function cargarProductosEnCatalogo(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -329,10 +291,10 @@ linkCategorias.forEach(link => {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.target.id);
             tituloCatalogo.innerText = "Productos para: " + productoCategoria.categoria.nombre;
             const productosLink = productos.filter(producto => producto.categoria.id === e.target.id);
-            cargarProductos(productosLink);
+            cargarProductosEnCatalogo(productosLink);
         } else {
             tituloCatalogo.innerText = "Catalogo completo";
-            cargarProductos(productos);
+            cargarProductosEnCatalogo(productos);
         }
     })
 })
