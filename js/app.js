@@ -43,8 +43,18 @@ window.addEventListener('mouseout', function(event) {
     }
   });
 
-
-
+  //Funcion para mostrar fecha
+  function showDate() {
+    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const date = new Date();
+    const day = days[date.getDay()];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    document.getElementById("fecha").innerHTML = `${day} de ${month} del ${year}`;
+  }
+  
+  showDate();
 
   
 
