@@ -1,5 +1,39 @@
 
 
+// trabajando en el carrito
+function actualizarBotonesAgregar() {
+  botonesAgregar = document.querySelectorAll(".botones");
+
+  botonesAgregar.forEach(boton => {
+      boton.addEventListener("click", agregarAlCarrito);
+  });
+}
+
+
+
+
+ function agregarAlCarrito(e){
+  
+     const idBoton = e.target.parentElement.id;
+      const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+  if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+   const index = productosEnCarrito.findIndex(producto => producto.id === idBoton) ;
+        productosEnCarrito[index].cantidad += 1;;
+  }else{     
+    
+      productoAgregado.cantidad = +1;
+     productosEnCarrito.push(productoAgregado);
+     }
+     actualizarNumerito ();
+     localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
+};
+
+function actualizarNumerito (){
+  let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+  numerito.innerHTML = nuevoNumerito
+ 
+}
 
 
 
@@ -20,7 +54,7 @@ let  caja1 = document.querySelector(".caja1");
 let totalPrecio = 0
 let precioporcantidad = 0
 
-// console.log(productosEnCarrito);
+
 
 if (productosEnCarrito) {
 
@@ -84,3 +118,4 @@ descuento.addEventListener("change", () => {
     document.getElementById("total").innerHTML = totalConIva;
   }
 })
+
