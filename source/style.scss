@@ -58,6 +58,11 @@ $padding:20rem;
 }
 .submenu {
   position: relative;
+  top: 2rem;
+  left: 3rem;
+  img{
+    width: 3rem;
+  }
 }
 
 .submenu #carrito{
@@ -70,21 +75,33 @@ $padding:20rem;
 
   top:100%;
   z-index: 1;
-  background-color: rgb(206, 199, 199);
+  background-color: white;
   padding: 20px;
   min-height: 400px;
   min-width: 300px;
-}
-
-#vaciar-carrito{
-  padding: .5rem 2rem;
-  border: 1px solid black;
-  color: $complementary-color-three;
-  text-decoration: none;
-  text-align: center;
   
-
 }
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.borrar-curso {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
 
 //==========================Estilo home==========================
 .home-main {

@@ -31,6 +31,11 @@
 
 .submenu {
   position: relative;
+  top: 2rem;
+  left: 3rem;
+}
+.submenu img {
+  width: 3rem;
 }
 
 .submenu #carrito {
@@ -43,18 +48,31 @@
   right: 0;
   top: 100%;
   z-index: 1;
-  background-color: rgb(206, 199, 199);
+  background-color: white;
   padding: 20px;
   min-height: 400px;
   min-width: 300px;
 }
 
-#vaciar-carrito {
-  padding: 0.5rem 2rem;
-  border: 1px solid black;
-  color: #8E58A6;
-  text-decoration: none;
+.vacio {
+  padding: 10px;
+  background-color: crimson;
   text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.borrar-curso {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
 }
 
 .home-main {
@@ -184,7 +202,7 @@ summary:hover {
 }
 
 .container-resumen, .formulario-envio {
-  width: 45vw;
+  width: 100vw;
   margin: 1rem;
 }
 .container-resumen .img-card, .formulario-envio .img-card {

@@ -275,8 +275,7 @@ window.addEventListener('mouseout', function(event) {
 
 
 
-listaProductos = JSON.stringify(productos);
-localStorage.setItem("listaProductos",listaProductos);
+
 
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
@@ -371,7 +370,16 @@ function actualizarBotonesAgregar() {
     });
 }
 
-   const productosEnCarrito = [];
+   let productosEnCarrito ;
+
+   let productosEnCarritoLS = localStorage.getItem("productosEnCarrito");
+
+   if (productosEnCarritoLS){
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();
+   }else{
+    productosEnCarrito = [];
+   }
 
 
    function agregarAlCarrito(e){
@@ -384,11 +392,12 @@ function actualizarBotonesAgregar() {
           productosEnCarrito[index].cantidad += 1;;
     }else{     
       
-        productoAgregado.cantidad = +1;
+        productoAgregado.cantidad = 1;
        productosEnCarrito.push(productoAgregado);
        }
        actualizarNumerito ();
        localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
+       
   };
 
 function actualizarNumerito (){
