@@ -26,8 +26,7 @@ productosEnCarrito.forEach(producto => {
             <p class="card-text">19.95 €</p>
         </div>
         </div>
-        <div class="total-pago">
-            <p>Total a pagar</p>
+        <div class="total-pago">       
         </div>
     </div>
   `
