@@ -31,6 +31,8 @@ function buscarUsuario() {
     }else {
 
         let usuario = usuarios.find(user => user.correo === loginMail);
+        sessionStorage.setItem("usuarioLogeado", JSON.stringify(usuario));
+    
         return usuario;
 
         console.log(usuario)
