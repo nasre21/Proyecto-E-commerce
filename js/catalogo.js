@@ -213,7 +213,6 @@ const productos = [
 ];
 
 
-
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
@@ -339,6 +338,6 @@ function actualizarBotonesAgregar() {
 
 function actualizarNumerito (){
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    numerito.innerHTML = nuevoNumerito;
+  
    
 }

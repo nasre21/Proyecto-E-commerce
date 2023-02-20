@@ -53,10 +53,11 @@ function cargarproductosCarrito() {
         </div>
     `
     carritoVacio.appendChild(div);
+    
  totalPrecio += precioporcantidad
    
   });
-  
+ 
  document.getElementById("precioSinDescuento").innerHTML = parseInt(totalPrecio) ;
 
 }
