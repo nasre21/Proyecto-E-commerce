@@ -256,6 +256,7 @@ window.addEventListener('mouseout', function(event) {
 
 
   //Funcion para mostrar fecha
+ let fecha = document.getElementById("fecha")
   function showDate() {
     const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
