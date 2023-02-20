@@ -30,16 +30,16 @@
 
   <body>
     <div class="container-fluid d-flex justify-content-end position-relative">
-      <p class="parrafoFecha me-5 position-absolute" id="fecha"></p>
-      <select name="idiomas" id="flags" class="flags mt-3 me-4">
-        <option class="flags_item" data-language="es">
-          <p>es</p>
-        </option>
-        <option class="flags_item" data-language="en">
-          <p>en</p>
-        </option>
-        <!-- <option value="EUS"></option> -->
-      </select>
+      <p id="fecha" class="parrafoFecha me-5 position-absolute"></p>       
+        <select name="idiomas" id="flags" class="flags mt-3 me-4">
+          <option class="flags_item" data-language="es">
+            <p>es</p>
+          </option>
+          <option class="flags_item" data-language="en">
+            <p>en</p>
+          </option>
+          <!-- <option  value="EUS"></option> -->
+        </select>
     </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -57,34 +57,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex mb-lg-0">
             <li class="nav-item">
-              <a
-                id="link"
-                class="nav-link active ms-5 me-5 mt-4"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
+              <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html">Home</a>
             </li>
 
             <li id="link" class="nav-item dropdown mt-4">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/catalogo.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Catalogo
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perros</a></li>
-                <li><a class="dropdown-item" href="#">Gatos</a></li>
-                <li><a class="dropdown-item" href="#">Aves</a></li>
-              </ul>
+              <a class="nav-link dropdown-toggle" href="catalogo.html" role="button" aria-expanded="false">Catalogo</a>
+              <!-- <ul class="dropdown-menu">
+                <li><a id="todo" class="dropdown-item" href="#">Todo</a></li>
+                <li><a id="perro" class="dropdown-item" href="#">Perros</a></li>
+                <li><a id="gato" class="dropdown-item" href="#">Gatos</a></li>
+                <li><a id="pajaro" class="dropdown-item" href="#">Aves</a></li>
+              </ul> -->
             </li>
             <li id="logo-gato" class="nav-item">
-              <a href="index.html"><img src="/image/logoToPets-sin-blanco.png" alt="" /></a>
-            </li>
+              <a href="index.html"><img src="/image/logoToPets-sin-blanco.png" alt="" /></a>            </li>
             <li id="search_">
               <form id="search" class="d-flex" role="search">
                 <input
@@ -100,33 +86,12 @@
               </form>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  id="img-usuario"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
-                  class="rounded-circle"
-                  alt="Avatar"
-                  loading="lazy"
-                />
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" alt="Avatar" loading="lazy"/>
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Mi perfil</a>
-                <a
-                  id="nombre-usuario"
-                  class="dropdown-item"
-                  href="login-page.html"
-                  >Login</a
-                >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cliente.html">Mi perfil</a>
+                <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
                 <a id="cerrar" class="dropdown-item" href="#">Cerrar sesion</a>
               </div>
             </li>
