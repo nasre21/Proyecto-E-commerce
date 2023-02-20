@@ -1,5 +1,5 @@
 window.addEventListener("focus", () => {
-  location.reload();
+  window.location.reload();
 });
 
 //agregar al carrito
@@ -147,29 +147,3 @@ const btncantidad = document.getElementById("btncantidad")
  btncantidad.addEventListener("input", () => {
   console.log(btncantidad.value);
 });
-
-
-
-// hacer que la cantidad cambie
-// let tarjeta = document.getElementsByClassName("carrito-productos")
-// cambiarCantidad();
-// function cambiarCantidad() {
-//     tarjeta.addEventListener('change', (eventoCambio)=>{
-//       console.log
-//          let nuevaCAntidad=eventoCambio.target.value;
-//          let precio=eventoCambio.target.parentElement.parentElement.childNodes[5].childNodes[0].innerText;
-//          let multiplicacion = (nuevaCAntidad*precio).toFixed(2);
-//          posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
-//          console.log(posicion);
-//          eventoCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText=` ${multiplicacion} €`;
-//           listaProducto= localStorage.getItem('pedido');
-//                lista_json=JSON.parse(listaProducto);
-//                 console.log(lista_json[posicion]);
-//                lista_json[posicion].cantidad= nuevaCAntidad;
-//                 console.log(lista_json[posicion]);
-//                lista_json.splice(posicion,1,lista_json[posicion])
-//                listaCarrols=JSON.stringify(lista_json)
-//                localStorage.setItem("pedido",listaCarrols)
-//                calculaFactura()
-//     })
-// }
