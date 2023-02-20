@@ -33,3 +33,17 @@ productosEnCarrito.forEach(producto => {
   `
  contenedorcheck.appendChild(check);
 });
+//checkbox
+
+const button = document.querySelector("#btn");
+const check = document.querySelector("#checkbox");
+
+check.addEventListener("change", ()=>{
+if (check.checked== false) {
+    button.disabled= true; 
+}else{
+    button.disabled=false;
+}
+    
+})
+
