@@ -30,7 +30,7 @@
 
   <body>
     <div class="container-fluid d-flex justify-content-end position-relative">
-      <p class="parrafoFecha me-5 position-absolute"></p>
+      <p id="fecha" class="parrafoFecha me-5 position-absolute"></p>
       <select name="idiomas" id="flags" class="flags mt-3 me-4">
         <option class="flags_item" data-language="es">
           <p>es</p>
@@ -67,20 +67,13 @@
             </li>
 
             <li id="link" class="nav-item dropdown mt-4">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/catalogo.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Catalogo
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perros</a></li>
-                <li><a class="dropdown-item" href="#">Gatos</a></li>
-                <li><a class="dropdown-item" href="#">Aves</a></li>
-              </ul>
+              <a class="nav-link dropdown-toggle" href="catalogo.html" role="button" aria-expanded="false">Catalogo</a>
+              <!-- <ul class="dropdown-menu">
+                <li><a id="todo" class="dropdown-item" href="#">Todo</a></li>
+                <li><a id="perro" class="dropdown-item" href="#">Perros</a></li>
+                <li><a id="gato" class="dropdown-item" href="#">Gatos</a></li>
+                <li><a id="pajaro" class="dropdown-item" href="#">Aves</a></li>
+              </ul> -->
             </li>
             <li id="logo-gato" class="nav-item">
               <img src="/image/logoToPets-sin-blanco.png" alt="" />
@@ -100,33 +93,12 @@
               </form>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  id="img-usuario"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
-                  class="rounded-circle"
-                  alt="Avatar"
-                  loading="lazy"
-                />
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" alt="Avatar" loading="lazy"/>
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Mi perfil</a>
-                <a
-                  id="nombre-usuario"
-                  class="dropdown-item"
-                  href="login-page.html"
-                  >Login</a
-                >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cliente.html">Mi perfil</a>
+                <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
                 <a class="dropdown-item" href="#">Cerrar sesion</a>
               </div>
             </li>
@@ -238,12 +210,12 @@
   </footer>
   <!-- Footer -->
   <script src="/js/app.js"></script>
-  <script src="js/app.js/carrito.js"></script>
+  <!-- <script src="js/carrito.js"></script>
   <script src="js/cliente.js"></script>
   <script src="js/catalogo.js"></script>
-  <script src="js/description_producto.js"></script>
+  <script src="js/description_producto.js"></script> -->
   <script src="js/login.js"></script>
-  <script src="js/user.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- <script src="js/user.js"></script> -->
+  <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>
