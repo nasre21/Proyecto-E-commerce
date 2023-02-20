@@ -58,7 +58,7 @@ function cargarproductosCarrito() {
     cantidadtotal += producto.cantidad
     
   });
-  
+ 
  document.getElementById("precioSinDescuento").innerHTML = parseInt(totalPrecio) ;
 
 }
