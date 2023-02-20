@@ -32,6 +32,7 @@ function buscarUsuario() {
 
         let usuario = usuarios.find(user => user.correo === loginMail);
         sessionStorage.setItem("usuarioLogeado", JSON.stringify(usuario));
+
     
         return usuario;
 
@@ -74,23 +75,11 @@ function redireccionar(usuario) {
 
         window.location.href = "./intranet.html";
     }else {
-        window.location.href = "/";
+        window.location.href = "cliente.html";
     }
 
 }
 
-// Cerrar session
-
- const cerrar = document.querySelector("#cerrar");
-
-cerrar.addEventListener("click", ()=>{
-    
-        sessionStorage.getItem('usuarioLogeado');
-        sessionStorage.clear();
-        window.location.href ="login-page.html"
-
-    
-});
 
 
 

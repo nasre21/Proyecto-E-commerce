@@ -1,6 +1,8 @@
+window.addEventListener("focus", () => {
+  location.reload();
+});
 
 //agregar al carrito
-
 let productosEnCarrito = localStorage.getItem("productosEnCarrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
@@ -15,18 +17,17 @@ let totalPrecio = 0
 let precioporcantidad = 0
 let cantidadtotal = 0
 
-
-function cargarproductosCarrito() { 
+function cargarproductosCarrito() {
   if (productosEnCarrito){
 
   productosEnCarrito.forEach(producto => {
 
      precioporcantidad = producto.precio * producto.cantidad
-     
+
 
     const div = document.createElement("div");
     div.classList.add("carrito-productos", "tarjeta", "d-flex", "mb-2");
-    div.innerHTML = 
+    div.innerHTML =
     ` <div class="carrito-productos tarjeta d-flex mb-2 w-100">
     <img class="m-3" src="${producto.imagen}" alt="${producto.nombre}">
     <div class="descripcion w-100 row align-items-center">
@@ -35,7 +36,7 @@ function cargarproductosCarrito() {
         <div class="d-flex">
           <p data-section="carrito" data-value="cantidad">Cantidad:</p>
           <div class="d-flex justify-content-end w-100 gap-1">
-          <input type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" value="${producto.cantidad}">
+          <input id="btncantidad" type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" value="${producto.cantidad}">
           </div>
         </div>
       </div>
@@ -44,7 +45,7 @@ function cargarproductosCarrito() {
         <p class="d-flex justify-content-end w-100 precioIndividual">${producto.precio}€</p>
       </div>
       <div class="d-flex border-bottom">
-        <p data-section="carrito" data-value="precio">Precio Total:</p>
+        <p data-section="carrito" data-value="precio">Total:</p>
         <p class="d-flex justify-content-end w-100 precioIndividual">${precioporcantidad}€</p>
         </div>
         </div>
@@ -56,9 +57,9 @@ function cargarproductosCarrito() {
     carritoVacio.appendChild(div);
     totalPrecio += precioporcantidad
     cantidadtotal += producto.cantidad
-    
+
   });
- 
+
  document.getElementById("precioSinDescuento").innerHTML = parseInt(totalPrecio) ;
 
 }
@@ -73,20 +74,20 @@ cargarproductosCarrito();
 
 botonesEliminar.forEach (boton =>{
   boton.addEventListener("click", eliminarDelCarrito)
-  
+
 })
-  
+
 }
 
 function eliminarDelCarrito (e){
   const idBoton = e.currentTarget.id;
   const index =  productosEnCarrito.findIndex(producto => producto.id === idBoton);
   productosEnCarrito.splice(index, 1 );
-  
+
 
    localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
 location.reload();
-   
+
 }
 
 btnVaciar.addEventListener("click", vaciarCarrito,);
@@ -104,7 +105,7 @@ function vaciarCarrito(){
 
 
 //  esto hace la suma del carrito
-const price1 = Math. trunc(totalPrecio) 
+const price1 = Math. trunc(totalPrecio)
 const price2 = parseInt(document.getElementById("envio").innerHTML);
 const totalConIva = (price1 + price2);
 document.getElementById("total").innerHTML = totalConIva;
@@ -135,9 +136,40 @@ if (cantidadtotal > 5) {
 
 //texto que sale al hacer hover en checkbox
 checkbox.addEventListener("mouseover", () => {
-  checkbox.title = "Texto de ejemplo al hacer hover";
+  checkbox.title = "Descuento activo con la compra de mas de 5 productos";
 });
 
 checkbox.addEventListener("mouseout", () => {
   checkbox.title = "";
 });
+
+const btncantidad = document.getElementById("btncantidad")
+ btncantidad.addEventListener("input", () => {
+  console.log(btncantidad.value);
+});
+
+
+
+// hacer que la cantidad cambie
+// let tarjeta = document.getElementsByClassName("carrito-productos")
+// cambiarCantidad();
+// function cambiarCantidad() {
+//     tarjeta.addEventListener('change', (eventoCambio)=>{
+//       console.log
+//          let nuevaCAntidad=eventoCambio.target.value;
+//          let precio=eventoCambio.target.parentElement.parentElement.childNodes[5].childNodes[0].innerText;
+//          let multiplicacion = (nuevaCAntidad*precio).toFixed(2);
+//          posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
+//          console.log(posicion);
+//          eventoCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText=` ${multiplicacion} €`;
+//           listaProducto= localStorage.getItem('pedido');
+//                lista_json=JSON.parse(listaProducto);
+//                 console.log(lista_json[posicion]);
+//                lista_json[posicion].cantidad= nuevaCAntidad;
+//                 console.log(lista_json[posicion]);
+//                lista_json.splice(posicion,1,lista_json[posicion])
+//                listaCarrols=JSON.stringify(lista_json)
+//                localStorage.setItem("pedido",listaCarrols)
+//                calculaFactura()
+//     })
+// }
