@@ -31,6 +31,8 @@ function buscarUsuario() {
     }else {
 
         let usuario = usuarios.find(user => user.correo === loginMail);
+        sessionStorage.setItem("usuarioLogeado", JSON.stringify(usuario));
+    
         return usuario;
 
         console.log(usuario)
@@ -79,11 +81,16 @@ function redireccionar(usuario) {
 
 // Cerrar session
 
-// const cerrar = document.querySelector("#cerrar");
+ const cerrar = document.querySelector("#cerrar");
 
-// cerrar.addEventListener("click", ()=>{
-//     window.location.href ="login-page.html"
-// });
+cerrar.addEventListener("click", ()=>{
+    if(cerrar){
+        sessionStorage.getItem('');
+        sessionStorage.clear();
+        window.location.href ="login-page.html"
+
+    }
+});
 
 
 
