@@ -1,6 +1,6 @@
 
 //cambiar idioma
-const flagsElement = document.getElementById('flags');
+const selectIdioma = document.getElementById('flags');
 
 const textsToChange = document.querySelectorAll("[data-section]");
 
@@ -17,7 +17,7 @@ const changeLanguage = async (language) => {
     }
 };
 
-flagsElement.addEventListener('click', (e) => {
+selectIdioma.addEventListener('click', (e) => {
     changeLanguage(e.target.value);
 });
 
