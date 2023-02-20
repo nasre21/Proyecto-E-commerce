@@ -12,6 +12,8 @@ const inputProvincia = document.querySelector("#provincia");
 const inputTelefono = document.querySelector("#telefono");
 const inputIdentificacion = document.querySelector("#identificacion");
 
+const parrafo = document.querySelector("#warnings");
+
 const botonEnviar = document.querySelector("#registro");
 
 const usuarios = obtenerUsuarios();
@@ -24,8 +26,37 @@ function registroUsuario(event) {
     event.preventDefault();
     cogerDatosUsuario();
     guardarUsuario();
-    irAIniciarSesion();
+    validarFormulario();
 }
+
+function validarFormulario(){
+       
+    let warnings = ""
+
+
+        let entrar = false
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+        parrafo.innerHTML = ""
+
+
+        if(!regexEmail.test(inputCorreo.value)){
+           
+            document.querySelector("#warnings").style.color = "red";
+            document.querySelector("#warnings").style.border = "0.1rem solid red";
+            document.querySelector("#warnings").style.padding = "0.8rem";
+            document.querySelector("#warnings").style.marginBottom = "1rem";
+
+
+          warnings += `El email que has introducido no es válido`
+            entrar = true
+        }if(entrar){
+            parrafo.innerHTML = warnings
+        }else{
+           window.location.href = "login-page.html";
+        }
+    }
+
+
 
 function cogerDatosUsuario() {
     let user = {
