@@ -31,4 +31,6 @@ Intranet: Página a la que redirige el login si el usuario es un administrador.
 
 Html5 / Css3 / Sass / Bootstrap5 / JavaScript
 
+# Equipo
+
 Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
