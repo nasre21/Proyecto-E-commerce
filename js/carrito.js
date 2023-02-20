@@ -13,6 +13,7 @@ let  caja1 = document.querySelector(".caja1");
 let borrarProducto = document.querySelector(".carrito-eliminar-producto")
 let totalPrecio = 0
 let precioporcantidad = 0
+let cantidadtotal = 0
 
 
 function cargarproductosCarrito() { 
@@ -53,8 +54,9 @@ function cargarproductosCarrito() {
         </div>
     `
     carritoVacio.appendChild(div);
- totalPrecio += precioporcantidad
-   
+    totalPrecio += precioporcantidad
+    cantidadtotal += producto.cantidad
+    
   });
   
  document.getElementById("precioSinDescuento").innerHTML = parseInt(totalPrecio) ;
@@ -118,3 +120,24 @@ descuento.addEventListener("change", () => {
   }
 })
 
+
+//descuento al carrito cuando se compran mas de 5 productos
+
+
+console.log(cantidadtotal)
+const checkbox = document.getElementById("descuento");
+
+if (cantidadtotal > 5) {
+  checkbox.disabled = false;
+} else {
+  checkbox.disabled = true;
+}
+
+//texto que sale al hacer hover en checkbox
+checkbox.addEventListener("mouseover", () => {
+  checkbox.title = "Texto de ejemplo al hacer hover";
+});
+
+checkbox.addEventListener("mouseout", () => {
+  checkbox.title = "";
+});
