@@ -213,7 +213,6 @@ const productos = [
 ];
 
 
-
 const contenedorProductos = document.querySelector("#cards-catalogo");
 const contenedorOcultoProductos = document.querySelector("#cards-catalogo-oculto");
 const linkCategorias = document.querySelectorAll(".link-categoria");
