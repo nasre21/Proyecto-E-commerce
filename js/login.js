@@ -84,12 +84,12 @@ function redireccionar(usuario) {
  const cerrar = document.querySelector("#cerrar");
 
 cerrar.addEventListener("click", ()=>{
-    if(cerrar){
-        sessionStorage.getItem('');
+    
+        sessionStorage.getItem('usuarioLogeado');
         sessionStorage.clear();
         window.location.href ="login-page.html"
 
-    }
+    
 });
 
 
