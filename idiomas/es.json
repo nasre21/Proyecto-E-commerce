@@ -13,19 +13,9 @@
     
     "carrito":{
         "titulo":"Tu carrito",
-        "items": "Elemetos",
-        "pienso": "Pienso de Gatos",
         "cantidad":"Cantidad",
-        "precio":"Precios",
-
-        "piensos": "Pienso de Gatos",
-        "cantidadd":"Cantidad",
-        "precioss":"Precios",
-        "ressumen":"Resumen",
-        "descuento":"Descuento",
-        "precios":"Precio envio:"
-
-
+        "precio":"Precio",
+        "resumen":"Resumen"
     },
 
     "checkout":{
@@ -45,9 +35,6 @@
         "formulario":"Formulario de Registro",
         "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
         "enviar":"Enviar"
-    },
-    "catalogo":{
-        "titulo":"Catalogo completo"
     }
 }
 

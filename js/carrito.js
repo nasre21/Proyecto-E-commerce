@@ -36,7 +36,7 @@ function cargarproductosCarrito() {
         <div class="d-flex">
           <p data-section="carrito" data-value="cantidad">Cantidad:</p>
           <div class="d-flex justify-content-end w-100 gap-1">
-          <input id="btncantidad" type="number" min="0" name="contadorcarrito" class=" contadorcarrito w-25 text-center" value="${producto.cantidad}">
+          <p class="numeroParrafo">${producto.cantidad}</p>
           </div>
         </div>
       </div>
