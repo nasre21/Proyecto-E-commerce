@@ -225,7 +225,7 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id;
     let nodo= eventoClick.target.nodeName;
-    alert(nodo);
+    //alert(nodo);
     console.log(nodo);
     if(nodo == "IMG"){
 
