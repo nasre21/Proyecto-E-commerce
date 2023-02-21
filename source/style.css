@@ -38,6 +38,17 @@
   width: 3rem;
 }
 
+select {
+  background-color: #e6d5ee;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #8C56A2;
+  font-size: 16px;
+  padding: 5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(153, 101, 101, 0.1);
+}
+
 .home-main {
   background-image: url("../image/mascota_perro.jpg");
   background-repeat: no-repeat;
