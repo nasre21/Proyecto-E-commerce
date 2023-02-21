@@ -72,7 +72,8 @@ function cogerDatosUsuario() {
         codigoPostal: inputCodigoPostal.value,
         provincia: inputProvincia.value,
         telefono: inputTelefono.value,
-        identificacion: inputIdentificacion.value
+        identificacion: inputIdentificacion.value,
+        imagen: ""
     }
     console.log("user es " + JSON.stringify(user));
     usuarios.push(user);

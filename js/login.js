@@ -7,41 +7,27 @@ const usuarios = obtenerUsuarios();
 
 
 botonLogin.addEventListener("click", iniciarSesion);
-function obtenerUsuarios() {
-    return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
-    }
 
-
-    function iniciarSesion() {
+function iniciarSesion() {
     let usuario = buscarUsuario()
-    validarDatosUsuario(usuario);
+    validarDatosUsuario(usuario);  
+    rellenarDatos(usuario);
 }
-
-
 
 function buscarUsuario() {
-
     loginMail = inputLoginMail.value;
-    
     let exist = usuarios.some(data => data.correo === loginMail);
+    
     if(!exist) {
-
         alert("Usuario no registrado");
-
     }else {
-
         let usuario = usuarios.find(user => user.correo === loginMail);
         sessionStorage.setItem("usuarioLogeado", JSON.stringify(usuario));
-
     
         return usuario;
-
         console.log(usuario)
     }
-
 }
-
-
 
 function validarDatosUsuario(usuario){
    
@@ -76,9 +62,25 @@ function redireccionar(usuario) {
         window.location.href = "./intranet.html";
     }else {
         window.location.href = "cliente.html";
+        
     }
 
 }
+
+function obtenerUsuarios() {
+    return JSON.parse(localStorage.getItem("usuarios")) === null? []: JSON.parse(localStorage.getItem("usuarios"));
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
