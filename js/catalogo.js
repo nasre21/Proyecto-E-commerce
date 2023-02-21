@@ -225,8 +225,9 @@ contenedorProductos.addEventListener('click', (eventoClick)=>{
     console.log(eventoClick.target.id);
     let productoSeleccionado=eventoClick.target.id;
     let nodo= eventoClick.target.nodeName;
-    //alert(nodo);
-    if(nodo=="IMG"){
+    alert(nodo);
+    console.log(nodo);
+    if(nodo == "IMG"){
 
 localStorage.setItem("nombreProducto", productoSeleccionado);
     window.location.assign("descripcionproducto.html?"+productoSeleccionado);
