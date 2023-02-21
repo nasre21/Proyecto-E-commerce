@@ -1,4 +1,3 @@
-
 let contenedorId = document.getElementById("contenedor-description");
 
 function mostrarProducto(){
