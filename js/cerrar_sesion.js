@@ -1,8 +1,6 @@
-// Cerrar session
+const cerrarSesion = document.getElementById("cerrar");
 
-const cerrar = document.querySelector("#cerrar");
-
-cerrar.addEventListener("click", ()=>{
+cerrarSesion.addEventListener("click", ()=>{
     
          //sessionStorage.getItem('usuarioLogeado');
         sessionStorage.clear();
